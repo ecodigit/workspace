@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:COV="https://w3id.org/italia/onto/COV/" xmlns:l0="https://w3id.org/italia/onto/l0/" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:cerif="http://eurocris.org/ontology/cerif/0.1#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:bibo="http://purl.org/ontology/bibo/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:org="http://www.w3.org/ns/org#" xmlns:vcard="http://www.w3.org/2006/vcard/ns#" xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" xmlns:cov="https://w3id.org/italia/onto/COV">
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:CLV="https://w3id.org/italia/onto/CLV" xmlns:COV="https://w3id.org/italia/onto/COV/" xmlns:l0="https://w3id.org/italia/onto/l0/" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:cerif="http://eurocris.org/ontology/cerif/0.1#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:bibo="http://purl.org/ontology/bibo/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:org="http://www.w3.org/ns/org#" xmlns:vcard="http://www.w3.org/2006/vcard/ns#" xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" xmlns:cov="https://w3id.org/italia/onto/COV">
 
 	<!--Laboratorio -->
-	<org:Organization rdf:about="https://w3id.og/ecodigit/organization/PCLPictorialComputingLaboratory">
+	<org:Organization rdf:about="https://w3id.og/ecodigit/organization/PCL">
 
-		<foaf:name>PCLPictorial Computing Laboratory</foaf:name>
+		<foaf:name>Pictorial Computing Laboratory</foaf:name>
+		<foaf:acronym>PCL</foaf:acronym>
 		<COV:hasLogo>
 			<foaf:Image rdf:about="http://dockerwebtest01.si.cnr.it:8083/sites/default/files/Pcl.png" />
 		</COV:hasLogo>
@@ -13,6 +14,16 @@
 		</l0:description>
 		<foaf:mbox rdf:resource="mailto:visionlabsapienza@gmail.com"></foaf:mbox>
 		<foaf:homepage rdf:resource="http://www.esempiolaboratorioPCLPictorialComputingLaboratory.it"></foaf:homepage>
+		
+		<org:hasSite>
+			<org:Site geo:lat="41.905213" geo:long="12.517448">
+				<CLV:hasAddress>
+					<CLV:Address>
+						<CLV:fullAddress>Viale Regina Elena, 295, 00185 Roma, Italia</CLV:fullAddress>
+					</CLV:Address>
+				</CLV:hasAddress>
+			</org:Site>
+		</org:hasSite>
 
 		<org:classification>
 			<skos:Concept rdf:about="https://w3id.org/ecodigit/classification/Image_Analysis_and_Manipulation">

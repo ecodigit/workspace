@@ -18,7 +18,7 @@
 
 		<!-- Affiliazione -->
 		<org:memberOf>
-			<org:Organization rdf:about="https://w3id.og/ecodigit/cnr-istc">
+			<org:Organization rdf:about="https://w3id.og/ecodigit/istc">
 				<foaf:name>Istituto di Scienze e Tecnologie della Cognizione</foaf:name>
 				<foaf:acronym>ISTC</foaf:acronym>
 				<org:hasSite>
