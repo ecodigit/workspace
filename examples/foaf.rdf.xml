@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:cerif="http://eurocris.org/ontology/cerif/0.1#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:bibo="http://purl.org/ontology/bibo/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:org="http://www.w3.org/ns/org#" xmlns:CLV="https://w3id.org/italia/onto/CLV" xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#">
+
+	<foaf:Person rdf:about="https://w3id.org/ecodigit/person/luigi_asprino">
+
+		<!-- Informazioni Personali -->
+		<foaf:givenname>Luigi</foaf:givenname>
+		<foaf:family_name>Asprino</foaf:family_name>
+		<foaf:img rdf:resource="http://luigiasprino.it/img/luigi-asprino.jpg" />
+		<foaf:mbox rdf:resource="mailto:luigi.asprino@istc.cnr.it" />
+		<foaf:homepage rdf:resource="http://luigiasprino.it" />
+		<foaf:account>
+			<foaf:OnlineAccount>
+				<foaf:accountServiceHomepage rdf:resource="https://orcid.org/" />
+				<foaf:accountName>0000-0003-1907-0677</foaf:accountName>
+			</foaf:OnlineAccount>
+		</foaf:account>
+
+		<!-- Affiliazione -->
+		<org:memberOf>
+			<org:Organization rdf:about="https://w3id.og/ecodigit/cnr-istc">
+				<foaf:name>Istituto di Scienze e Tecnologie della Cognizione</foaf:name>
+				<foaf:acronym>ISTC</foaf:acronym>
+				<org:hasSite>
+					<org:Site geo:lat="41.905973" geo:long="12.504686">
+						<CLV:hasAddress>
+							<CLV:Address>
+								<CLV:fullAddress>Via San Martino della Battaglia, 44, 00185 Roma, Italia</CLV:fullAddress>
+							</CLV:Address>
+						</CLV:hasAddress>
+					</org:Site>
+				</org:hasSite>
+			</org:Organization>
+		</org:memberOf>
+
+		<!-- Publicazioni -->
+		<foaf:made rdf:resource="https://w3id.org/ecodigit/publication/Asprino2018Empirical" />
+		<foaf:made rdf:resource="https://w3id.org/ecodigit/publication/Lodi2017Semantic" />
+
+		<!-- Projects -->
+		<foaf:currentProject rdf:resource="https://w3id.org/ecodigit/project/ecodigit" />
+
+	</foaf:Person>
+
+
+	<cerif:Project rdf:about="https://w3id.org/ecodigit/project/ecodigit">
+		<cerif:title>Ecosistema Digitale per la fruizione e la
+			valorizzazione
+			dei beni e delle attività culturali del Lazio
+		</cerif:title>
+		<cerif:acronym>EcoDigit</cerif:acronym>
+		<cerif:startDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-10-02</cerif:startDate>
+		<cerif:endDate rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-01-02</cerif:endDate>
+		<cerif:abstract>Il progetto EcoDigit "Ecosistema Digitale per la fruizione e la valorizzazione dei beni e delle attività culturali del Lazio" è una delle iniziative del Centro di Eccellenza del Distretto Tecnologico per i beni e le attività Culturali (DTC) del Lazio, costituito dalle cinque università statali del Lazio - Sapienza, Tor Vergata, RomaTre, Cassino e Tuscia - in rete con CNR, ENEA e INFN per aggregare e integrare competenze nel settore delle tecnologie per i beni e le attività culturali. EcoDigit intende arricchire il sistema Anagrafe delle Competenze con una piattaforma middleware che faciliti l’integrazione di nuove sorgenti di dati e consenta la pubblicazione e il riuso di servizi per la valorizzazione e la fruizione del patrimonio culturale del Lazio. I principali
+			obiettivi del progetto possono essere sintetizzati nei seguenti punti: 1) la prototipazione di un’architettura middleware integrata con il sistema Anagrafe per consentirgli di acquisire e integrare dati, contenuti e servizi; 2) l’identificazione e l’analisi approfondita delle sorgenti di dati e di contenuti e la progettazione di modelli comuni per la loro integrazione; 3) la progettazione di servizi avanzati e delle tecnologie e interfacce per il loro inserimento nella piattaforma comune. Il risultato finale sarà, quindi, un prototipo che dimostri le principali funzioni di supporto all’integrazione e alla fruizione. Tale prototipo intende fornire una prova di concetto e di sostenibilità della piattaforma accompagnata dalle specifiche tecniche e le metodologie per la sua messa in opera
+			su larga scala.
+		</cerif:abstract>
+		<cerif:uri rdf:resource="http://ecodigit.dtclazio.it" />
+	</cerif:Project>
+
+
+	<bibo:Article rdf:about="https://w3id.org/ecodigit/publication/Asprino2018Empirical" dc:language="en" bibo:pageStart="3962" bibo:pageEnd="3969" bibo:doi="10.24963/ijcai.2018/551" dc:date="2018" dc:title="Empirical Analysis of Foundational Distinctions in Linked Open Data">
+
+		<dcterms:isPartOf>
+			<bibo:Proceedings rdf:about="https://w3id.org/ecodigit/publication/IJCAI2018" dc:title="Proceedings of the 27th International Joint Conference on Artificial Intelligence and the 23rd European Conference on Artificial Intelligence (IJCAI-ECAI-18)" bibo:issn="978-0-9992411-2-7" />
+		</dcterms:isPartOf>
+
+		<bibo:authorList>
+			<rdf:Seq>
+				<rdf:li rdf:resource="https://w3id.org/ecodigit/person/luigi_asprino" />
+				<rdf:li>
+					<foaf:Person rdf:about="https://w3id.org/ecodigit/person/valerio_basile">
+						<foaf:givenname>Valerio</foaf:givenname>
+						<foaf:family_name>Basile</foaf:family_name>
+					</foaf:Person>
+				</rdf:li>
+				<rdf:li>
+					<foaf:Person rdf:about="https://w3id.org/ecodigit/person/paolo_ciancarini">
+						<foaf:givenname>Paolo</foaf:givenname>
+						<foaf:family_name>Ciancarini</foaf:family_name>
+					</foaf:Person>
+				</rdf:li>
+				<rdf:li>
+					<foaf:Person rdf:about="https://w3id.org/ecodigit/person/valentina_presutti">
+						<foaf:givenname>Valentina</foaf:givenname>
+						<foaf:family_name>Presutti</foaf:family_name>
+					</foaf:Person>
+				</rdf:li>
+			</rdf:Seq>
+		</bibo:authorList>
+	</bibo:Article>
+
+
+	<bibo:Article rdf:about="https://w3id.org/ecodigit/publication/Lodi2017Semantic" dc:language="en" bibo:pageStart="3" bibo:pageEnd="37" dc:title="Semantic Web for Cultural Heritage Valorisation" dc:date="2017" bibo:doi="10.1007/978-3-319-54499-1_1">
+
+		<dcterms:isPartOf>
+			<bibo:Book rdf:about="https://w3id.org/ecodigit/publication/DADH" dc:title="Data Analytics in Digital Humanities" bibo:issn="978-3-319-54499-1" />
+		</dcterms:isPartOf>
+
+		<bibo:authorList>
+			<rdf:Seq>
+				<rdf:li>
+					<foaf:Person rdf:about="https://w3id.org/ecodigit/person/giorgia_lodi">
+						<foaf:givenname>Giorgia</foaf:givenname>
+						<foaf:family_name>Lodi</foaf:family_name>
+					</foaf:Person>
+				</rdf:li>
+				<rdf:li rdf:resource="https://w3id.org/ecodigit/person/luigi_asprino" />
+				<rdf:li>
+					<foaf:Person rdf:about="https://w3id.org/ecodigit/person/andreagiovanni_nuzzolese">
+						<foaf:givenname>Andrea Giovanni</foaf:givenname>
+						<foaf:family_name>Nuzzolese</foaf:family_name>
+					</foaf:Person>
+				</rdf:li>
+				<rdf:li>
+					<foaf:Person rdf:about="https://w3id.org/ecodigit/person/valentina_presutti">
+						<foaf:givenname>Valentina</foaf:givenname>
+						<foaf:family_name>Presutti</foaf:family_name>
+					</foaf:Person>
+				</rdf:li>
+				<rdf:li>
+					<foaf:Person rdf:about="https://w3id.org/ecodigit/person/aldo_gangemi">
+						<foaf:givenname>Aldo</foaf:givenname>
+						<foaf:family_name>Gangemi</foaf:family_name>
+					</foaf:Person>
+				</rdf:li>
+				<rdf:li>
+					<foaf:Person rdf:about="https://w3id.org/ecodigit/person/diego_reforgiatorecupero">
+						<foaf:givenname>Diego</foaf:givenname>
+						<foaf:family_name>Reforgiato Recupero</foaf:family_name>
+					</foaf:Person>
+				</rdf:li>
+				<rdf:li>
+					<foaf:Person rdf:about="https://w3id.org/ecodigit/person/chiara_veninata">
+						<foaf:givenname>Chiara</foaf:givenname>
+						<foaf:family_name>Veninata</foaf:family_name>
+					</foaf:Person>
+				</rdf:li>
+				<rdf:li>
+					<foaf:Person rdf:about="https://w3id.org/ecodigit/person/annarita_orsini">
+						<foaf:givenname>Annarita</foaf:givenname>
+						<foaf:family_name>Orsini</foaf:family_name>
+					</foaf:Person>
+				</rdf:li>
+			</rdf:Seq>
+		</bibo:authorList>
+	</bibo:Article>
+
+</rdf:RDF>

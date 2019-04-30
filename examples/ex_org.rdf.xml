@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:COV="https://w3id.org/italia/onto/COV/" xmlns:l0="https://w3id.org/italia/onto/l0/" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:cerif="http://eurocris.org/ontology/cerif/0.1#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:bibo="http://purl.org/ontology/bibo/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:org="http://www.w3.org/ns/org#" xmlns:vcard="http://www.w3.org/2006/vcard/ns#" xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" xmlns:cov="https://w3id.org/italia/onto/COV">
+
+	<!--Laboratorio -->
+	<org:Organization rdf:about="https://w3id.og/ecodigit/organization/PCLPictorialComputingLaboratory">
+
+		<foaf:name>PCLPictorial Computing Laboratory</foaf:name>
+		<COV:hasLogo>
+			<foaf:Image rdf:about="http://dockerwebtest01.si.cnr.it:8083/sites/default/files/Pcl.png" />
+		</COV:hasLogo>
+		<l0:description>The Computer Vision Laboratory è inserito nel Department of Computer Science presso la Sapienza University di Roma. I principali interessi di ricerca del Laboratorio riguardano: Image Analysis and Manipulation Scene Understanding Object Recognition and Tracking Medical Image Analysis Aerial Imagery Gesture Analysis Human-Computer Interaction Multimodal Interaction Sketch Recognition Robotics and Machine Learning Underwater Image Analysis. Codici di calcolo numerico specialistici per l'analisi dei problemi di interazione terreno-struttura, in condizioni bi- e tri-dimensionali (2D e 3D), che permettono una modellazione costitutiva avanzata del comportamento meccanico dei terreni, e una simulazione accurata delle fasi di scavo meccanizzato di una galleria, o delle fasi
+			costruttive di uno scavo profondo a cielo aperto.
+		</l0:description>
+		<foaf:mbox rdf:resource="mailto:visionlabsapienza@gmail.com"></foaf:mbox>
+		<foaf:homepage rdf:resource="http://www.esempiolaboratorioPCLPictorialComputingLaboratory.it"></foaf:homepage>
+
+		<org:classification>
+			<skos:Concept rdf:about="https://w3id.org/ecodigit/classification/Image_Analysis_and_Manipulation">
+				<skos:prefLabel>Image Analysis and Manipulation</skos:prefLabel>
+			</skos:Concept>
+		</org:classification>
+		<org:classification>
+			<skos:Concept rdf:about="https://w3id.org/ecodigit/classification/Scene_Understanding">
+				<skos:prefLabel>Scene Understanding</skos:prefLabel>
+			</skos:Concept>
+		</org:classification>
+		<org:classification>
+			<skos:Concept rdf:about="https://w3id.org/ecodigit/classification/Object_Recognition_and_Tracking">
+				<skos:prefLabel>Object Recognition and Tracking</skos:prefLabel>
+			</skos:Concept>
+		</org:classification>
+		<org:classification>
+			<skos:Concept rdf:about="https://w3id.org/ecodigit/classification/Medical_Image_Analysis">
+				<skos:prefLabel>Medical Image Analysis</skos:prefLabel>
+			</skos:Concept>
+		</org:classification>
+		<org:classification>
+			<skos:Concept rdf:about="https://w3id.org/ecodigit/classification/Aerial_Imagery">
+				<skos:prefLabel>Aerial Imagery</skos:prefLabel>
+			</skos:Concept>
+		</org:classification>
+		<org:classification>
+			<skos:Concept rdf:about="https://w3id.org/ecodigit/classification/Gesture_Analysis">
+				<skos:prefLabel>Gesture Analysis</skos:prefLabel>
+			</skos:Concept>
+		</org:classification>
+		<org:classification>
+			<skos:Concept rdf:about="https://w3id.org/ecodigit/classification/Human-Computer_Interaction">
+				<skos:prefLabel>Human-Computer Interaction</skos:prefLabel>
+			</skos:Concept>
+		</org:classification>
+		<org:classification>
+			<skos:Concept rdf:about="https://w3id.org/ecodigit/classification/Multimodal_Interaction">
+				<skos:prefLabel>Multimodal Interaction</skos:prefLabel>
+			</skos:Concept>
+		</org:classification>
+		<org:classification>
+			<skos:Concept rdf:about="https://w3id.org/ecodigit/classification/Sketch_Recognition">
+				<skos:prefLabel>Sketch Recognition</skos:prefLabel>
+			</skos:Concept>
+		</org:classification>
+		<org:classification>
+			<skos:Concept rdf:about="https://w3id.org/ecodigit/classification/Robotics_and_Machine_Learning">
+				<skos:prefLabel>Robotics and Machine Learning</skos:prefLabel>
+			</skos:Concept>
+		</org:classification>
+		<org:classification>
+			<skos:Concept rdf:about="https://w3id.org/ecodigit/classification/Underwater_Image_Analysis">
+				<skos:prefLabel>Underwater Image Analysis</skos:prefLabel>
+			</skos:Concept>
+		</org:classification>
+
+		<org:hasMember> <!-- Membri del laboratorio -->
+			<foaf:Person rdf:about="https://w3id.org/ecodigit/person/p_bottoni">
+				<foaf:name>P. Bottoni</foaf:name>
+				<org:hasMembership> <!-- hasMembership lega una persona con la membership al quale partecipa -->
+					<org:Membership>
+						<!-- Membership è una Relazione ternaria che lega una persona (member) che ha un certo ruolo (role) presso una certa organizzazione (organization) -->
+						<org:role>
+							<!-- Ruolo Responsabile -->
+							<org:Role rdf:about="https://w3id.org/ecodigit/role/headOfLaboratory">
+								<rdfs:label>Ruolo responsabile di laboratorio</rdfs:label>
+							</org:Role>
+						</org:role>
+						<org:organization rdf:resource="https://w3id.og/ecodigit/organization/PCLPictorialComputingLaboratory" />
+						<org:member rdf:resource="https://w3id.org/ecodigit/person/p_bottoni" />
+					</org:Membership>
+				</org:hasMembership>
+			</foaf:Person>
+		</org:hasMember>
+
+		<org:hasMember> <!-- Membri del laboratorio -->
+			<foaf:Person rdf:about="https://w3id.org/ecodigit/person/l_cinque">
+				<foaf:name>L. Cinque</foaf:name>
+				<org:hasMembership> <!-- hasMembership lega una persona con la membership al quale partecipa -->
+					<org:Membership>
+						<!-- Membership è una Relazione ternaria che lega una persona (member) che ha un certo ruolo (role) presso una certa organizzazione (organization) -->
+						<org:role>
+							<!-- Ruolo Responsabile -->
+							<org:Role rdf:about="https://w3id.org/ecodigit/role/headOfLaboratory">
+								<rdfs:label>Ruolo responsabile di laboratorio</rdfs:label>
+							</org:Role>
+						</org:role>
+						<org:organization rdf:resource="https://w3id.og/ecodigit/organization/PCLPictorialComputingLaboratory" />
+						<org:member rdf:resource="https://w3id.org/ecodigit/person/l_cinque" />
+					</org:Membership>
+				</org:hasMembership>
+			</foaf:Person>
+		</org:hasMember>
+
+		<org:subOrganizationOf>
+			<org:Organization rdf:about="https://w3id.og/ecodigit/organization/di">
+				<foaf:name>Dipartimento di Informatica</foaf:name>
+				<foaf:acronym>DI</foaf:acronym>
+
+				<!-- inversa di subOrganizationOf -->
+				<org:hasSubOrganization rdf:resource="https://w3id.og/ecodigit/organization/PCLPictorialComputingLaboratory" />
+
+				<org:subOrganizationOf>
+					<org:Organization rdf:about="https://w3id.og/ecodigit/organization/rm1">
+						<foaf:name>Sapienza Università di Roma</foaf:name>
+						<foaf:acronym>Uniroma1</foaf:acronym>
+						<foaf:acronym>RM1</foaf:acronym>
+						<org:hasSubOrganization rdf:resource="https://w3id.og/ecodigit/organization/di" /> <!-- inversa di subOrganizationOf -->
+					</org:Organization>
+				</org:subOrganizationOf>
+
+			</org:Organization>
+
+		</org:subOrganizationOf>
+
+
+		<!-- La rete di laboratori è anch'essa un'organizzazione, quindi un laboratorio che afferisce ad una rete è sotto organizzazione della rete di laboratori -->
+		<org:subOrganizationOf>
+			<org:Organization rdf:about="https://w3id.og/ecodigit/organization/reteDiLaboratoriR4">
+				<foaf:name>R4 - Internet-of-things, robotica, intelligenza artificiale applicata alla cura e valorizzazione</foaf:name>
+				<foaf:acronym>R4</foaf:acronym>
+				<org:hasSubOrganization rdf:resource="https://w3id.og/ecodigit/organization/PCLPictorialComputingLaboratory" />
+			</org:Organization>
+		</org:subOrganizationOf>
+
+	</org:Organization>
+
+</rdf:RDF>
+
+
+	
+
+
+
+
+
+
+
+
