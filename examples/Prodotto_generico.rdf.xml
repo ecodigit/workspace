@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:org="http://www.w3.org/ns/org#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:cerif="http://eurocris.org/ontology/cerif/0.1#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:bibo="http://purl.org/ontology/bibo/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:ical="http://www.w3.org/2002/12/cal/ical#" xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#">
-	<rdf:Description rdf:about="https://w3id.org/ecodigit/cnr/resource/1">
+	<rdf:Description rdf:about="https://w3id.org/ecodigit/resource/Sentenza_nella_causa_demaniale_n_211_95_R_G">
 		<dc:identifier>UCILCOMR2002V02S20</dc:identifier>
 		<dc:title>Sentenza nella causa demaniale n. 211/95 R.G.</dc:title>
+		<dc:description>Descrizione della sentenza...</dc:description>
 		<dc:creator>
 			<foaf:Person rdf:about="https://w3id.org/ecodigit/person/franco_carletti">
 				<foaf:givenname>Franco</foaf:givenname>
@@ -10,13 +11,13 @@
 			</foaf:Person>
 		</dc:creator>
 		<dc:creator>
-			<org:Organization rdf:about="https://w3id.og/ecodigit/organization/commissariato_liquidazione_lazio_umbria_toscana">
+			<org:Organization rdf:about="https://w3id.org/ecodigit/organization/commissariato_liquidazione_lazio_umbria_toscana">
 				<foaf:name>Commissariato per la liquidazione degli Usi Civici delle Regioni Lazio, Umbria e Toscana - Roma</foaf:name>
 			</org:Organization>
 		</dc:creator>
 		<dc:description>Accertamento della natura giuridica del terreno sito in agro del Comune di Sant'Angelo Romano</dc:description>
 		<dc:contributor>
-			<org:Organization rdf:about="https://w3id.og/ecodigit/organization/comune_castel_santangelo_romano">
+			<org:Organization rdf:about="https://w3id.org/ecodigit/organization/comune_castel_santangelo_romano">
 				<foaf:name>Comune di Sant'Angelo Romano</foaf:name>
 			</org:Organization>
 		</dc:contributor>
@@ -37,7 +38,7 @@
 		<dc:coverage rdf:resource="http://dbpedia.org/resource/Rome" />
 		<dc:coverage rdf:resource="http://dbpedia.org/resource/Lazio" />
 		<dcterms:rightsHolder>
-			<org:Organization rdf:about="https://w3id.og/ecodigit/organization/ARSIAL">
+			<org:Organization rdf:about="https://w3id.org/ecodigit/organization/ARSIAL">
 				<foaf:name>ARSIAL - Agenzia Regionale per lo Sviluppo e l'Innovazione dell'Agricoltura del Lazio</foaf:name>
 				<foaf:acronym>ARSIAL</foaf:acronym>
 			</org:Organization>
