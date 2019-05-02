@@ -17,40 +17,14 @@
 					<target>1.8</target>
 				</configuration>
 			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-assembly-plugin</artifactId>
-				<executions>
-					<execution>
-						<phase>package</phase>
-						<goals>
-							<goal>single</goal>
-						</goals>
-						<configuration>
-							<finalName>rdf_validator</finalName>
-							<appendAssemblyId>false</appendAssemblyId>
-							<directory>${project.basedir}</directory>
-							<outputDirectory>bin</outputDirectory>
-							<archive>
-								<manifest>
-									<mainClass>
-										it.cnr.istc.stlab.ecodigit.RDFValidator
-									</mainClass>
-								</manifest>
-							</archive>
-							<descriptorRefs>
-								<descriptorRef>jar-with-dependencies</descriptorRef>
-							</descriptorRefs>
-						</configuration>
-					</execution>
-				</executions>
-			</plugin>
 
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-shade-plugin</artifactId>
 				<configuration>
 					<shadedArtifactAttached>false</shadedArtifactAttached>
+					<finalName>rdf_validator-${project.version}</finalName>
+					<outputDirectory>bin</outputDirectory>
 					<transformers>
 						<transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
 							<mainClass>it.cnr.istc.stlab.ecodigit.RDFValidator</mainClass>
@@ -65,7 +39,6 @@
 						<filter>
 							<artifact>*:*</artifact>
 							<excludes>
-								<!-- Some jars are signed but shading breaks that. Don't include signing files. -->
 								<exclude>META-INF/*.SF</exclude>
 								<exclude>META-INF/*.DSA</exclude>
 								<exclude>META-INF/*.RSA</exclude>
@@ -82,6 +55,25 @@
 					</execution>
 				</executions>
 			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-assembly-plugin</artifactId>
+				<configuration>
+					<descriptor>src/assembly/bin.xml</descriptor>
+					<outputDirectory>bin</outputDirectory>
+					<finalName>rdf_validator-${project.version}</finalName>
+				</configuration>
+				<executions>
+					<execution>
+						<phase>package</phase>
+						<goals>
+							<goal>single</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+
 		</plugins>
 	</build>
 

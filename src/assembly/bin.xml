@@ -1,0 +1,15 @@
+<assembly>
+	<!-- <id>rdf_validator</id> -->
+	<formats>
+		<format>zip</format>
+	</formats>
+	<fileSets>
+		<fileSet>
+			<directory>bin</directory>
+			<outputDirectory>rdf_validator-${project.version}</outputDirectory>
+			<includes>
+				<include>*.jar</include>
+			</includes>
+		</fileSet>
+	</fileSets>
+</assembly>
