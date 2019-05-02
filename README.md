@@ -14,9 +14,9 @@ RDFValidator verifica la correttezza sintattica di un file RDF.
 RDFValidator è disponibile tramite pacchetto java (JAR) al seguente [link](https://github.com/ecodigit/workspace/raw/master/bin/rdf_validator-0.0.1.zip).
 Di seguito verranno riportate le istruzioni per usare RDFValidator
 ```
-wget https://github.com/ecodigit/workspace/raw/master/bin/rdf_validator-0.0.1.zip
-unzip rdf_validator-0.0.1.zip
-cd rdf_validator-0.0.1/rdf_validator-0.0.1/
-java -jar rdf_validator-0.0.1.jar -i <input_file_or_directory>
+$ wget https://github.com/ecodigit/workspace/raw/master/bin/rdf_validator-0.0.1.zip
+$ unzip rdf_validator-0.0.1.zip
+$ cd rdf_validator-0.0.1/rdf_validator-0.0.1/
+$ java -jar rdf_validator-0.0.1.jar -i <input_file_or_directory>
 ```
 Dove <input_file_or_directory> è il path assoluto verso un file rdf oppure il path assoluto verso una directory contenente file RDF.
