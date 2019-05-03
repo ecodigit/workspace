@@ -47,7 +47,8 @@
 			<foaf:Person rdf:about="https://w3id.org/ecodigit/person/massimo_inguscio">
 				<foaf:givenname>Massimo</foaf:givenname>
 				<foaf:family_name>Inguscio</foaf:family_name>
-				<foaf:name>Prof. Massimo Inguscio</foaf:name>
+				<foaf:name>Massimo Inguscio</foaf:name>
+				<foaf:title>Prof</foaf:title>
 				<foaf:img rdf:resource="https://www.cnr.it/sites/default/files/public/media/organizzazione/inguscio_img.jpg" />
 				<foaf:mbox rdf:resource="mailto:presidenza@cnr.it" />
 				<foaf:phone>+390649933200</foaf:phone>

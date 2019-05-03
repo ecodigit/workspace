@@ -3,7 +3,6 @@
 	<rdf:Description rdf:about="https://w3id.org/ecodigit/resource/Sentenza_nella_causa_demaniale_n_211_95_R_G">
 		<dc:identifier>UCILCOMR2002V02S20</dc:identifier>
 		<dc:title>Sentenza nella causa demaniale n. 211/95 R.G.</dc:title>
-		<dc:description>Descrizione della sentenza...</dc:description>
 		<dc:creator>
 			<foaf:Person rdf:about="https://w3id.org/ecodigit/person/franco_carletti">
 				<foaf:givenname>Franco</foaf:givenname>
