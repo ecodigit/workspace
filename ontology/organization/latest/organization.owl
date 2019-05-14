@@ -1,0 +1,290 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/italia/onto/COV/"
+     xml:base="https://w3id.org/italia/onto/COV/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:l0="https://w3id.org/italia/onto/l0/"
+     xmlns:ns="http://www.w3.org/2006/vcard/ns#"
+     xmlns:CLV="https://w3id.org/italia/onto/CLV/"
+     xmlns:dct="http://purl.org/dc/terms/"
+     xmlns:org="http://www.w3.org/ns/org#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:dcat="http://www.w3.org/ns/dcat#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:prov="http://www.w3.org/ns/prov#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:admsapit="https://w3id.org/italia/onto/ADMS/"
+     xmlns:ecodigit-org="http://w3id.org/ecodigit/ontology/organization/">
+    <owl:Ontology rdf:about="http://w3id.org/ecodigit/ontology/organization">
+        <owl:versionIRI rdf:resource="http://w3id.org/ecodigit/ontology/organization/0.01"/>
+        <owl:imports rdf:resource="http://dati.gov.it/onto/dcatapit/2.0"/>
+        <owl:imports rdf:resource="http://www.w3.org/ns/org#"/>
+        <owl:imports rdf:resource="https://w3id.org/italia/onto/COV"/>
+        <owl:imports rdf:resource="https://w3id.org/italia/onto/COV-aligns"/>
+        <dc:title xml:lang="it">Ontologia delle Organizzazioni di EcoDigit</dc:title>
+        <dct:accrualPeriodicity rdf:resource="http://publications.europa.eu/resource/authority/frequency/IRREG"/>
+        <dct:creator rdf:resource="https://w3id.org/italia/data/organization/support-unit/cnr-Z6HZEH/stlab"/>
+        <dct:description xml:lang="it">L&apos;ontologia ha lo scopo di definire un vocabolario condiviso di termini per la descrizione delle organizzazioni che partecipano al Centro di Eccellenza - DTC Lazio.</dct:description>
+        <dct:issued rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-05-14</dct:issued>
+        <dct:language rdf:resource="http://publications.europa.eu/resource/authority/language/ITA"/>
+        <dct:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-05-14</dct:modified>
+        <dct:rightsHolder rdf:resource="https://w3id.org/italia/data/organization/support-unit/cnr-Z6HZEH/stlab"/>
+        <dct:title xml:lang="it">Ontologia delle Organizzazioni di EcoDigit</dct:title>
+        <rdfs:comment xml:lang="it">L&apos;ontologia ha lo scopo di definire un vocabolario condiviso di termini per la descrizione delle organizzazioni che partecipano al Centro di Eccellenza - DTC Lazio.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://w3id.org/ecodigit/ontology/organization"/>
+        <rdfs:label xml:lang="it">Ontologia delle Organizzazioni di EcoDigit</rdfs:label>
+        <dcat:contactPoint rdf:resource="https://w3id.org/ecodigit/contactPoint"/>
+        <dcat:keyword xml:lang="it">ente di ricerca</dcat:keyword>
+        <dcat:keyword xml:lang="it">laboratori di ricerca</dcat:keyword>
+        <dcat:keyword xml:lang="it">reti di laboratori</dcat:keyword>
+        <admsapit:acronym>ecodigit-org</admsapit:acronym>
+        <admsapit:hasFormalityLevel rdf:resource="https://w3id.org/italia/onto/ADMS/Formal"/>
+        <admsapit:hasOntologyLanguage rdf:resource="https://w3id.org/italia/onto/ADMS/OWL"/>
+        <admsapit:last rdf:resource="http://w3id.org/ecodigit/ontology/organization/0.01"/>
+        <admsapit:officialURI rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://w3id.org/ecodigit/ontology/organization</admsapit:officialURI>
+        <admsapit:prefix>ecodigit-org</admsapit:prefix>
+        <admsapit:semanticAssetInUse rdf:resource="https://w3id.org/ecodigit/project/ecodigit"/>
+        <admsapit:status>catalogued</admsapit:status>
+        <admsapit:status>published</admsapit:status>
+        <admsapit:target xml:lang="it">Pubbliche Amministrazioni</admsapit:target>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/accrualPeriodicity -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/accrualPeriodicity"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/issued -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/issued"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/language -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/language"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/rightsHolder -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/rightsHolder"/>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#contactPoint -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#contactPoint"/>
+    
+
+
+    <!-- http://www.w3.org/ns/dcat#keyword -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/dcat#keyword"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/acronym -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/acronym"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/hasFormalityLevel -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/hasFormalityLevel"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/hasOntologyLanguage -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/hasOntologyLanguage"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/hasSemanticAssetDistribution -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/hasSemanticAssetDistribution"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/last -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/last"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/officialURI -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/officialURI"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/prefix -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/prefix"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/semanticAssetInUse -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/semanticAssetInUse"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/status -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/status"/>
+    
+
+
+    <!-- https://w3id.org/italia/onto/ADMS/target -->
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/italia/onto/ADMS/target"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://w3id.org/ecodigit/ontology/organization/EnteDiRicerca -->
+
+    <owl:Class rdf:about="http://w3id.org/ecodigit/ontology/organization/EnteDiRicerca">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/org#Organization"/>
+        <rdfs:comment xml:lang="it">Gli enti di ricerca sono organizzazioni con il compito di svolgere attività di ricerca scientifica nei principali settori di sviluppo delle conoscenze e delle loro applicazioni in ambito tecnico-scientifico.</rdfs:comment>
+        <rdfs:label xml:lang="it">Ente di Ricerca</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/ecodigit/ontology/organization/LaboratorioDiRicerca -->
+
+    <owl:Class rdf:about="http://w3id.org/ecodigit/ontology/organization/LaboratorioDiRicerca">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/ecodigit/ontology/organization/EnteDiRicerca"/>
+        <rdfs:label xml:lang="it">Laboratorio di Ricerca</rdfs:label>
+        <rdfs:label xml:lang="it">Un laboratorio è una organizzazione creata ad hoc per operare e promuovere la ricerca in uno o più ambiti della scienza.</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/ecodigit/ontology/organization/ReteDiLaboratori -->
+
+    <owl:Class rdf:about="http://w3id.org/ecodigit/ontology/organization/ReteDiLaboratori">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/ecodigit/ontology/organization/EnteDiRicerca"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/org#OrganizationalCollaboration"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.w3.org/ns/org#hasMember"/>
+                <owl:allValuesFrom rdf:resource="http://w3id.org/ecodigit/ontology/organization/LaboratorioDiRicerca"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="it">I laboratori censiti dal Centro di Eccellenza DTC Lazio sono stati raggruppati per tematica di competenza o tipologia di tecnologia sviluppata, in modo da costituire la rete.</rdfs:comment>
+        <rdfs:label xml:lang="it">Rete di Laboratori</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://w3id.org/ecodigit/ontology/organization/UnitaDiRicerca -->
+
+    <owl:Class rdf:about="http://w3id.org/ecodigit/ontology/organization/UnitaDiRicerca">
+        <rdfs:subClassOf rdf:resource="http://w3id.org/ecodigit/ontology/organization/EnteDiRicerca"/>
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/org#OrganizationalCollaboration"/>
+        <rdfs:comment xml:lang="it">Il Centro di Eccellenza DTC Lazio svolge le proprie attività di ricerca, innovazione, trasferimento tecnologico formazione permanente e alta formazione nei diversi ambiti tecnologi e disciplinari attraverso 6 Unità di Ricerca (UR) operative, che hanno quindi la funzione di coordinamento tecnico scientifico negli ambiti di propria competenza e di integrazione delle tecnologie e conoscenze multidisciplinari che caratterizzano l’unicità e la ricchezza del Centro</rdfs:comment>
+        <rdfs:label xml:lang="it">Unità di Ricerca</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/italia/onto/COV/Organization -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/COV/Organization"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://publications.europa.eu/resource/authority/frequency/IRREG -->
+
+    <owl:NamedIndividual rdf:about="http://publications.europa.eu/resource/authority/frequency/IRREG"/>
+    
+
+
+    <!-- http://publications.europa.eu/resource/authority/language/ITA -->
+
+    <owl:NamedIndividual rdf:about="http://publications.europa.eu/resource/authority/language/ITA"/>
+    
+
+
+    <!-- http://w3id.org/ecodigit/ontology/organization -->
+
+    <owl:NamedIndividual rdf:about="http://w3id.org/ecodigit/ontology/organization"/>
+    
+
+
+    <!-- https://w3id.org/ecodigit/contactPoint -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ecodigit/contactPoint"/>
+    
+
+
+    <!-- https://w3id.org/italia/data/organization/support-unit/cnr-Z6HZEH/stlab -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/italia/data/organization/support-unit/cnr-Z6HZEH/stlab"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
