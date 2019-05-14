@@ -18,8 +18,8 @@
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
      xmlns:admsapit="https://w3id.org/italia/onto/ADMS/"
      xmlns:ecodigit-org="http://w3id.org/ecodigit/ontology/organization/">
-    <owl:Ontology rdf:about="http://w3id.org/ecodigit/ontology/organization">
-        <owl:versionIRI rdf:resource="http://w3id.org/ecodigit/ontology/organization/0.01"/>
+    <owl:Ontology rdf:about="https://w3id.org/ecodigit/ontology/organization">
+        <owl:versionIRI rdf:resource="https://w3id.org/ecodigit/ontology/organization/0.01"/>
         <owl:imports rdf:resource="http://dati.gov.it/onto/dcatapit/2.0"/>
         <owl:imports rdf:resource="http://www.w3.org/ns/org#"/>
         <owl:imports rdf:resource="https://w3id.org/italia/onto/COV"/>
@@ -182,6 +182,27 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/ecodigit/ontology/organization/mission -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/ecodigit/ontology/organization/mission">
+        <rdfs:domain rdf:resource="http://www.w3.org/ns/org#Organization"/>
+        <rdfs:comment xml:lang="it">Descrive la missione dell&apos;organizzazione.</rdfs:comment>
+        <rdfs:label xml:lang="it">Missione</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // Classes
     //
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -190,9 +211,9 @@
     
 
 
-    <!-- http://w3id.org/ecodigit/ontology/organization/EnteDiRicerca -->
+    <!-- https://w3id.org/ecodigit/ontology/organization/EnteDiRicerca -->
 
-    <owl:Class rdf:about="http://w3id.org/ecodigit/ontology/organization/EnteDiRicerca">
+    <owl:Class rdf:about="https://w3id.org/ecodigit/ontology/organization/EnteDiRicerca">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/org#Organization"/>
         <rdfs:comment xml:lang="it">Gli enti di ricerca sono organizzazioni con il compito di svolgere attività di ricerca scientifica nei principali settori di sviluppo delle conoscenze e delle loro applicazioni in ambito tecnico-scientifico.</rdfs:comment>
         <rdfs:label xml:lang="it">Ente di Ricerca</rdfs:label>
@@ -200,25 +221,25 @@
     
 
 
-    <!-- http://w3id.org/ecodigit/ontology/organization/LaboratorioDiRicerca -->
+    <!-- https://w3id.org/ecodigit/ontology/organization/LaboratorioDiRicerca -->
 
-    <owl:Class rdf:about="http://w3id.org/ecodigit/ontology/organization/LaboratorioDiRicerca">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/ecodigit/ontology/organization/EnteDiRicerca"/>
+    <owl:Class rdf:about="https://w3id.org/ecodigit/ontology/organization/LaboratorioDiRicerca">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ecodigit/ontology/organization/EnteDiRicerca"/>
         <rdfs:label xml:lang="it">Laboratorio di Ricerca</rdfs:label>
         <rdfs:label xml:lang="it">Un laboratorio è una organizzazione creata ad hoc per operare e promuovere la ricerca in uno o più ambiti della scienza.</rdfs:label>
     </owl:Class>
     
 
 
-    <!-- http://w3id.org/ecodigit/ontology/organization/ReteDiLaboratori -->
+    <!-- https://w3id.org/ecodigit/ontology/organization/ReteDiLaboratori -->
 
-    <owl:Class rdf:about="http://w3id.org/ecodigit/ontology/organization/ReteDiLaboratori">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/ecodigit/ontology/organization/EnteDiRicerca"/>
+    <owl:Class rdf:about="https://w3id.org/ecodigit/ontology/organization/ReteDiLaboratori">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/org#OrganizationalCollaboration"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ecodigit/ontology/organization/EnteDiRicerca"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.w3.org/ns/org#hasMember"/>
-                <owl:allValuesFrom rdf:resource="http://w3id.org/ecodigit/ontology/organization/LaboratorioDiRicerca"/>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ecodigit/ontology/organization/LaboratorioDiRicerca"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="it">I laboratori censiti dal Centro di Eccellenza DTC Lazio sono stati raggruppati per tematica di competenza o tipologia di tecnologia sviluppata, in modo da costituire la rete.</rdfs:comment>
@@ -227,11 +248,11 @@
     
 
 
-    <!-- http://w3id.org/ecodigit/ontology/organization/UnitaDiRicerca -->
+    <!-- https://w3id.org/ecodigit/ontology/organization/UnitaDiRicerca -->
 
-    <owl:Class rdf:about="http://w3id.org/ecodigit/ontology/organization/UnitaDiRicerca">
-        <rdfs:subClassOf rdf:resource="http://w3id.org/ecodigit/ontology/organization/EnteDiRicerca"/>
+    <owl:Class rdf:about="https://w3id.org/ecodigit/ontology/organization/UnitaDiRicerca">
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/org#OrganizationalCollaboration"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ecodigit/ontology/organization/EnteDiRicerca"/>
         <rdfs:comment xml:lang="it">Il Centro di Eccellenza DTC Lazio svolge le proprie attività di ricerca, innovazione, trasferimento tecnologico formazione permanente e alta formazione nei diversi ambiti tecnologi e disciplinari attraverso 6 Unità di Ricerca (UR) operative, che hanno quindi la funzione di coordinamento tecnico scientifico negli ambiti di propria competenza e di integrazione delle tecnologie e conoscenze multidisciplinari che caratterizzano l’unicità e la ricchezza del Centro</rdfs:comment>
         <rdfs:label xml:lang="it">Unità di Ricerca</rdfs:label>
     </owl:Class>
