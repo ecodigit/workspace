@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:cerif="http://eurocris.org/ontology/cerif/0.1#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:bibo="http://purl.org/ontology/bibo/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:org="http://www.w3.org/ns/org#" xmlns:CLV="https://w3id.org/italia/onto/CLV" xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#">
+
+	<bibo:Article rdf:about="https://w3id.org/ecodigit/publication/Lodi2017Semantic" dc:language="en" bibo:pageStart="3" bibo:pageEnd="37" dc:title="Semantic Web for Cultural Heritage Valorisation" dc:date="2017" bibo:doi="10.1007/978-3-319-54499-1_1">
+
+		<dcterms:isPartOf>
+			<bibo:Book rdf:about="https://w3id.org/ecodigit/publication/DADH" dc:title="Data Analytics in Digital Humanities" bibo:issn="978-3-319-54499-1" />
+		</dcterms:isPartOf>
+
+		<bibo:abstract>
+			Cultural heritage consists of heterogeneous resources: archaeological artefacts, monuments, sites, landscapes, paintings, photos, books and expressions of human creativity, often enjoyed in different forms: tangible, intangible or digital. Each resource is usually documented, conserved and managed by cultural institutes like museums, libraries or holders of archives. These institutes make available a detailed description of the objects as catalog records.
+			In this context, the Chapter proposes both a classification of cultural heritage data types and a process for cultural heritage valorisation through the wide-spreading Linked Open Data paradigm. The classification and process have been defined in the context of a collaboration between the Semantic Technology Laboratory of
+			the National Research Council (STLab) and the Italian Ministry of Cultural Heritage and Activities and Tourism (MIBACT) that the Chapter describes, although we claim they are sufficiently general to be adopted in every cultural heritage scenario.
+			In particular, the Chapter introduces both a suite of ontology modules named Cultural-ON to model the principal elements identified in the cultural heritage data type classification, and the process we employed for data valorisation purposes. To this end, semantic technologies are exploited; that is, technologies that allow us to conceptualise and describe the meaning of data forming the cultural heritage and including such entities as places, institutions, cultural heritage events, availability, etc.. These entities have special characteristics
+			and are connected with each other in a profound way.
+			The result is a knowledge base consisting of semantic interconnections with also other data available in the Web to be exploited according to different tasks and users preferences. By navigating the semantic relationships between the various objects of the knowledge base, new semantic paths can be revealed and utilised with the aim to develop innovative services and applications.
+			The process is compliant with Linked Open Data and W3C Semantic Web best practices so that to enable a wider promotion of cultural heritage, and of sharing and reuse of cultural heritage data in the Web. The Chapter concludes presenting a number of methodological principles and lessons learnt from the STLab/MIBACT collaboration that are applicable to any
+			cultural heritage context and, in some cases, also to other domains.
+		</bibo:abstract>
+
+		<bibo:authorList>
+			<rdf:Seq>
+				<rdf:li>
+					<foaf:Person rdf:about="https://w3id.org/ecodigit/person/giorgia_lodi">
+						<foaf:givenname>Giorgia</foaf:givenname>
+						<foaf:family_name>Lodi</foaf:family_name>
+					</foaf:Person>
+				</rdf:li>
+				<rdf:li rdf:resource="https://w3id.org/ecodigit/person/luigi_asprino" />
+				<rdf:li>
+					<foaf:Person rdf:about="https://w3id.org/ecodigit/person/andreagiovanni_nuzzolese">
+						<foaf:givenname>Andrea Giovanni</foaf:givenname>
+						<foaf:family_name>Nuzzolese</foaf:family_name>
+					</foaf:Person>
+				</rdf:li>
+				<rdf:li>
+					<foaf:Person rdf:about="https://w3id.org/ecodigit/person/valentina_presutti">
+						<foaf:givenname>Valentina</foaf:givenname>
+						<foaf:family_name>Presutti</foaf:family_name>
+					</foaf:Person>
+				</rdf:li>
+				<rdf:li>
+					<foaf:Person rdf:about="https://w3id.org/ecodigit/person/aldo_gangemi">
+						<foaf:givenname>Aldo</foaf:givenname>
+						<foaf:family_name>Gangemi</foaf:family_name>
+					</foaf:Person>
+				</rdf:li>
+				<rdf:li>
+					<foaf:Person rdf:about="https://w3id.org/ecodigit/person/diego_reforgiatorecupero">
+						<foaf:givenname>Diego</foaf:givenname>
+						<foaf:family_name>Reforgiato Recupero</foaf:family_name>
+					</foaf:Person>
+				</rdf:li>
+				<rdf:li>
+					<foaf:Person rdf:about="https://w3id.org/ecodigit/person/chiara_veninata">
+						<foaf:givenname>Chiara</foaf:givenname>
+						<foaf:family_name>Veninata</foaf:family_name>
+					</foaf:Person>
+				</rdf:li>
+				<rdf:li>
+					<foaf:Person rdf:about="https://w3id.org/ecodigit/person/annarita_orsini">
+						<foaf:givenname>Annarita</foaf:givenname>
+						<foaf:family_name>Orsini</foaf:family_name>
+					</foaf:Person>
+				</rdf:li>
+			</rdf:Seq>
+		</bibo:authorList>
+	</bibo:Article>
+</rdf:RDF>

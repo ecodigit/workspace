@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:cerif="http://eurocris.org/ontology/cerif/0.1#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:bibo="http://purl.org/ontology/bibo/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:org="http://www.w3.org/ns/org#" xmlns:CLV="https://w3id.org/italia/onto/CLV" xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#">
+	<bibo:Article rdf:about="https://w3id.org/ecodigit/publication/Asprino2018Empirical" dc:language="en" bibo:pageStart="3962" bibo:pageEnd="3969" bibo:doi="10.24963/ijcai.2018/551" dc:date="2018" dc:title="Empirical Analysis of Foundational Distinctions in Linked Open Data">
+
+		<dcterms:isPartOf>
+			<bibo:Proceedings rdf:about="https://w3id.org/ecodigit/publication/IJCAI2018" dc:title="Proceedings of the 27th International Joint Conference on Artificial Intelligence and the 23rd European Conference on Artificial Intelligence (IJCAI-ECAI-18)" bibo:issn="978-0-9992411-2-7" />
+		</dcterms:isPartOf>
+
+		<bibo:abstract>
+			The Web and its Semantic extension (i.e. Linked Open Data) contain open global-scale knowledge and make it available to potentially intelligent machines that want to benefit from it. Nevertheless, most of Linked Open Data lack ontological distinctions and have sparse axiomatisation. For example, distinctions such as whether an entity is \emph{inherently} a class or an individual, or whether it is a physical object or not, are hardly expressed in the data, although they have been largely studied and formalised by foundational ontologies (e.g. DOLCE, SUMO). These distinctions belong to common sense too, which is relevant for many artificial intelligence tasks such as natural language understanding, scene recognition, and the like. There is a gap between foundational
+			ontologies, that often formalise or are inspired by pre-existing philosophical theories and are developed with a top-down approach, and Linked Open Data that mostly derive from existing databases or crowd-based effort (e.g. DBpedia, Wikidata). We investigate whether machines can learn foundational distinctions over Linked Open Data entities, and if they match common sense. We want to answer questions such as ``does the DBpedia entity for \emph{dog} refer to a class or to an instance?". We report on a set of experiments based on machine learning and crowdsourcing that show promising results.
+
+		</bibo:abstract>
+
+		<bibo:authorList>
+			<rdf:Seq>
+				<rdf:li rdf:resource="https://w3id.org/ecodigit/person/luigi_asprino" />
+				<rdf:li>
+					<foaf:Person rdf:about="https://w3id.org/ecodigit/person/valerio_basile">
+						<foaf:givenname>Valerio</foaf:givenname>
+						<foaf:family_name>Basile</foaf:family_name>
+					</foaf:Person>
+				</rdf:li>
+				<rdf:li>
+					<foaf:Person rdf:about="https://w3id.org/ecodigit/person/paolo_ciancarini">
+						<foaf:givenname>Paolo</foaf:givenname>
+						<foaf:family_name>Ciancarini</foaf:family_name>
+					</foaf:Person>
+				</rdf:li>
+				<rdf:li>
+					<foaf:Person rdf:about="https://w3id.org/ecodigit/person/valentina_presutti">
+						<foaf:givenname>Valentina</foaf:givenname>
+						<foaf:family_name>Presutti</foaf:family_name>
+					</foaf:Person>
+				</rdf:li>
+			</rdf:Seq>
+		</bibo:authorList>
+	</bibo:Article>
+
+</rdf:RDF>

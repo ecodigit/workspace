@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:SM="https://w3id.org/italia/onto/SM/" xmlns:l0="https://w3id.org/italia/onto/l0/" xmlns:TI="https://w3id.org/italia/onto/TI/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:project="https://w3id.org/italia/onto/Project/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:bibo="http://purl.org/ontology/bibo/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:org="http://www.w3.org/ns/org#" xmlns:CLV="https://w3id.org/italia/onto/CLV" xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#">
+	<project:PublicInvestmentProject rdf:about="https://w3id.org/ecodigit/project/ecodigit">
+		<project:projectTitle>Ecosistema Digitale per la fruizione e la
+			valorizzazione
+			dei beni e delle attività culturali del Lazio
+		</project:projectTitle>
+		<project:projectAcronym>EcoDigit</project:projectAcronym>
+		<TI:hasDuration>
+			<TI:TimeInterval>
+				<TI:startTime rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-10-02</TI:startTime>
+				<TI:endTime rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-01-02</TI:endTime>
+			</TI:TimeInterval>
+		</TI:hasDuration>
+		<l0:description>Il progetto EcoDigit "Ecosistema Digitale per la fruizione e la valorizzazione dei beni e delle attività culturali del Lazio" è una delle iniziative del Centro di Eccellenza del Distretto Tecnologico per i beni e le attività Culturali (DTC) del Lazio, costituito dalle cinque università statali del Lazio - Sapienza, Tor Vergata, RomaTre, Cassino e Tuscia - in rete con CNR, ENEA e INFN per aggregare e integrare competenze nel settore delle tecnologie per i beni e le attività culturali. EcoDigit intende arricchire il sistema Anagrafe delle Competenze con una piattaforma middleware che faciliti l’integrazione di nuove sorgenti di dati e consenta la pubblicazione e il riuso di servizi per la valorizzazione e la fruizione del patrimonio culturale del Lazio. I principali
+			obiettivi del progetto possono essere sintetizzati nei seguenti punti: 1) la prototipazione di un’architettura middleware integrata con il sistema Anagrafe per consentirgli di acquisire e integrare dati, contenuti e servizi; 2) l’identificazione e l’analisi approfondita delle sorgenti di dati e di contenuti e la progettazione di modelli comuni per la loro integrazione; 3) la progettazione di servizi avanzati e delle tecnologie e interfacce per il loro inserimento nella piattaforma comune. Il risultato finale sarà, quindi, un prototipo che dimostri le principali funzioni di supporto all’integrazione e alla fruizione. Tale prototipo intende fornire una prova di concetto e di sostenibilità della piattaforma accompagnata dalle specifiche tecniche e le metodologie per la sua messa in opera
+			su larga scala.
+		</l0:description>
+		<SM:hasContactPoint>
+			<SM:OnlineContactPoint>
+				<SM:hasWebSite rdf:resource="http://ecodigit.dtclazio.it"></SM:hasWebSite>
+			</SM:OnlineContactPoint>
+		</SM:hasContactPoint>
+	</project:PublicInvestmentProject>
+</rdf:RDF>
