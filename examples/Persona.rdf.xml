@@ -1,34 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:project="https://w3id.org/italia/onto/Project/" xmlns:cerif="http://eurocris.org/ontology/cerif/0.1#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:bibo="http://purl.org/ontology/bibo/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:org="http://www.w3.org/ns/org#" xmlns:CLV="https://w3id.org/italia/onto/CLV" xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" xmlns:curric="https://www.bbc.co.uk/ontologies/curriculum/" xmlns:RO="https://w3id.org/italia/onto/RO/" xmlns:l0="https://w3id.org/italia/onto/l0/" xmlns:SM="https://w3id.org/italia/onto/SM/">
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:project="https://w3id.org/italia/onto/Project/"
+	xmlns:cerif="http://eurocris.org/ontology/cerif/0.1#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:bibo="http://purl.org/ontology/bibo/"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:org="http://www.w3.org/ns/org#"
+	xmlns:CLV="https://w3id.org/italia/onto/CLV"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	xmlns:curric="https://www.bbc.co.uk/ontologies/curriculum/"
+	xmlns:RO="https://w3id.org/italia/onto/RO/"
+	xmlns:CPV="https://w3id.org/italia/onto/CPV/"
+	xmlns:COV="https://w3id.org/italia/onto/COV/"
+	xmlns:l0="https://w3id.org/italia/onto/l0/"
+	xmlns:TI="https://w3id.org/italia/onto/TI/"
+	xmlns:SM="https://w3id.org/italia/onto/SM/">
 
-	<foaf:Person rdf:about="https://w3id.org/ecodigit/person/luigi_asprino">
+	<foaf:Person
+		rdf:about="https://w3id.org/ecodigit/person/luigi_asprino">
 
 		<!-- Informazioni Personali -->
 		<foaf:givenname>Luigi</foaf:givenname>
 		<foaf:family_name>Asprino</foaf:family_name>
-		<foaf:img rdf:resource="http://luigiasprino.it/img/luigi-asprino.jpg" />
+		<foaf:img
+			rdf:resource="http://luigiasprino.it/img/luigi-asprino.jpg" />
 		<foaf:mbox rdf:resource="mailto:luigi.asprino@istc.cnr.it" />
 		<foaf:homepage rdf:resource="http://luigiasprino.it" />
 		<foaf:account>
 			<foaf:OnlineAccount>
-				<foaf:accountServiceHomepage rdf:resource="https://orcid.org/" />
+				<foaf:accountServiceHomepage
+					rdf:resource="https://orcid.org/" />
 				<foaf:accountName>0000-0003-1907-0677</foaf:accountName>
 			</foaf:OnlineAccount>
 		</foaf:account>
 
 		<!-- Breve descrizione della persona -->
-		<l0:description>Luigi Asprino è assegnista di ricerca presso l'Istituto di Scienze e Tecnologie della Cognizione del Consiglio Nazionale delle Ricerche. Nel 2019 ha conseguito un dottorato in Computer Science and Engineering presso l'Università di Bologna. I suoi interessi di ricerca riguardano l'Intelligenza Artificiale e l'Informatica, in particolare Knowledge Representation and Reasoning, Natural Language Processing e Machine Learning.</l0:description>
+		<l0:description xml:lang="it">Luigi Asprino è un Assistente
+			di Ricerca presso l'Istituto di Scienze e Tecnologie della Cognizione
+			del Consiglio Nazionale delle Ricerche. Nel 2019 ha conseguito un
+			dottorato in Computer Science and Engineering presso l'Università di
+			Bologna. I suoi interessi di ricerca riguardano l'Intelligenza
+			Artificiale e l'Informatica, in particolare Knowledge Representation
+			and Reasoning, Natural Language Processing e Machine Learning.
+		</l0:description>
+		<l0:description xml:lang="en">Luigi Asprino is a research
+			assistant at the Institute of Cognitive Science and Technologies of
+			National Research Council in Italy. He received a PhD in Computer
+			Science and Engineering in 2019 from the University of Bologna. His
+			research interests include Knowledge Representation and Reasoning,
+			Natural Language Processing e Machine Learning.
+		</l0:description>
 
 		<!-- Affiliazione -->
 		<org:memberOf>
-			<org:Organization rdf:about="https://w3id.org/ecodigit/organization/istc">
-				<foaf:name>Istituto di Scienze e Tecnologie della Cognizione</foaf:name>
+			<org:Organization
+				rdf:about="https://w3id.org/ecodigit/organization/istc">
+				<foaf:name>Istituto di Scienze e Tecnologie della Cognizione
+				</foaf:name>
 				<foaf:acronym>ISTC</foaf:acronym>
 				<org:hasSite>
 					<org:Site geo:lat="41.905973" geo:long="12.504686">
 						<CLV:hasAddress>
 							<CLV:Address>
-								<CLV:fullAddress>Via San Martino della Battaglia, 44, 00185 Roma, Italia</CLV:fullAddress>
+								<CLV:fullAddress>Via San Martino della Battaglia, 44, 00185
+									Roma, Italia
+								</CLV:fullAddress>
 							</CLV:Address>
 						</CLV:hasAddress>
 					</org:Site>
@@ -37,69 +75,53 @@
 		</org:memberOf>
 
 		<!-- Titoli di studio -->
-		<cerif:Qualification>
-			<foaf:name>Dottorato di ricerca in Ingegneria Informatica</foaf:name>
-			<cerif:startDate></cerif:startDate>
-			<cerif:endDate></cerif:endDate>
-			<bibo:Thesis>
-				<dcterms:title></dcterms:title>
-				<bibo:degree>
-					<bibo:ThesisDegree></bibo:ThesisDegree> 
-				</bibo:degree>
-				<curric:topic>
-					<curric:TopicOfStudyList></curric:TopicOfStudyList>
-				</curric:topic>
-			</bibo:Thesis>
-			<org:Organization>
-				<foaf:name>Università di Bologna</foaf:name>
-				<org:hasSite>
-					<org:Site geo:lat="" geo:long="">
-						<CLV:hasAddress>
-							<CLV:Address>
-								<CLV:fullAddress></CLV:fullAddress>
-							</CLV:Address>
-						</CLV:hasAddress>
-					</org:Site>
-				</org:hasSite>
-			</org:Organization>
-		</cerif:Qualification>
+		<CPV:hasLevelOfEducation
+			rdf:resource="https://w3id.org/italia/controlled-vocabulary/classifications-for-people/education-level/RDD" />
+
+		<!-- DA RIVEDERE -->
+		<!-- <cerif:Qualification> <foaf:name>Dottorato di ricerca in Ingegneria 
+			Informatica</foaf:name> <cerif:startDate></cerif:startDate> <cerif:endDate></cerif:endDate> 
+			<bibo:Thesis> <dcterms:title></dcterms:title> <bibo:degree> <bibo:ThesisDegree></bibo:ThesisDegree> 
+			</bibo:degree> <curric:topic> <curric:TopicOfStudyList></curric:TopicOfStudyList> 
+			</curric:topic> </bibo:Thesis> <org:Organization> <foaf:name>Università di 
+			Bologna</foaf:name> <org:hasSite> <org:Site geo:lat="" geo:long=""> <CLV:hasAddress> 
+			<CLV:Address> <CLV:fullAddress></CLV:fullAddress> </CLV:Address> </CLV:hasAddress> 
+			</org:Site> </org:hasSite> </org:Organization> </cerif:Qualification> -->
 
 		<!-- Attività lavorativa -->
-		<foaf:workInfoHomepage>
-			</org:role>
-				<org:Role></org:Role>
-				<cerif:startDate></cerif:startDate>
-				<cerif:endDate></cerif:endDate>
-				<l0:description></l0:description>
-			<org:role>
-			<org:memberOf>
-				<org:Organization rdf:about="">
-					<foaf:name></foaf:name>
-					<foaf:acronym></foaf:acronym>
-					<cerif:researchActivities></cerif:researchActivities> <!-- va rivisto questo campo per capire se inserirlo a parte con un ruolo collegato oppure trovare il modo di integrarlo qui -->
-					<org:hasSite>
-						<org:Site geo:lat="" geo:long="">
-							<CLV:hasAddress>
-								<CLV:Address>
-									<CLV:fullAddress></CLV:fullAddress>
-								</CLV:Address>
-							</CLV:hasAddress>
-						</org:Site>
-					</org:hasSite>
-					<SM:hasWebsite>
-						<SM:Website></SM:Website>
-					</SM:hasWebsite>
-				</org:Organization>
-			</org:memberOf>
-		</foaf:workInfoHomepage>
+		<COV:holdEmployment>
+			<COV:Employment>
+				<COV:employmentFor
+					rdf:resource="https://w3id.org/ecodigit/organization/istc" />
+				<TI:atTime>
+					<TI:TimeInterval>
+						<TI:startTime
+							rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-01-16</TI:startTime>
+					</TI:TimeInterval>
+				</TI:atTime>
+				<RO:withRole>
+					<RO:Role
+						rdf:about="https://w3id.org/ecodigit/role/assegnista_di_ricerca">
+						<l0:name xml:lang="it">Assegnista di Ricerca</l0:name>
+						<l0:description xml:lang="it">ASSEGNO PER LO SVOLGIMENTO
+							DI ATTIVITA’ DI RICERCA NELL’AMBITO DEL PROGRAMMA DI RICERCA
+							"Ecosistema digitale per la fruizione e la valorizzazione dei
+							beni e delle attività culturali della regione Lazio (ECODIGIT) e
+							ATLANTE DEI CAMMINI - REGIONE ABRUZZO"
+						</l0:description>
+					</RO:Role>
+				</RO:withRole>
+			</COV:Employment>
+		</COV:holdEmployment>
 
-		<!-- Lingue conosciute -->
+
+		<!-- Lingue conosciute
 		<curric:language>
-			<curric:Language rdf:type="English"></curric:Language> 
+			<curric:Language rdf:type="English"></curric:Language>
 			<curric:paperTier>
 				<curric:PaperTier></curric:PaperTier>
 			</curric:paperTier>
-		</curric:language>
+		</curric:language> -->
 
 
 		<!-- LISTA COMPETENZE: da mappare -->
@@ -107,11 +129,14 @@
 
 
 		<!-- Publicazioni -->
-		<foaf:made rdf:resource="https://w3id.org/ecodigit/publication/Asprino2018Empirical" />
-		<foaf:made rdf:resource="https://w3id.org/ecodigit/publication/Lodi2017Semantic" />
+		<foaf:made
+			rdf:resource="https://w3id.org/ecodigit/publication/Asprino2018Empirical" />
+		<foaf:made
+			rdf:resource="https://w3id.org/ecodigit/publication/Lodi2017Semantic" />
 
 		<!-- Projects -->
-		<project:hasParticipantingAgent rdf:resource="https://w3id.org/ecodigit/project/ecodigit" />
+		<project:hasParticipantingAgent
+			rdf:resource="https://w3id.org/ecodigit/project/ecodigit" />
 
 	</foaf:Person>
 
