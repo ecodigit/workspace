@@ -115,13 +115,9 @@
 		</COV:holdEmployment>
 
 
-		<!-- Lingue conosciute
-		<curric:language>
-			<curric:Language rdf:type="English"></curric:Language>
-			<curric:paperTier>
-				<curric:PaperTier></curric:PaperTier>
-			</curric:paperTier>
-		</curric:language> -->
+		<!-- Lingue conosciute <curric:language> <curric:Language rdf:type="English"></curric:Language> 
+			<curric:paperTier> <curric:PaperTier></curric:PaperTier> </curric:paperTier> 
+			</curric:language> -->
 
 
 		<!-- LISTA COMPETENZE: da mappare -->
@@ -129,14 +125,30 @@
 
 
 		<!-- Publicazioni -->
-		<foaf:made
-			rdf:resource="https://w3id.org/ecodigit/publication/Asprino2018Empirical" />
-		<foaf:made
-			rdf:resource="https://w3id.org/ecodigit/publication/Lodi2017Semantic" />
+		<foaf:made>
+			<bibo:Article
+				rdf:about="https://w3id.org/ecodigit/publication/Asprino2018Empirical">
+				<rdfs:label xml:lang="en">><![CDATA[Empirical Analysis of Foundational Distinctions in Linked Open Data]]>
+				</rdfs:label>
+			</bibo:Article>
+		</foaf:made>
+
+
+		<foaf:made>
+			<bibo:Article
+				rdf:about="https://w3id.org/ecodigit/publication/Lodi2017Semantic">
+				<rdfs:label xml:lang="en"><![CDATA[Semantic Web for Cultural Heritage Valorisation]]></rdfs:label>
+			</bibo:Article>
+		</foaf:made>
 
 		<!-- Projects -->
-		<project:hasParticipantingAgent
-			rdf:resource="https://w3id.org/ecodigit/project/ecodigit" />
+		<project:hasParticipantingAgent>
+			<project:PublicInvestmentProject
+				rdf:about="https://w3id.org/ecodigit/project/ecodigit">
+				<rdfs:label xml:lang="it"><![CDATA[Ecosistema Digitale per la fruizione e la	valorizzazione dei beni e delle attività culturali del Lazio]]></rdfs:label>
+			</project:PublicInvestmentProject>
+		</project:hasParticipantingAgent>
+
 
 	</foaf:Person>
 
