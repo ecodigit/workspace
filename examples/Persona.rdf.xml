@@ -75,18 +75,37 @@
 		</org:memberOf>
 
 		<!-- Titoli di studio -->
-		<CPV:hasLevelOfEducation
-			rdf:resource="https://w3id.org/italia/controlled-vocabulary/classifications-for-people/education-level/RDD" />
-
-		<!-- DA RIVEDERE -->
-		<!-- <cerif:Qualification> <foaf:name>Dottorato di ricerca in Ingegneria 
-			Informatica</foaf:name> <cerif:startDate></cerif:startDate> <cerif:endDate></cerif:endDate> 
-			<bibo:Thesis> <dcterms:title></dcterms:title> <bibo:degree> <bibo:ThesisDegree></bibo:ThesisDegree> 
-			</bibo:degree> <curric:topic> <curric:TopicOfStudyList></curric:TopicOfStudyList> 
-			</curric:topic> </bibo:Thesis> <org:Organization> <foaf:name>Università di 
-			Bologna</foaf:name> <org:hasSite> <org:Site geo:lat="" geo:long=""> <CLV:hasAddress> 
-			<CLV:Address> <CLV:fullAddress></CLV:fullAddress> </CLV:Address> </CLV:hasAddress> 
-			</org:Site> </org:hasSite> </org:Organization> </cerif:Qualification> -->
+		<CPV:hasLevelOfEducation>
+			<CPV:EducationLevel rdf:about="https://w3id.org/italia/controlled-vocabulary/classifications-for-people/education-level">
+				<l0:name>Dottorato di ricerca</l0:name>
+				<CPV:educationLevelDesc></CPV:educationLevelDesc>
+				<CPV:educationLevelID></CPV:educationLevelID>
+			</CPV:EducationLevel>
+		</CPV:hasLevelOfEducation>
+		<foaf:made>
+			<bibo:Thesis>
+				<dcterms:title></dcterms:title>
+				<bibo:degree>
+					<bibo:ThesisDegree rdf:about="http://purl.org/ontology/bibo/degrees/phd">
+					</bibo:ThesisDegree> 
+				</bibo:degree>
+				<foaf:primaryTopic></foaf:primaryTopic>
+			</bibo:Thesis>
+		</foaf:made>
+		
+		<!-- BISOGNA MODELLARE IL FATTO CHE L'ESPERIENZA FORMATIVA E' EROGATA DA UN CERTO ENTE CHE CONFERISCE UNA CERTIFICAZIONE CON VOTO.
+		<org:Organization>
+			<foaf:name>Università di Bologna</foaf:name>
+			<org:hasSite>
+				<org:Site geo:lat="" geo:long="">
+					<CLV:hasAddress>
+						<CLV:Address>
+							<CLV:fullAddress></CLV:fullAddress>
+						</CLV:Address>
+					</CLV:hasAddress>
+				</org:Site>
+			</org:hasSite>
+		</org:Organization> -->
 
 		<!-- Attività lavorativa -->
 		<COV:holdEmployment>
@@ -114,13 +133,34 @@
 			</COV:Employment>
 		</COV:holdEmployment>
 
+		<!-- <org:Organization>
+			<foaf:name>Università di Bologna</foaf:name>
+			<org:hasSite>
+				<org:Site geo:lat="" geo:long="">
+					<CLV:hasAddress>
+						<CLV:Address>
+							<CLV:fullAddress></CLV:fullAddress>
+						</CLV:Address>
+					</CLV:hasAddress>
+				</org:Site>
+			</org:hasSite>
+		</org:Organization> -->
 
-		<!-- Lingue conosciute <curric:language> <curric:Language rdf:type="English"></curric:Language> 
-			<curric:paperTier> <curric:PaperTier></curric:PaperTier> </curric:paperTier> 
-			</curric:language> -->
+
+		<!-- Lingue conosciute 
+		<curric:language>
+			<curric:Language rdf:type="English"></curric:Language> 
+				<curric:paperTier>
+					<curric:PaperTier></curric:PaperTier>
+				</curric:paperTier>
+		</curric:language>-->
 
 
-		<!-- LISTA COMPETENZE: da mappare -->
+		<!-- LISTA COMPETENZE 
+		<cerif:ExpSkill>
+			<foaf:name></foaf:name>
+			<lo:description></lo:description>
+		</cerif:ExpSkill>-->
 
 
 
@@ -145,7 +185,7 @@
 		<project:hasParticipantingAgent>
 			<project:PublicInvestmentProject
 				rdf:about="https://w3id.org/ecodigit/project/ecodigit">
-				<rdfs:label xml:lang="it"><![CDATA[Ecosistema Digitale per la fruizione e la	valorizzazione dei beni e delle attività culturali del Lazio]]></rdfs:label>
+				<rdfs:label xml:lang="it"><![CDATA[Ecosistema Digitale per la fruizione e la valorizzazione dei beni e delle attività culturali del Lazio]]></rdfs:label>
 			</project:PublicInvestmentProject>
 		</project:hasParticipantingAgent>
 
