@@ -41,20 +41,20 @@
     
 
 
+    <!-- https://w3id.org/ecodigit/ontology/person/hasEducationResult -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ecodigit/ontology/person/hasEducationResult">
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://w3id.org/ecodigit/ontology/person/hasExpertise -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/ecodigit/ontology/person/hasExpertise">
         <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
         <rdfs:range rdf:resource="https://w3id.org/ecodigit/ontology/person/ExpertiseAndSkill"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- https://w3id.org/ecodigit/ontology/person/hasExpertiseResult -->
-
-    <owl:ObjectProperty rdf:about="https://w3id.org/ecodigit/ontology/person/hasExpertiseResult">
-        <rdfs:domain rdf:resource="https://w3id.org/ecodigit/ontology/person/Training"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
     </owl:ObjectProperty>
     
 
@@ -193,20 +193,6 @@
 
     <owl:Class rdf:about="https://w3id.org/ecodigit/ontology/person/SelfCertification">
         <rdfs:subClassOf rdf:resource="https://w3id.org/ecodigit/ontology/person/Certification"/>
-    </owl:Class>
-    
-
-
-    <!-- https://w3id.org/ecodigit/ontology/person/Training -->
-
-    <owl:Class rdf:about="https://w3id.org/ecodigit/ontology/person/Training">
-        <rdfs:subClassOf rdf:resource="https://w3id.org/ecodigit/ontology/person/ExpertiseAndSkill"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/ecodigit/ontology/person/hasExpertiseResult"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
     </owl:Class>
     
 
