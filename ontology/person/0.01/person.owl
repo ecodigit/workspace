@@ -1,0 +1,250 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/ecodigit/ontology/person/"
+     xml:base="https://w3id.org/ecodigit/ontology/person/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="https://w3id.org/ecodigit/ontology/person/">
+        <owl:versionIRI rdf:resource="https://w3id.org/ecodigit/ontology/person/0.1/"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/ecodigit/ontology/person/hasCertification -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ecodigit/ontology/person/hasCertification">
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="https://w3id.org/ecodigit/ontology/person/Certification"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ecodigit/ontology/person/hasCertificationLevel -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ecodigit/ontology/person/hasCertificationLevel">
+        <rdfs:domain rdf:resource="https://w3id.org/ecodigit/ontology/person/Certification"/>
+        <rdfs:range rdf:resource="https://w3id.org/ecodigit/ontology/person/CertificationLevel"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ecodigit/ontology/person/hasExpertiseResult -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ecodigit/ontology/person/hasExpertiseResult">
+        <rdfs:domain rdf:resource="https://w3id.org/ecodigit/ontology/person/Training"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ecodigit/ontology/person/isCertificationLevelOf -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ecodigit/ontology/person/isCertificationLevelOf">
+        <rdfs:domain rdf:resource="https://w3id.org/ecodigit/ontology/person/CertificationLevel"/>
+        <rdfs:range rdf:resource="https://w3id.org/ecodigit/ontology/person/Certification"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ecodigit/ontology/person/isCertificationOf -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ecodigit/ontology/person/isCertificationOf">
+        <rdfs:domain rdf:resource="https://w3id.org/ecodigit/ontology/person/Certification"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ecodigit/ontology/person/issuedBy -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ecodigit/ontology/person/issuedBy">
+        <owl:inverseOf rdf:resource="https://w3id.org/ecodigit/ontology/person/issues"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ecodigit/ontology/person/Certification"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/onto/COV/Organization"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ecodigit/ontology/person/issues -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ecodigit/ontology/person/issues">
+        <rdfs:domain rdf:resource="https://w3id.org/italia/onto/COV/Organization"/>
+        <rdfs:range rdf:resource="https://w3id.org/ecodigit/ontology/person/Certification"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/ecodigit/ontology/person/withGrade -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/ecodigit/ontology/person/withGrade">
+        <rdfs:domain rdf:resource="https://w3id.org/ecodigit/ontology/person/CertificationLevel"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/ecodigit/ontology/person/Certification -->
+
+    <owl:Class rdf:about="https://w3id.org/ecodigit/ontology/person/Certification"/>
+    
+
+
+    <!-- https://w3id.org/ecodigit/ontology/person/CertificationLevel -->
+
+    <owl:Class rdf:about="https://w3id.org/ecodigit/ontology/person/CertificationLevel">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ecodigit/ontology/person/withGrade"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ecodigit/ontology/person/ExpertiseAndSkill -->
+
+    <owl:Class rdf:about="https://w3id.org/ecodigit/ontology/person/ExpertiseAndSkill">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ecodigit/ontology/person/hasCertification"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="https://w3id.org/ecodigit/ontology/person/IstitutionalCertification"/>
+                            <rdf:Description rdf:about="https://w3id.org/ecodigit/ontology/person/SelfCertification"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ecodigit/ontology/person/IstitutionalCertification -->
+
+    <owl:Class rdf:about="https://w3id.org/ecodigit/ontology/person/IstitutionalCertification">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ecodigit/ontology/person/Certification"/>
+        <owl:disjointWith rdf:resource="https://w3id.org/ecodigit/ontology/person/SelfCertification"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ecodigit/ontology/person/LanguageSkill -->
+
+    <owl:Class rdf:about="https://w3id.org/ecodigit/ontology/person/LanguageSkill">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ecodigit/ontology/person/ExpertiseAndSkill"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ecodigit/ontology/person/SelfCertification -->
+
+    <owl:Class rdf:about="https://w3id.org/ecodigit/ontology/person/SelfCertification">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ecodigit/ontology/person/Certification"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ecodigit/ontology/person/Training -->
+
+    <owl:Class rdf:about="https://w3id.org/ecodigit/ontology/person/Training">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ecodigit/ontology/person/ExpertiseAndSkill"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ecodigit/ontology/person/hasExpertiseResult"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/italia/onto/COV/Organization -->
+
+    <owl:Class rdf:about="https://w3id.org/italia/onto/COV/Organization"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/ecodigit/ontology/person/English -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ecodigit/ontology/person/English">
+        <rdf:type rdf:resource="https://w3id.org/ecodigit/ontology/person/LanguageSkill"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ecodigit/ontology/person/French -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ecodigit/ontology/person/French">
+        <rdf:type rdf:resource="https://w3id.org/ecodigit/ontology/person/LanguageSkill"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ecodigit/ontology/person/German -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ecodigit/ontology/person/German">
+        <rdf:type rdf:resource="https://w3id.org/ecodigit/ontology/person/LanguageSkill"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ecodigit/ontology/person/Italian -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ecodigit/ontology/person/Italian">
+        <rdf:type rdf:resource="https://w3id.org/ecodigit/ontology/person/LanguageSkill"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
