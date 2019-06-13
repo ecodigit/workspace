@@ -16,7 +16,8 @@
 	xmlns:COV="https://w3id.org/italia/onto/COV/"
 	xmlns:l0="https://w3id.org/italia/onto/l0/"
 	xmlns:TI="https://w3id.org/italia/onto/TI/"
-	xmlns:SM="https://w3id.org/italia/onto/SM/">
+	xmlns:SM="https://w3id.org/italia/onto/SM/"
+	xmlns:ecodigit="https://w3id.org/ecodigit/ontology/person/">
 
 	<foaf:Person
 		rdf:about="https://w3id.org/ecodigit/person/luigi_asprino">
@@ -53,6 +54,7 @@
 			Natural Language Processing e Machine Learning.
 		</l0:description>
 
+
 		<!-- Affiliazione -->
 		<org:memberOf>
 			<org:Organization
@@ -73,39 +75,6 @@
 				</org:hasSite>
 			</org:Organization>
 		</org:memberOf>
-
-		<!-- Titoli di studio -->
-		<CPV:hasLevelOfEducation>
-			<CPV:EducationLevel rdf:about="https://w3id.org/italia/controlled-vocabulary/classifications-for-people/education-level">
-				<l0:name>Dottorato di ricerca</l0:name>
-				<CPV:educationLevelDesc></CPV:educationLevelDesc>
-				<CPV:educationLevelID></CPV:educationLevelID>
-			</CPV:EducationLevel>
-		</CPV:hasLevelOfEducation>
-		<foaf:made>
-			<bibo:Thesis>
-				<dcterms:title></dcterms:title>
-				<bibo:degree>
-					<bibo:ThesisDegree rdf:about="http://purl.org/ontology/bibo/degrees/phd">
-					</bibo:ThesisDegree> 
-				</bibo:degree>
-				<foaf:primaryTopic></foaf:primaryTopic>
-			</bibo:Thesis>
-		</foaf:made>
-		
-		<!-- BISOGNA MODELLARE IL FATTO CHE L'ESPERIENZA FORMATIVA E' EROGATA DA UN CERTO ENTE CHE CONFERISCE UNA CERTIFICAZIONE CON VOTO.
-		<org:Organization>
-			<foaf:name>Università di Bologna</foaf:name>
-			<org:hasSite>
-				<org:Site geo:lat="" geo:long="">
-					<CLV:hasAddress>
-						<CLV:Address>
-							<CLV:fullAddress></CLV:fullAddress>
-						</CLV:Address>
-					</CLV:hasAddress>
-				</org:Site>
-			</org:hasSite>
-		</org:Organization> -->
 
 		<!-- Attività lavorativa -->
 		<COV:holdEmployment>
@@ -133,35 +102,94 @@
 			</COV:Employment>
 		</COV:holdEmployment>
 
-		<!-- <org:Organization>
-			<foaf:name>Università di Bologna</foaf:name>
-			<org:hasSite>
-				<org:Site geo:lat="" geo:long="">
-					<CLV:hasAddress>
-						<CLV:Address>
-							<CLV:fullAddress></CLV:fullAddress>
-						</CLV:Address>
-					</CLV:hasAddress>
-				</org:Site>
-			</org:hasSite>
-		</org:Organization> -->
+
+		<!-- Titoli di studio -->
+		<CPV:hasLevelOfEducation>
+			<CPV:EducationLevel rdf:about="https://w3id.org/italia/controlled-vocabulary/classifications-for-people/education-level">
+				<l0:name>Dottorato di ricerca</l0:name>
+				<CPV:educationLevelDesc></CPV:educationLevelDesc>
+				<CPV:educationLevelID></CPV:educationLevelID>
+			</CPV:EducationLevel>
+		</CPV:hasLevelOfEducation>
+		
+		<ecodigit:hasExpertise>
+			<ecodigit:Training>
+				<ecodigit:hasExpertiseResult>
+					<bibo:Thesis>
+						<dcterms:title></dcterms:title>
+						<bibo:degree>
+							<bibo:ThesisDegree rdf:type="http://purl.org/ontology/bibo/degrees/phd"></bibo:ThesisDegree> 
+						</bibo:degree>
+						<foaf:primaryTopic></foaf:primaryTopic>
+					</bibo:Thesis>
+				</ecodigit:hasExpertiseResult>
+				<ecodigit:hasCertification>
+					<ecodigit:IstitutionalCertification>
+						<ecodigit:hasCertificationLevel>
+							<ecodigit:CertificationLevel>
+								<ecodigit:withDegree>Ottimo / 100 </ecodigit:withDegree>
+							</ecodigit:CertificationLevel>
+						</ecodigit:hasCertificationLevel>
+						<ecodigit:issuedBy>
+							<org:Organization>
+								<foaf:name>Università di Bologna</foaf:name>
+								<org:hasSite>
+									<org:Site geo:lat="" geo:long="">
+										<CLV:hasAddress>
+											<CLV:Address>
+												<CLV:fullAddress></CLV:fullAddress>
+											</CLV:Address>
+										</CLV:hasAddress>
+									</org:Site>
+								</org:hasSite>
+							</org:Organization>
+						</ecodigit:issuedBy>
+					</ecodigit:IstitutionalCertification>
+				</ecodigit:hasCertification>
+			</ecodigit:Training>
+		</ecodigit:hasExpertise>
 
 
-		<!-- Lingue conosciute 
-		<curric:language>
-			<curric:Language rdf:type="English"></curric:Language> 
-				<curric:paperTier>
-					<curric:PaperTier></curric:PaperTier>
-				</curric:paperTier>
-		</curric:language>-->
+		<!-- Lingue conosciute -->
+		<ecodigit:hasExpertise>
+			<ecodigit:LanguageSkill rdf:type="https://w3id.org/ecodigit/ontology/person/English">
+				<ecodigit:hasCertification>
+					<ecodigit:SelfCertification>
+						<ecodigit:hasCertificationLevel>
+							<ecodigit:CertificationLevel>
+								<ecodigit:withDegree>C1</ecodigit:withDegree>
+							</ecodigit:CertificationLevel>
+						</ecodigit:hasCertificationLevel>
+					</ecodigit:SelfCertification>
+				</ecodigit:hasCertification>
+			</ecodigit:LanguageSkill>
+		</ecodigit:hasExpertise>
+
+		<ecodigit:hasExpertise>
+			<ecodigit:LanguageSkill rdf:type="https://w3id.org/ecodigit/ontology/person/French">
+				<ecodigit:hasCertification>
+					<ecodigit:IstitutionalCertification>
+						<ecodigit:hasCertificationLevel>
+							<ecodigit:CertificationLevel>
+								<ecodigit:withDegree>B2</ecodigit:withDegree>
+							</ecodigit:CertificationLevel>
+						</ecodigit:hasCertificationLevel>
+						<ecodigit:issuedBy>
+							<org:Organization>
+								<foaf:name>Università di Bologna</foaf:name>
+							</org:Organization>
+						</ecodigit:issuedBy>
+					</ecodigit:IstitutionalCertification>
+				</ecodigit:hasCertification>
+			</ecodigit:LanguageSkill>
+		</ecodigit:hasExpertise>
 
 
-		<!-- LISTA COMPETENZE 
-		<cerif:ExpSkill>
+		<!-- Lista competenze -->
+		<ecodigit:ExpertiseAndSkill>
 			<foaf:name></foaf:name>
 			<lo:description></lo:description>
-		</cerif:ExpSkill>-->
-
+		</ecodigit:ExpertiseAndSkill>
 
 
 		<!-- Publicazioni -->
@@ -180,6 +208,7 @@
 				<rdfs:label xml:lang="en"><![CDATA[Semantic Web for Cultural Heritage Valorisation]]></rdfs:label>
 			</bibo:Article>
 		</foaf:made>
+
 
 		<!-- Projects -->
 		<project:hasParticipantingAgent>
