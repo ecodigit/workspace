@@ -41,6 +41,15 @@
     
 
 
+    <!-- https://w3id.org/ecodigit/ontology/person/hasExpertise -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ecodigit/ontology/person/hasExpertise">
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <rdfs:range rdf:resource="https://w3id.org/ecodigit/ontology/person/ExpertiseAndSkill"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://w3id.org/ecodigit/ontology/person/hasExpertiseResult -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/ecodigit/ontology/person/hasExpertiseResult">
@@ -115,6 +124,12 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/Agent -->
+
+    <owl:Class rdf:about="http://xmlns.com/foaf/0.1/Agent"/>
     
 
 
