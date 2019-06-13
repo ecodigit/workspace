@@ -169,7 +169,7 @@
 		<!-- Lista competenze -->
 		<ecodigit:ExpertiseAndSkill>
 			<foaf:name></foaf:name>
-			<lo:description></lo:description>
+			<l0:description></l0:description>
 		</ecodigit:ExpertiseAndSkill>
 
 
