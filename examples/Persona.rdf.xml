@@ -87,21 +87,6 @@
 			<CPV:EducationLevel
 				rdf:about="https://w3id.org/italia/controlled-vocabulary/classifications-for-people/education-level/RDD">
 				<rdfs:label><![CDATA[Dottorato di ricerca/Diploma accademico di formazione alla ricerca]]></rdfs:label>
-			</CPV:EducationLevel>
-		</CPV:hasLevelOfEducation>
-
-		<ecodigit:hasExpertise>
-			<ecodigit:Training>
-				<ecodigit:hasExpertiseResult>
-					<bibo:Thesis>
-						<dcterms:title></dcterms:title>
-						<bibo:degree>
-							<bibo:ThesisDegree
-								rdf:type="http://purl.org/ontology/bibo/degrees/phd"></bibo:ThesisDegree>
-						</bibo:degree>
-						<foaf:primaryTopic></foaf:primaryTopic>
-					</bibo:Thesis>
-				</ecodigit:hasExpertiseResult>
 				<ecodigit:hasCertification>
 					<ecodigit:IstitutionalCertification>
 						<ecodigit:hasCertificationLevel>
@@ -125,10 +110,21 @@
 						</ecodigit:issuedBy>
 					</ecodigit:IstitutionalCertification>
 				</ecodigit:hasCertification>
-			</ecodigit:Training>
-		</ecodigit:hasExpertise>
+			</CPV:EducationLevel>
+		</CPV:hasLevelOfEducation>
 
-
+		<ecodigit:hasEducationResult>
+			<bibo:Thesis>
+				<dcterms:title></dcterms:title>
+					<bibo:degree>
+						<bibo:ThesisDegree
+							rdf:type="http://purl.org/ontology/bibo/degrees/phd"></bibo:ThesisDegree>
+					</bibo:degree>
+				<foaf:primaryTopic></foaf:primaryTopic>
+			</bibo:Thesis>
+		</ecodigit:hasEducationResult>
+				
+		
 		<!-- Lingue conosciute -->
 		<ecodigit:hasExpertise>
 			<ecodigit:LanguageSkill
