@@ -25,6 +25,7 @@
         <owl:imports rdf:resource="http://xmlns.com/foaf/0.1/"/>
         <owl:imports rdf:resource="https://w3id.org/italia/onto/COV/"/>
         <owl:imports rdf:resource="https://w3id.org/italia/onto/CPV/"/>
+        <owl:imports rdf:resource="https://w3id.org/italia/onto/Language/"/>
     </owl:Ontology>
     
 
@@ -71,16 +72,9 @@
     <!-- https://w3id.org/ecodigit/ontology/eas/grantsCertification -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/ecodigit/ontology/eas/grantsCertification">
-        <rdfs:domain>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://w3id.org/ecodigit/ontology/eas/Examination"/>
-                    <rdf:Description rdf:about="https://w3id.org/ecodigit/ontology/eas/Training"/>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:domain>
+        <rdfs:domain rdf:resource="https://w3id.org/ecodigit/ontology/eas/Training"/>
         <rdfs:range rdf:resource="https://w3id.org/ecodigit/ontology/eas/Certification"/>
-        <rdfs:comment xml:lang="it">Permette di associare una Esperienza formativa o un Esame con la Certificazione conferita.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Permette di associare una Esperienza formativa con la Certificazione da essa  conferita.</rdfs:comment>
         <rdfs:label xml:lang="it">conferisce certificazione</rdfs:label>
     </owl:ObjectProperty>
     
@@ -98,7 +92,7 @@
     <!-- https://w3id.org/ecodigit/ontology/eas/hasExpertise -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/ecodigit/ontology/eas/hasExpertise">
-        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Agent"/>
+        <rdfs:domain rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
         <rdfs:range rdf:resource="https://w3id.org/ecodigit/ontology/eas/ExpertiseAndSkill"/>
     </owl:ObjectProperty>
     
@@ -215,7 +209,7 @@
     <!-- https://w3id.org/ecodigit/ontology/eas/withGrade -->
 
     <owl:DatatypeProperty rdf:about="https://w3id.org/ecodigit/ontology/eas/withGrade">
-        <rdfs:domain rdf:resource="https://w3id.org/ecodigit/ontology/eas/Level"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ecodigit/ontology/eas/Examination"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
     </owl:DatatypeProperty>
     
@@ -339,6 +333,12 @@
 
     <owl:Class rdf:about="https://w3id.org/ecodigit/ontology/eas/LanguageSkill">
         <rdfs:subClassOf rdf:resource="https://w3id.org/ecodigit/ontology/eas/ExpertiseAndSkill"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/italia/onto/Language/hasLanguage"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/italia/onto/Language/Language"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -473,38 +473,6 @@
 
     <owl:NamedIndividual rdf:about="https://w3id.org/ecodigit/ontology/eas/C2">
         <rdf:type rdf:resource="https://w3id.org/ecodigit/ontology/eas/CERFLevel"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/ecodigit/ontology/eas/English -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/ecodigit/ontology/eas/English">
-        <rdf:type rdf:resource="https://w3id.org/ecodigit/ontology/eas/LanguageSkill"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/ecodigit/ontology/eas/French -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/ecodigit/ontology/eas/French">
-        <rdf:type rdf:resource="https://w3id.org/ecodigit/ontology/eas/LanguageSkill"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/ecodigit/ontology/eas/German -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/ecodigit/ontology/eas/German">
-        <rdf:type rdf:resource="https://w3id.org/ecodigit/ontology/eas/LanguageSkill"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://w3id.org/ecodigit/ontology/eas/Italian -->
-
-    <owl:NamedIndividual rdf:about="https://w3id.org/ecodigit/ontology/eas/Italian">
-        <rdf:type rdf:resource="https://w3id.org/ecodigit/ontology/eas/LanguageSkill"/>
     </owl:NamedIndividual>
 </rdf:RDF>
 

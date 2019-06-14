@@ -17,7 +17,8 @@
 	xmlns:l0="https://w3id.org/italia/onto/l0/"
 	xmlns:TI="https://w3id.org/italia/onto/TI/"
 	xmlns:SM="https://w3id.org/italia/onto/SM/"
-	xmlns:ecodigit="https://w3id.org/ecodigit/ontology/person/">
+	xmlns:language="https://w3id.org/italia/onto/Language/"
+	xmlns:ecodigit-eas="https://w3id.org/ecodigit/ontology/eas/">
 
 	<foaf:Person
 		rdf:about="https://w3id.org/ecodigit/person/luigi_asprino">
@@ -81,111 +82,90 @@
 			</COV:Employment>
 		</COV:holdEmployment>
 
-
 		<!-- Titoli di studio -->
 		<CPV:hasLevelOfEducation>
 			<CPV:EducationLevel
 				rdf:about="https://w3id.org/italia/controlled-vocabulary/classifications-for-people/education-level/RDD">
 				<rdfs:label><![CDATA[Dottorato di ricerca/Diploma accademico di formazione alla ricerca]]></rdfs:label>
-				<ecodigit:hasCertification>
-					<ecodigit:IstitutionalCertification>
-						<ecodigit:hasCertificationLevel>
-							<ecodigit:CertificationLevel>
-								<ecodigit:withDegree>Ottimo / 100 </ecodigit:withDegree>
-							</ecodigit:CertificationLevel>
-						</ecodigit:hasCertificationLevel>
-						<ecodigit:issuedBy>
-							<org:Organization>
-								<foaf:name>Università di Bologna</foaf:name>
-								<org:hasSite>
-									<org:Site geo:lat="" geo:long="">
-										<CLV:hasAddress>
-											<CLV:Address>
-												<CLV:fullAddress></CLV:fullAddress>
-											</CLV:Address>
-										</CLV:hasAddress>
-									</org:Site>
-								</org:hasSite>
-							</org:Organization>
-						</ecodigit:issuedBy>
-					</ecodigit:IstitutionalCertification>
-				</ecodigit:hasCertification>
 			</CPV:EducationLevel>
 		</CPV:hasLevelOfEducation>
-		
-		
 
-		<ecodigit:hasEducationResult>
-			<bibo:Thesis>
-				<dcterms:title></dcterms:title>
-					<bibo:degree>
-						<bibo:ThesisDegree
-							rdf:type="http://purl.org/ontology/bibo/degrees/phd"></bibo:ThesisDegree>
-					</bibo:degree>
-				<foaf:primaryTopic></foaf:primaryTopic>
-			</bibo:Thesis>
-		</ecodigit:hasEducationResult>
-				
-		
+		<ecodigit-eas:attends>
+			<ecodigit-eas:Training>
+				<ecodigit-eas:isAttendedBy
+					rdf:resource="https://w3id.org/ecodigit/person/luigi_asprino" />
+				<ecodigit-eas:providedBy>
+					<org:Organization
+						rdf:about="https://w3id.org/ecodigit/organization/unibo">
+						<foaf:name><![CDATA[Università di Bologna]]></foaf:name>
+					</org:Organization>
+				</ecodigit-eas:providedBy>
+				<ecodigit-eas:includesAnExamination>
+					<ecodigit-eas:FinalExamination>
+						<TI:atTime>
+							<TI:TemporalEntity>
+								<TI:startTime
+									rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-04-03</TI:startTime>
+							</TI:TemporalEntity>
+						</TI:atTime>
+						<ecodigit-eas:withGrade>100</ecodigit-eas:withGrade>
+						<ecodigit-eas:hasTrainingOutcome>
+							<bibo:Thesis
+								rdf:about="https://w3id.org/ecodigit/publication/Asprino2019Engineering">
+								<rdfs:label xml:lang="en">><![CDATA[Engineering Background Knowledge for Social Robots]]></rdfs:label>
+							</bibo:Thesis>
+						</ecodigit-eas:hasTrainingOutcome>
+						<ecodigit-eas:leadsTo>
+							<ecodigit-eas:IstitutionalCertification>
+								<ecodigit-eas:attests
+									rdf:resource="https://w3id.org/italia/controlled-vocabulary/classifications-for-people/education-level/RDD" />
+								<ecodigit-eas:issuedBy
+									rdf:resource="https://w3id.org/ecodigit/organization/unibo" />
+							</ecodigit-eas:IstitutionalCertification>
+						</ecodigit-eas:leadsTo>
+					</ecodigit-eas:FinalExamination>
+				</ecodigit-eas:includesAnExamination>
+			</ecodigit-eas:Training>
+		</ecodigit-eas:attends>
+
 		<!-- Lingue conosciute -->
-		<ecodigit:hasExpertise>
-			<ecodigit:LanguageSkill
-				rdf:type="https://w3id.org/ecodigit/ontology/person/English">
-				<ecodigit:hasCertification>
-					<ecodigit:SelfCertification>
-						<ecodigit:hasCertificationLevel>
-							<ecodigit:CertificationLevel>
-								<ecodigit:withDegree>C1</ecodigit:withDegree>
-							</ecodigit:CertificationLevel>
-						</ecodigit:hasCertificationLevel>
-					</ecodigit:SelfCertification>
-				</ecodigit:hasCertification>
-			</ecodigit:LanguageSkill>
-		</ecodigit:hasExpertise>
-
-		<ecodigit:hasExpertise>
-			<ecodigit:LanguageSkill
-				rdf:type="https://w3id.org/ecodigit/ontology/person/French">
-				<ecodigit:hasCertification>
-					<ecodigit:IstitutionalCertification>
-						<ecodigit:hasCertificationLevel>
-							<ecodigit:CertificationLevel>
-								<ecodigit:withDegree>B2</ecodigit:withDegree>
-							</ecodigit:CertificationLevel>
-						</ecodigit:hasCertificationLevel>
-						<ecodigit:issuedBy>
-							<org:Organization>
-								<foaf:name>Università di Bologna</foaf:name>
-							</org:Organization>
-						</ecodigit:issuedBy>
-					</ecodigit:IstitutionalCertification>
-				</ecodigit:hasCertification>
-			</ecodigit:LanguageSkill>
-		</ecodigit:hasExpertise>
+		<ecodigit-eas:hasExpertise>
+			<ecodigit-eas:LanguageSkill>
+				<language:hasLanguage
+					rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
+				<ecodigit-eas:hasCertification>
+					<ecodigit-eas:SelfCertification>
+						<ecodigit-eas:attests
+							rdf:resource="https://w3id.org/ecodigit/ontology/eas/C1" />
+					</ecodigit-eas:SelfCertification>
+				</ecodigit-eas:hasCertification>
+			</ecodigit-eas:LanguageSkill>
+		</ecodigit-eas:hasExpertise>
 
 
 		<!-- Lista competenze -->
-		<ecodigit:ExpertiseAndSkill>
-			<foaf:name></foaf:name>
-			<l0:description></l0:description>
-		</ecodigit:ExpertiseAndSkill>
+		<ecodigit-eas:hasExpertise>
+			<ecodigit-eas:ExpertiseAndSkill>
+				<rdfs:label>Programmazione Java</rdfs:label>
+				<rdfs:comment>Programmazione Java</rdfs:comment>
+			</ecodigit-eas:ExpertiseAndSkill>
+		</ecodigit-eas:hasExpertise>
 
 
 		<!-- Publicazioni -->
 		<foaf:made>
-			<bibo:Article
+			<rdf:Description
 				rdf:about="https://w3id.org/ecodigit/publication/Asprino2018Empirical">
-				<rdfs:label xml:lang="en">><![CDATA[Empirical Analysis of Foundational Distinctions in Linked Open Data]]>
-				</rdfs:label>
-			</bibo:Article>
+				<rdfs:label xml:lang="en">><![CDATA[Empirical Analysis of Foundational Distinctions in Linked Open Data]]></rdfs:label>
+			</rdf:Description>
 		</foaf:made>
 
 
 		<foaf:made>
-			<bibo:Article
+			<rdf:Description
 				rdf:about="https://w3id.org/ecodigit/publication/Lodi2017Semantic">
 				<rdfs:label xml:lang="en"><![CDATA[Semantic Web for Cultural Heritage Valorisation]]></rdfs:label>
-			</bibo:Article>
+			</rdf:Description>
 		</foaf:made>
 
 
