@@ -18,7 +18,7 @@ Di seguito la lista delle ontologie definite ex-novo per EcoDigit:
 - [Ontologia delle Esperienze e Competenze](https://w3id.org/ecodigit/ontology/eas) 
   - Namespace: `https://w3id.org/ecodigit/ontology/eas/`
   - Obiettivo: L'ontologia ha lo scopo di definire un vocabolario condiviso di termini per la descrizione delle esperienze e competenze di una persona.
-  - Estende: [OntoPiA-CPV](https://w3id.org/italia/onto/CPV), OntoPiA-COV](https://w3id.org/italia/onto/COV), [FOAF](http://xmlns.com/foaf/spec/),[BIBO](http://purl.org/ontology/bibo/) 
+  - Estende: [OntoPiA-CPV](https://w3id.org/italia/onto/CPV), [OntoPiA-COV](https://w3id.org/italia/onto/COV), [FOAF](http://xmlns.com/foaf/spec/),[BIBO](http://purl.org/ontology/bibo/) 
 
 
 
