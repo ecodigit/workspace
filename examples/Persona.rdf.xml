@@ -112,6 +112,8 @@
 				</ecodigit:hasCertification>
 			</CPV:EducationLevel>
 		</CPV:hasLevelOfEducation>
+		
+		
 
 		<ecodigit:hasEducationResult>
 			<bibo:Thesis>
