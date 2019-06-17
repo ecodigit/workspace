@@ -187,8 +187,12 @@
 		<prov:wasGeneratedBy>
 			<prov:Activity>
 				<rdfs:comment><![CDATA[Attività di inserimento, unione e triplificazione delle informazioni riguardanti le persone.]]></rdfs:comment>
-				<prov:wasAssociatedWith
-					rdf:resource="https://w3id.org/italia/data/organization/support-unit/cnr-Z6HZEH/stlab" />
+				<prov:wasAssociatedWith>
+					<rdf:Description
+						rdf:about="https://w3id.org/italia/data/organization/support-unit/cnr-Z6HZEH/stlab">
+						<foaf:name><![CDATA[Istituto di Scienze e Tecnologie della Cognizione del CNR - Semantic Technology Lab (STLab)]]></foaf:name>
+					</rdf:Description>
+				</prov:wasAssociatedWith>
 				<prov:used rdf:resource="http://luigiasprino.it#me" />
 			</prov:Activity>
 		</prov:wasGeneratedBy>
