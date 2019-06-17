@@ -9,6 +9,10 @@
 	xmlns:CLV="https://w3id.org/italia/onto/CLV/"
 	xmlns:fabio="http://purl.org/spar/fabio/"
 	xmlns:prov="http://www.w3.org/ns/prov#"
+	xmlns:datacite="http://purl.org/spar/datacite/"
+	xmlns:literal="http://www.essepuntato.it/2010/06/literalreification/"
+	xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/"
+	xmlns:schemaorg="https://schema.org/"
 	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#">
 
 
@@ -16,12 +20,47 @@
 		rdf:about="https://w3id.org/ecodigit/publication/Lodi2017Semantic">
 
 		<dc:title><![CDATA[Semantic Web for Cultural Heritage Valorisation]]></dc:title>
+
 		<dc:language>en</dc:language>
 		<bibo:pageStart>3</bibo:pageStart>
 		<bibo:pageEnd>37</bibo:pageEnd>
+		<dcterms:extent>35</dcterms:extent>
 		<dc:date>2017</dc:date>
-		<bibo:doi>10.1007/978-3-319-54499-1_1</bibo:doi>
-		<dc:identifier>10.1007/978-3-319-54499-1_1</dc:identifier>
+		<fabio:hasURL
+			rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://link.springer.com/chapter/10.1007/978-3-319-54499-1_1
+		</fabio:hasURL>
+
+
+		<datacite:hasIdentifier>
+			<datacite:ResourceIdentifier>
+				<literal:hasLiteralValue><![CDATA[10.1007/978-3-319-54499-1_1]]></literal:hasLiteralValue>
+				<datacite:usesIdentifierScheme>
+					<!-- Usare Vocabolario datacite https://sparontologies.github.io/datacite/current/datacite.html 
+						per i resource identifier schema più comuni: arkni, arxivni, bibcodeni, doini, 
+						ean13ni, eissnni, handleni, infourini, isbnni, issnni, istcni, lissnni, local 
+						resource identifier schemeni, lsidni, nihmsidni, ocini, piini, pmcidni, pmidni, 
+						purlni, sicini, upcni, urini, urlni, urnniark, arxiv, bibcode, doi, ean13, 
+						eissn, handle, infouri, isbn, issn, istc, lissn, local resource identifier 
+						scheme, lsid, nihmsid, oci, pii, pmcid, pmid, purl, sici, upc, uri, url, 
+						urn. -->
+					<!-- per quelli non definiti usare il seguente schema di uri https://w3id.org/ecodigit/resource/[nome 
+						schema] e.g. https://w3id.org/ecodigit/resource/googlescholar specificando 
+						il nome del servizio (e.g. Google Scholar) e la URL alla homepage -->
+					<datacite:ResourceIdentifierScheme
+						rdf:about="http://purl.org/spar/datacite/doi">
+						<fabio:hasURL
+							rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.doi.org/
+						</fabio:hasURL>
+						<rdfs:label>Digital Object Identier.</rdfs:label>
+					</datacite:ResourceIdentifierScheme>
+				</datacite:usesIdentifierScheme>
+			</datacite:ResourceIdentifier>
+		</datacite:hasIdentifier>
+		<prism:keyword>Semantic Web</prism:keyword>
+		<prism:keyword>Linked Open Data</prism:keyword>
+		<prism:keyword>Cultural Heritage</prism:keyword>
+		<bibo:doi><![CDATA[10.1007/978-3-319-54499-1_1]]></bibo:doi>
+		<dc:identifier><![CDATA[10.1007/978-3-319-54499-1_1]]></dc:identifier>
 		<rdf:type>
 			<rdf:Description
 				rdf:about="http://purl.org/spar/fabio/Chapter">
@@ -47,14 +86,34 @@
 		<dcterms:isPartOf>
 			<rdf:Description
 				rdf:about="https://w3id.org/ecodigit/publication/DADH">
+
 				<dc:title><![CDATA[Data Analytics in Digital Humanities]]></dc:title>
+
 				<rdf:type>
 					<rdf:Description
 						rdf:about="http://purl.org/spar/fabio/Book">
 						<rdfs:label xml:lang="en">Book</rdfs:label>
 					</rdf:Description>
 				</rdf:type>
-				<bibo:issn>978-3-319-54499-1</bibo:issn>
+
+				<bibo:isbn>978-3-319-54498-4</bibo:isbn>
+				<dc:identifier><![CDATA[978-3-319-54498-4]]></dc:identifier>
+
+				<bibo:editor>
+					<foaf:Person
+						rdf:about="https://w3id.org/ecodigit/person/shalin.hai-jew">
+						<foaf:givenname>Shalin</foaf:givenname>
+						<foaf:family_name>Hai-Jew</foaf:family_name>
+					</foaf:Person>
+				</bibo:editor>
+
+				<bibo:editorList>
+					<rdf:Seq>
+						<rdf:li
+							rdf:resource="https://w3id.org/ecodigit/person/shalin.hai-jew" />
+					</rdf:Seq>
+				</bibo:editorList>
+
 			</rdf:Description>
 		</dcterms:isPartOf>
 
@@ -63,6 +122,15 @@
 				rdf:about="https://w3id.org/ecodigit/person/giorgia.lodi">
 				<foaf:givenname>Giorgia</foaf:givenname>
 				<foaf:family_name>Lodi</foaf:family_name>
+			</foaf:Person>
+		</dc:creator>
+
+
+		<dc:creator>
+			<foaf:Person
+				rdf:about="https://w3id.org/ecodigit/person/luigi.asprino">
+				<foaf:givenname>Luigi</foaf:givenname>
+				<foaf:family_name>Asprino</foaf:family_name>
 			</foaf:Person>
 		</dc:creator>
 
@@ -157,5 +225,18 @@
 			</prov:Activity>
 		</prov:wasGeneratedBy>
 	</prov:Entity>
+
+
+	<schemaorg:DigitalDocument
+		rdf:about="https://w3id.org/ecodigit/document/Lodi2017Semantic">
+		<dc:title>Altro documento PDF associato alla pubblicazione Lodi 2017
+		</dc:title>
+		<dc:description>Altro documento PDF associato alla pubblicazione Lodi
+			2017</dc:description>
+		<schemaorg:inLanguage>en</schemaorg:inLanguage>
+		<schemaorg:mainEntity
+			rdf:resource="https://w3id.org/ecodigit/publication/Lodi2017Semantic" />
+		<schemaorg:url rdf:resource="...." />
+	</schemaorg:DigitalDocument>
 
 </rdf:RDF>
