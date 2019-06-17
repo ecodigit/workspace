@@ -22,7 +22,7 @@
 	xmlns:ecodigit-eas="https://w3id.org/ecodigit/ontology/eas/">
 
 	<foaf:Person
-		rdf:about="https://w3id.org/ecodigit/person/luigi_asprino">
+		rdf:about="https://w3id.org/ecodigit/person/luigi.asprino">
 
 		<!-- Informazioni Personali -->
 		<foaf:givenname>Luigi</foaf:givenname>
@@ -94,7 +94,7 @@
 		<ecodigit-eas:attends>
 			<ecodigit-eas:Training>
 				<ecodigit-eas:isAttendedBy
-					rdf:resource="https://w3id.org/ecodigit/person/luigi_asprino" />
+					rdf:resource="https://w3id.org/ecodigit/person/luigi.asprino" />
 				<ecodigit-eas:providedBy>
 					<org:Organization
 						rdf:about="https://w3id.org/ecodigit/organization/unibo">
@@ -183,10 +183,10 @@
 
 	<!-- Provenance -->
 	<prov:Entity
-		rdf:about="https://w3id.org/ecodigit/person/luigi_asprino">
+		rdf:about="https://w3id.org/ecodigit/person/luigi.asprino">
 		<prov:wasGeneratedBy>
 			<prov:Activity>
-				<rdfs:comment><![CDATA[Attività di inserimento, unione e triplificazione delle informazioni riguardanti la persona]]></rdfs:comment>
+				<rdfs:comment><![CDATA[Attività di inserimento, unione e triplificazione delle informazioni riguardanti le persone.]]></rdfs:comment>
 				<prov:wasAssociatedWith
 					rdf:resource="https://w3id.org/italia/data/organization/support-unit/cnr-Z6HZEH/stlab" />
 				<prov:used rdf:resource="http://luigiasprino.it#me" />

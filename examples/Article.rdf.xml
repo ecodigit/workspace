@@ -8,6 +8,7 @@
 	xmlns:org="http://www.w3.org/ns/org#"
 	xmlns:CLV="https://w3id.org/italia/onto/CLV/"
 	xmlns:fabio="http://purl.org/spar/fabio/"
+	xmlns:prov="http://www.w3.org/ns/prov#"
 	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#">
 
 
@@ -52,7 +53,7 @@
 
 		<dc:creator>
 			<foaf:Person
-				rdf:about="https://w3id.org/ecodigit/person/giorgia_lodi">
+				rdf:about="https://w3id.org/ecodigit/person/giorgia.lodi">
 				<foaf:givenname>Giorgia</foaf:givenname>
 				<foaf:family_name>Lodi</foaf:family_name>
 			</foaf:Person>
@@ -60,7 +61,7 @@
 
 		<dc:creator>
 			<foaf:Person
-				rdf:about="https://w3id.org/ecodigit/person/andreagiovanni_nuzzolese">
+				rdf:about="https://w3id.org/ecodigit/person/andreagiovanni.nuzzolese">
 				<foaf:givenname>Andrea Giovanni</foaf:givenname>
 				<foaf:family_name>Nuzzolese</foaf:family_name>
 			</foaf:Person>
@@ -68,7 +69,7 @@
 
 		<dc:creator>
 			<foaf:Person
-				rdf:about="https://w3id.org/ecodigit/person/valentina_presutti">
+				rdf:about="https://w3id.org/ecodigit/person/valentina.presutti">
 				<foaf:givenname>Valentina</foaf:givenname>
 				<foaf:family_name>Presutti</foaf:family_name>
 			</foaf:Person>
@@ -76,7 +77,7 @@
 
 		<dc:creator>
 			<foaf:Person
-				rdf:about="https://w3id.org/ecodigit/person/aldo_gangemi">
+				rdf:about="https://w3id.org/ecodigit/person/aldo.gangemi">
 				<foaf:givenname>Aldo</foaf:givenname>
 				<foaf:family_name>Gangemi</foaf:family_name>
 			</foaf:Person>
@@ -84,7 +85,7 @@
 
 		<dc:creator>
 			<foaf:Person
-				rdf:about="https://w3id.org/ecodigit/person/diego_reforgiatorecupero">
+				rdf:about="https://w3id.org/ecodigit/person/diego.reforgiatorecupero">
 				<foaf:givenname>Diego</foaf:givenname>
 				<foaf:family_name>Reforgiato Recupero</foaf:family_name>
 			</foaf:Person>
@@ -92,7 +93,7 @@
 
 		<dc:creator>
 			<foaf:Person
-				rdf:about="https://w3id.org/ecodigit/person/chiara_veninata">
+				rdf:about="https://w3id.org/ecodigit/person/chiara.veninata">
 				<foaf:givenname>Chiara</foaf:givenname>
 				<foaf:family_name>Veninata</foaf:family_name>
 			</foaf:Person>
@@ -100,35 +101,50 @@
 
 		<dc:creator>
 			<foaf:Person
-				rdf:about="https://w3id.org/ecodigit/person/annarita_orsini">
+				rdf:about="https://w3id.org/ecodigit/person/annarita.orsini">
 				<foaf:givenname>Annarita</foaf:givenname>
 				<foaf:family_name>Orsini</foaf:family_name>
 			</foaf:Person>
 		</dc:creator>
 
-
 		<bibo:authorList>
 			<rdf:Seq>
 				<rdf:li
-					rdf:resource="https://w3id.org/ecodigit/person/giorgia_lodi" />
+					rdf:resource="https://w3id.org/ecodigit/person/giorgia.lodi" />
 				<rdf:li
-					rdf:resource="https://w3id.org/ecodigit/person/luigi_asprino" />
+					rdf:resource="https://w3id.org/ecodigit/person/luigi.asprino" />
 				<rdf:li
-					rdf:resource="https://w3id.org/ecodigit/person/andreagiovanni_nuzzolese" />
+					rdf:resource="https://w3id.org/ecodigit/person/andreagiovanni.nuzzolese" />
 				<rdf:li
-					rdf:resource="https://w3id.org/ecodigit/person/valentina_presutti" />
+					rdf:resource="https://w3id.org/ecodigit/person/valentina.presutti" />
 				<rdf:li
-					rdf:resource="https://w3id.org/ecodigit/person/aldo_gangemi" />
+					rdf:resource="https://w3id.org/ecodigit/person/aldo.gangemi" />
 				<rdf:li
-					rdf:resource="https://w3id.org/ecodigit/person/diego_reforgiatorecupero" />
+					rdf:resource="https://w3id.org/ecodigit/person/diego.reforgiatorecupero" />
 				<rdf:li
-					rdf:resource="https://w3id.org/ecodigit/person/chiara_veninata" />
+					rdf:resource="https://w3id.org/ecodigit/person/chiara.veninata" />
 				<rdf:li
-					rdf:resource="https://w3id.org/ecodigit/person/annarita_orsini" />
+					rdf:resource="https://w3id.org/ecodigit/person/annarita.orsini" />
 			</rdf:Seq>
 		</bibo:authorList>
 
 
 	</rdf:Description>
+
+
+
+	<!-- Provenance -->
+	<prov:Entity
+		rdf:about="https://w3id.org/ecodigit/publication/Lodi2017Semantic">
+		<prov:wasGeneratedBy>
+			<prov:Activity>
+				<rdfs:comment><![CDATA[Attività di inserimento, unione e triplificazione delle informazioni riguardanti le pubblicazioni.]]></rdfs:comment>
+				<prov:wasAssociatedWith
+					rdf:resource="https://w3id.org/italia/data/organization/support-unit/cnr-Z6HZEH/stlab" />
+				<prov:used rdf:resource="http://luigiasprino.it#me" />
+			</prov:Activity>
+		</prov:wasGeneratedBy>
+	</prov:Entity>
+
 
 </rdf:RDF>
