@@ -1,24 +1,96 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:SM="https://w3id.org/italia/onto/SM/" xmlns:CLV="https://w3id.org/italia/onto/CLV" xmlns:COV="https://w3id.org/italia/onto/COV/" xmlns:l0="https://w3id.org/italia/onto/l0/" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:cerif="http://eurocris.org/ontology/cerif/0.1#" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:bibo="http://purl.org/ontology/bibo/" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:org="http://www.w3.org/ns/org#" xmlns:vcard="http://www.w3.org/2006/vcard/ns#" xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" xmlns:cov="https://w3id.org/italia/onto/COV" xmlns:schemaorg="https://schema.org/">
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:SM="https://w3id.org/italia/onto/SM/"
+	xmlns:CLV="https://w3id.org/italia/onto/CLV"
+	xmlns:COV="https://w3id.org/italia/onto/COV/"
+	xmlns:l0="https://w3id.org/italia/onto/l0/"
+	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:cerif="http://eurocris.org/ontology/cerif/0.1#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:bibo="http://purl.org/ontology/bibo/"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:org="http://www.w3.org/ns/org#"
+	xmlns:vcard="http://www.w3.org/2006/vcard/ns#"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	xmlns:cov="https://w3id.org/italia/onto/COV"
+	xmlns:schemaorg="https://schema.org/">
 
-	<org:Organization rdf:about="https://w3id.org/ecodigit/organization/cnr">
+	<org:Organization
+		rdf:about="https://w3id.org/ecodigit/organization/cnr">
 
-		<foaf:name xml:lang="it">Consiglio Nazionale delle Ricerche</foaf:name>
+		<foaf:name xml:lang="it">Consiglio Nazionale delle Ricerche
+		</foaf:name>
 		<foaf:name xml:lang="en">National Research Council</foaf:name>
 		<foaf:acronym>CNR</foaf:acronym>
 		<COV:hasLogo>
-			<foaf:Image rdf:about="http://www.cnr.it/images/logoCNR154x154.png" />
+			<foaf:Image
+				rdf:about="http://www.cnr.it/images/logoCNR154x154.png" />
 		</COV:hasLogo>
-		<l0:description>Il Consiglio Nazionale delle Ricerche (CNR) è Ente pubblico nazionale di ricerca con competenza scientifica generale, vigilato dal Ministro dell'Istruzione, dell'Università e della Ricerca (MIUR). E' dotato di personalità giuridica di diritto pubblico e di autonomia scientifica, finanziaria, organizzativa, patrimoniale e contabile. Il CNR, in un quadro di cooperazione e integrazione europea, ha il compito di svolgere, promuovere, trasferire, valutare e valorizzare ricerche nei principali settori della conoscenza. E di applicarne i risultati per lo sviluppo scientifico, culturale, tecnologico, economico e sociale del Paese. La rete scientifica del CNR è composta da oltre 100 Istituti, articolati in 7 Dipartimenti, con circa 8.000 dipendenti. Le dimensioni, l'articolazione
-			e la diffusione su tutto il territorio nazionale fanno del CNR il più grande Ente di ricerca italiano, caratterizzato da un elevato grado di multidisciplinarietà che lo distingue da tutti gli altri Enti, e uno dei maggiori a livello internazionale.
-			In coerenza con il Programma Nazionale della Ricerca (PNR), con gli atti di indirizzo e con le direttive adottati dal Ministro, il CNR: svolge, promuove e coordina attivit� di ricerca fondamentale ed applicata di eccellenza; promuove l'internazionalizzazione del sistema italiano della ricerca scientifica e tecnologica al fine di accrescerne competitivit� e visibilit�. Partecipa ai grandi programmi di ricerca, compreso il coordinamento delle attivit� polari, e agli organismi internazionali garantendo la collaborazione con enti ed istituzioni di
-			altri paesi nel campo scientif�co-tccnologico e nella definizione della normativa tecnica. Partecipa alla realizzazione dello spazio europeo della ricerca e dell'innovazione; propone e, anche su affidamento del Governo, coordina e svolge progetti strategici di ricerca di interesse nazionale in collaborazione con universit� e imprese, tenendo conto delle esigenze delle regioni in materia di ricerca e innovazione; promuove la formazione e la crescita scientifica dei ricercatori attraverso borse di studio e assegni di ricerca. Promuove, inoltre, sulla base di apposite convenzioni con le universit� corsi di dottorato di ricerca anche con il coinvolgimento del mondo imprenditoriale; contribuisce all'analisi della congiuntura scientifica nazionale ed internazionale e delle sue prospettive di
-			sviluppo; d� supporto alle istituzioni internazionali dell'Unione Europea, nazionali e regionali nella valutazione e nel monitoraggio dei programmi scientifici; collabora con le universit� e con gli altri enti di ricerca per la promozione delle conoscenze scientifiche e tecnologiche e per la condivisione di infrastrutture; collabora con le regioni e le autonomie locali, al fine di favorire lo sviluppo delle specifiche realt� produttive e del territorio; promuove la valorizzazione e l'utilizzazione dei risultati della ricerca; promuove la diffusione della conoscenza nella societ� anche attraverso proprie iniziative editoriali; sostiene nuove idee progettuali e nuovi settori emergenti attraverso iniziative di eccellenza; fornisce attivit� di consulenza, certificazione e supporto tecnico
-			scientifico alle amministrazioni pubbliche nonch� servizi a terzi in regime di diritto privato; pu� promuovere, concorrere alla costituzione o partecipare a fondi di investimento insieme ad investitori pubblici e privati ai sensi e per le finalit� di cui all'articolo 16 del decreto di riordino.
+		<l0:description>Il Consiglio Nazionale delle Ricerche (CNR) è Ente
+			pubblico nazionale di ricerca con competenza scientifica generale,
+			vigilato dal Ministro dell'Istruzione, dell'Università e della
+			Ricerca (MIUR). E' dotato di personalità giuridica di diritto
+			pubblico e di autonomia scientifica, finanziaria, organizzativa,
+			patrimoniale e contabile. Il CNR, in un quadro di cooperazione e
+			integrazione europea, ha il compito di svolgere, promuovere,
+			trasferire, valutare e valorizzare ricerche nei principali settori
+			della conoscenza. E di applicarne i risultati per lo sviluppo
+			scientifico, culturale, tecnologico, economico e sociale del Paese.
+			La rete scientifica del CNR è composta da oltre 100 Istituti,
+			articolati in 7 Dipartimenti, con circa 8.000 dipendenti. Le
+			dimensioni, l'articolazione
+			e la diffusione su tutto il territorio
+			nazionale fanno del CNR il più grande Ente di ricerca italiano,
+			caratterizzato da un elevato grado di multidisciplinarietà che lo
+			distingue da tutti gli altri Enti, e uno dei maggiori a livello
+			internazionale.
+			In coerenza con il Programma Nazionale della Ricerca
+			(PNR), con gli atti di indirizzo e con le direttive adottati dal
+			Ministro, il CNR: svolge, promuove e coordina attivit� di ricerca
+			fondamentale ed applicata di eccellenza; promuove
+			l'internazionalizzazione del sistema italiano della ricerca
+			scientifica e tecnologica al fine di accrescerne competitivit� e
+			visibilit�. Partecipa ai grandi programmi di ricerca, compreso il
+			coordinamento delle attivit� polari, e agli organismi internazionali
+			garantendo la collaborazione con enti ed istituzioni di
+			altri paesi
+			nel campo scientif�co-tccnologico e nella definizione della normativa
+			tecnica. Partecipa alla realizzazione dello spazio europeo della
+			ricerca e dell'innovazione; propone e, anche su affidamento del
+			Governo, coordina e svolge progetti strategici di ricerca di
+			interesse nazionale in collaborazione con universit� e imprese,
+			tenendo conto delle esigenze delle regioni in materia di ricerca e
+			innovazione; promuove la formazione e la crescita scientifica dei
+			ricercatori attraverso borse di studio e assegni di ricerca.
+			Promuove, inoltre, sulla base di apposite convenzioni con le
+			universit� corsi di dottorato di ricerca anche con il coinvolgimento
+			del mondo imprenditoriale; contribuisce all'analisi della congiuntura
+			scientifica nazionale ed internazionale e delle sue prospettive di
+			sviluppo; d� supporto alle istituzioni internazionali dell'Unione
+			Europea, nazionali e regionali nella valutazione e nel monitoraggio
+			dei programmi scientifici; collabora con le universit� e con gli
+			altri enti di ricerca per la promozione delle conoscenze scientifiche
+			e tecnologiche e per la condivisione di infrastrutture; collabora con
+			le regioni e le autonomie locali, al fine di favorire lo sviluppo
+			delle specifiche realt� produttive e del territorio; promuove la
+			valorizzazione e l'utilizzazione dei risultati della ricerca;
+			promuove la diffusione della conoscenza nella societ� anche
+			attraverso proprie iniziative editoriali; sostiene nuove idee
+			progettuali e nuovi settori emergenti attraverso iniziative di
+			eccellenza; fornisce attivit� di consulenza, certificazione e
+			supporto tecnico
+			scientifico alle amministrazioni pubbliche nonch�
+			servizi a terzi in regime di diritto privato; pu� promuovere,
+			concorrere alla costituzione o partecipare a fondi di investimento
+			insieme ad investitori pubblici e privati ai sensi e per le finalit�
+			di cui all'articolo 16 del decreto di riordino.
 		</l0:description>
 
 		<foaf:phone>+390649931</foaf:phone>
-		<foaf:mbox rdf:resource="mailto:protocollo-ammcen@pec.cnr.it"></foaf:mbox>
+		<foaf:mbox
+			rdf:resource="mailto:protocollo-ammcen@pec.cnr.it"></foaf:mbox>
 		<foaf:homepage rdf:resource="http://www.cnr.it"></foaf:homepage>
 		<SM:hasContactPoint>
 			<SM:ContactPoint>
@@ -26,7 +98,8 @@
 					<SM:Telephone>
 						<SM:telephoneNumber>+39064461954</SM:telephoneNumber>
 						<!-- Entità che identifica i fax nel vocabolario controllato dell'AgiD -->
-						<SM:hasTelephoneType rdf:resource="https://w3id.org/italia/controlled-vocabulary/classifications-for-public-services/channel/033" />
+						<SM:hasTelephoneType
+							rdf:resource="https://w3id.org/italia/controlled-vocabulary/classifications-for-public-services/channel/033" />
 					</SM:Telephone>
 				</SM:hasTelephone>
 			</SM:ContactPoint>
@@ -36,7 +109,8 @@
 			<org:Site geo:lat="41.900743" geo:long="12.513092">
 				<CLV:hasAddress>
 					<CLV:Address>
-						<CLV:fullAddress>Piazzale Aldo Moro,7 - 00185, Roma, Italia</CLV:fullAddress>
+						<CLV:fullAddress>Piazzale Aldo Moro,7 - 00185, Roma, Italia
+						</CLV:fullAddress>
 					</CLV:Address>
 				</CLV:hasAddress>
 			</org:Site>
@@ -44,24 +118,29 @@
 
 
 		<org:hasMember>
-			<foaf:Person rdf:about="https://w3id.org/ecodigit/person/massimo_inguscio">
+			<foaf:Person
+				rdf:about="https://w3id.org/ecodigit/person/massimo_inguscio">
 				<foaf:givenname>Massimo</foaf:givenname>
 				<foaf:family_name>Inguscio</foaf:family_name>
 				<foaf:name>Massimo Inguscio</foaf:name>
 				<foaf:title>Prof</foaf:title>
-				<foaf:img rdf:resource="https://www.cnr.it/sites/default/files/public/media/organizzazione/inguscio_img.jpg" />
+				<foaf:img
+					rdf:resource="https://www.cnr.it/sites/default/files/public/media/organizzazione/inguscio_img.jpg" />
 				<foaf:mbox rdf:resource="mailto:presidenza@cnr.it" />
 				<foaf:phone>+390649933200</foaf:phone>
 				<foaf:phone>+390649933246</foaf:phone>
 				<org:hasMembership>
 					<org:Membership>
 						<org:role>
-							<org:Role rdf:about="https://w3id.org/ecodigit/role/presidente">
+							<org:Role
+								rdf:about="https://w3id.org/ecodigit/role/presidente">
 								<rdfs:label>Presidente</rdfs:label>
 							</org:Role>
 						</org:role>
-						<org:organization rdf:resource="https://w3id.org/ecodigit/organization/cnr" />
-						<org:member rdf:resource="https://w3id.org/ecodigit/person/massimo_inguscio" />
+						<org:organization
+							rdf:resource="https://w3id.org/ecodigit/organization/cnr" />
+						<org:member
+							rdf:resource="https://w3id.org/ecodigit/person/massimo_inguscio" />
 					</org:Membership>
 				</org:hasMembership>
 			</foaf:Person>
@@ -69,28 +148,38 @@
 
 	</org:Organization>
 
-	<schemaorg:CreativeWork rdf:about="https://w3id.org/ecodigit/document/CNRBrochure">
+	<schemaorg:CreativeWork
+		rdf:about="https://w3id.org/ecodigit/document/CNRBrochure">
 		<dc:title>Brochure CNR</dc:title>
 		<dc:description>Brochure CNR</dc:description>
 		<schemaorg:inLanguage>en</schemaorg:inLanguage>
-		<schemaorg:mainEntity rdf:resource="https://w3id.org/ecodigit/organization/cnr" />
-		<schemaorg:url rdf:resource="http://www.cnr.it/sitocnr/Englishversion/brochureCNR_ENG.pdf" />
+		<schemaorg:mainEntity
+			rdf:resource="https://w3id.org/ecodigit/organization/cnr" />
+		<schemaorg:url
+			rdf:resource="http://www.cnr.it/sitocnr/Englishversion/brochureCNR_ENG.pdf" />
 	</schemaorg:CreativeWork>
 
-	<schemaorg:DigitalDocument rdf:about="https://w3id.org/ecodigit/document/Inguscio_curriculum_it">
+	<schemaorg:DigitalDocument
+		rdf:about="https://w3id.org/ecodigit/document/Inguscio_curriculum_it">
 		<dc:title>Curriculum Massimo Inguscio (italiano)</dc:title>
-		<dc:description>Curriculum Massimo Inguscio (italiano)</dc:description>
+		<dc:description>Curriculum Massimo Inguscio (italiano)
+		</dc:description>
 		<schemaorg:inLanguage>it</schemaorg:inLanguage>
-		<schemaorg:mainEntity rdf:resource="https://w3id.org/ecodigit/person/massimo_inguscio" />
-		<schemaorg:url rdf:resource="https://www.cnr.it/sites/default/files/public/media/organizzazione/CV_Inguscio_IT.pdf" />
+		<schemaorg:mainEntity
+			rdf:resource="https://w3id.org/ecodigit/person/massimo_inguscio" />
+		<schemaorg:url
+			rdf:resource="https://www.cnr.it/sites/default/files/public/media/organizzazione/CV_Inguscio_IT.pdf" />
 	</schemaorg:DigitalDocument>
 
-	<schemaorg:DigitalDocument rdf:about="https://w3id.org/ecodigit/document/Inguscio_curriculum_en">
+	<schemaorg:DigitalDocument
+		rdf:about="https://w3id.org/ecodigit/document/Inguscio_curriculum_en">
 		<dc:title>Curriculum Massimo Inguscio (english)</dc:title>
 		<dc:description>Curriculum Massimo Inguscio (english)</dc:description>
 		<schemaorg:inLanguage>en</schemaorg:inLanguage>
-		<schemaorg:mainEntity rdf:resource="https://w3id.org/ecodigit/person/massimo_inguscio" />
-		<schemaorg:url rdf:resource="https://www.cnr.it/sites/default/files/public/media/organizzazione/CV_Inguscio_EN.pdf" />
+		<schemaorg:mainEntity
+			rdf:resource="https://w3id.org/ecodigit/person/massimo_inguscio" />
+		<schemaorg:url
+			rdf:resource="https://www.cnr.it/sites/default/files/public/media/organizzazione/CV_Inguscio_EN.pdf" />
 	</schemaorg:DigitalDocument>
 </rdf:RDF>
 
