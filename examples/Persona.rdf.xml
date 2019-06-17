@@ -8,7 +8,7 @@
 	xmlns:bibo="http://purl.org/ontology/bibo/"
 	xmlns:dcterms="http://purl.org/dc/terms/"
 	xmlns:org="http://www.w3.org/ns/org#"
-	xmlns:CLV="https://w3id.org/italia/onto/CLV"
+	xmlns:CLV="https://w3id.org/italia/onto/CLV/"
 	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
 	xmlns:curric="https://www.bbc.co.uk/ontologies/curriculum/"
 	xmlns:RO="https://w3id.org/italia/onto/RO/"
@@ -17,6 +17,7 @@
 	xmlns:l0="https://w3id.org/italia/onto/l0/"
 	xmlns:TI="https://w3id.org/italia/onto/TI/"
 	xmlns:SM="https://w3id.org/italia/onto/SM/"
+	xmlns:prov="http://www.w3.org/ns/prov#"
 	xmlns:language="https://w3id.org/italia/onto/Language/"
 	xmlns:ecodigit-eas="https://w3id.org/ecodigit/ontology/eas/">
 
@@ -156,7 +157,7 @@
 		<foaf:made>
 			<rdf:Description
 				rdf:about="https://w3id.org/ecodigit/publication/Asprino2018Empirical">
-				<rdfs:label xml:lang="en">><![CDATA[Empirical Analysis of Foundational Distinctions in Linked Open Data]]></rdfs:label>
+				<rdfs:label xml:lang="en"><![CDATA[Empirical Analysis of Foundational Distinctions in Linked Open Data]]></rdfs:label>
 			</rdf:Description>
 		</foaf:made>
 
@@ -179,6 +180,19 @@
 
 
 	</foaf:Person>
+
+	<!-- Provenance -->
+	<prov:Entity
+		rdf:about="https://w3id.org/ecodigit/person/luigi_asprino">
+		<prov:wasGeneratedBy>
+			<prov:Activity>
+				<rdfs:comment><![CDATA[Attività di inserimento, unione e triplificazione delle informazioni riguardanti la persona]]></rdfs:comment>
+				<prov:wasAssociatedWith
+					rdf:resource="https://w3id.org/italia/data/organization/support-unit/cnr-Z6HZEH/stlab" />
+				<prov:used rdf:resource="http://luigiasprino.it#me" />
+			</prov:Activity>
+		</prov:wasGeneratedBy>
+	</prov:Entity>
 
 
 
