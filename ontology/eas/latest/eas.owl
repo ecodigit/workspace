@@ -23,6 +23,7 @@
         <owl:versionIRI rdf:resource="https://w3id.org/ecodigit/ontology/eas/0.1/"/>
         <owl:imports rdf:resource="http://purl.org/ontology/bibo/"/>
         <owl:imports rdf:resource="http://xmlns.com/foaf/0.1/"/>
+        <owl:imports rdf:resource="https://w3id.org/ecodigit/ontology/grade"/>
         <owl:imports rdf:resource="https://w3id.org/italia/onto/COV/"/>
         <owl:imports rdf:resource="https://w3id.org/italia/onto/CPV/"/>
         <owl:imports rdf:resource="https://w3id.org/italia/onto/Language/"/>
@@ -358,6 +359,12 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/ecodigit/ontology/eas/leadsTo"/>
                 <owl:someValuesFrom rdf:resource="https://w3id.org/ecodigit/ontology/eas/Certification"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ecodigit/ontology/grade/hasGrade"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/ecodigit/ontology/grade/Grade"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
