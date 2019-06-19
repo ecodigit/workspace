@@ -127,7 +127,7 @@
 						<ecodigit-eas:hasTrainingOutcome>
 							<bibo:Thesis
 								rdf:about="https://w3id.org/ecodigit/publication/Asprino2019Engineering">
-								<rdfs:label xml:lang="en">><![CDATA[Engineering Background Knowledge for Social Robots]]></rdfs:label>
+								<rdfs:label xml:lang="en"><![CDATA[Engineering Background Knowledge for Social Robots]]></rdfs:label>
 							</bibo:Thesis>
 						</ecodigit-eas:hasTrainingOutcome>
 						<ecodigit-eas:leadsTo>
@@ -160,7 +160,7 @@
 
 		<!-- Lista competenze -->
 		<ecodigit-eas:hasExpertise>
-			<ecodigit-eas:ExpertiseAndSkill>
+			<ecodigit-eas:ExpertiseAndSkill rdf:about="https://w3id.org/ecodigit/skill/programmazione_java">
 				<rdfs:label>Programmazione Java</rdfs:label>
 				<rdfs:comment>Programmazione Java</rdfs:comment>
 			</ecodigit-eas:ExpertiseAndSkill>
