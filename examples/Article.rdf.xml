@@ -13,6 +13,7 @@
 	xmlns:literal="http://www.essepuntato.it/2010/06/literalreification/"
 	xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/"
 	xmlns:schemaorg="https://schema.org/"
+	xmlns:frbr="http://purl.org/vocab/frbr/core#"
 	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#">
 
 
@@ -117,73 +118,76 @@
 			</rdf:Description>
 		</dcterms:isPartOf>
 
-		<dc:creator>
+		<dc:creator><![CDATA[Lodi, Giorgia and Asprino, Luigi and Nuzzolese, Andrea Giovanni and Presutti, Valentina and Gangemi, Aldo and Recupero, Diego Reforgiato and Veninata, Chiara and Orsini, Annarita]]></dc:creator>
+
+		<frbr:creator>
 			<foaf:Person
 				rdf:about="https://w3id.org/ecodigit/person/giorgia.lodi">
 				<foaf:givenname>Giorgia</foaf:givenname>
 				<foaf:family_name>Lodi</foaf:family_name>
 			</foaf:Person>
-		</dc:creator>
+		</frbr:creator>
 
 
-		<dc:creator>
+		<frbr:creator>
 			<foaf:Person
 				rdf:about="https://w3id.org/ecodigit/person/luigi.asprino">
 				<foaf:givenname>Luigi</foaf:givenname>
 				<foaf:family_name>Asprino</foaf:family_name>
 			</foaf:Person>
-		</dc:creator>
+		</frbr:creator>
 
-		<dc:creator>
+		<frbr:creator>
 			<foaf:Person
 				rdf:about="https://w3id.org/ecodigit/person/andreagiovanni.nuzzolese">
 				<foaf:givenname>Andrea Giovanni</foaf:givenname>
 				<foaf:family_name>Nuzzolese</foaf:family_name>
 			</foaf:Person>
-		</dc:creator>
+		</frbr:creator>
 
-		<dc:creator>
+		<frbr:creator>
 			<foaf:Person
 				rdf:about="https://w3id.org/ecodigit/person/valentina.presutti">
 				<foaf:givenname>Valentina</foaf:givenname>
 				<foaf:family_name>Presutti</foaf:family_name>
 			</foaf:Person>
-		</dc:creator>
+		</frbr:creator>
 
-		<dc:creator>
+		<frbr:creator>
 			<foaf:Person
 				rdf:about="https://w3id.org/ecodigit/person/aldo.gangemi">
 				<foaf:givenname>Aldo</foaf:givenname>
 				<foaf:family_name>Gangemi</foaf:family_name>
 			</foaf:Person>
-		</dc:creator>
+		</frbr:creator>
 
-		<dc:creator>
+		<frbr:creator>
 			<foaf:Person
 				rdf:about="https://w3id.org/ecodigit/person/diego.reforgiatorecupero">
 				<foaf:givenname>Diego</foaf:givenname>
 				<foaf:family_name>Reforgiato Recupero</foaf:family_name>
 			</foaf:Person>
-		</dc:creator>
+		</frbr:creator>
 
-		<dc:creator>
+		<frbr:creator>
 			<foaf:Person
 				rdf:about="https://w3id.org/ecodigit/person/chiara.veninata">
 				<foaf:givenname>Chiara</foaf:givenname>
 				<foaf:family_name>Veninata</foaf:family_name>
 			</foaf:Person>
-		</dc:creator>
+		</frbr:creator>
 
-		<dc:creator>
+		<frbr:creator>
 			<foaf:Person
 				rdf:about="https://w3id.org/ecodigit/person/annarita.orsini">
 				<foaf:givenname>Annarita</foaf:givenname>
 				<foaf:family_name>Orsini</foaf:family_name>
 			</foaf:Person>
-		</dc:creator>
+		</frbr:creator>
 
 		<bibo:authorList>
 			<rdf:Seq>
+
 				<rdf:li
 					rdf:resource="https://w3id.org/ecodigit/person/giorgia.lodi" />
 				<rdf:li
@@ -200,6 +204,7 @@
 					rdf:resource="https://w3id.org/ecodigit/person/chiara.veninata" />
 				<rdf:li
 					rdf:resource="https://w3id.org/ecodigit/person/annarita.orsini" />
+
 			</rdf:Seq>
 		</bibo:authorList>
 
@@ -232,7 +237,8 @@
 		<dc:title>Altro documento PDF associato alla pubblicazione Lodi 2017
 		</dc:title>
 		<dc:description>Altro documento PDF associato alla pubblicazione Lodi
-			2017</dc:description>
+			2017
+		</dc:description>
 		<schemaorg:inLanguage>en</schemaorg:inLanguage>
 		<schemaorg:mainEntity
 			rdf:resource="https://w3id.org/ecodigit/publication/Lodi2017Semantic" />
