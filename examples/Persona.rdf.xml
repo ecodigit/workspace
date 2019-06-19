@@ -65,8 +65,22 @@
 		<!-- Attività lavorativa -->
 		<COV:holdEmployment>
 			<COV:Employment>
-				<COV:employmentFor
-					rdf:resource="https://w3id.org/ecodigit/organization/istc" />
+				<COV:employmentFor>
+					<org:Organization
+						rdf:about="https://w3id.org/ecodigit/organization/istc">
+						<foaf:name><![CDATA[Istituto di Scienze e Tecnologie della Cognizione]]></foaf:name>
+						<foaf:acronym>ISTC</foaf:acronym>
+						<org:hasSite>
+							<org:Site geo:lat="41.905973" geo:long="12.504686">
+								<CLV:hasAddress>
+									<CLV:Address>
+										<CLV:fullAddress><![CDATA[Via San Martino della Battaglia, 44, 00185 Roma, Italia]]></CLV:fullAddress>
+									</CLV:Address>
+								</CLV:hasAddress>
+							</org:Site>
+						</org:hasSite>
+					</org:Organization>
+				</COV:employmentFor>
 				<TI:atTime>
 					<TI:TimeInterval>
 						<TI:startTime
