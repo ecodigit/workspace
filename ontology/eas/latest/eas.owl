@@ -302,32 +302,6 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
-    // Data properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- https://w3id.org/ecodigit/ontology/eas/withGrade -->
-
-    <owl:DatatypeProperty rdf:about="https://w3id.org/ecodigit/ontology/eas/withGrade">
-        <rdfs:domain rdf:resource="https://w3id.org/ecodigit/ontology/eas/Examination"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <rdfs:comment xml:lang="it">Questa proprietà rappresenta il voto associato al superamento di un Esame.</rdfs:comment>
-        <rdfs:comment xml:lang="en">This property represents the grade of an passed Exam.</rdfs:comment>
-        <rdfs:label xml:lang="it">con voto</rdfs:label>
-        <rdfs:label xml:lang="en">with grade</rdfs:label>
-        <owl:versionInfo xml:lang="it">instabile</owl:versionInfo>
-        <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
     // Classes
     //
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -390,12 +364,6 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/ecodigit/ontology/eas/hasTrainingOutcome"/>
                 <owl:allValuesFrom rdf:resource="http://purl.org/ontology/bibo/Thesis"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://w3id.org/ecodigit/ontology/eas/withGrade"/>
-                <owl:allValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="it">Questa classe rappresenta la situazione di Esame, che accerta la preparazione della Persona che ha seguito l&apos;Esperienza formativa, e porta al conseguimento di una Certificazione.</rdfs:comment>
@@ -466,7 +434,7 @@
         <rdfs:label xml:lang="it">Certificazione istituzionale</rdfs:label>
         <rdfs:label xml:lang="en">Istitutional Certification</rdfs:label>
         <owl:versionInfo xml:lang="it">instabile</owl:versionInfo>
-        <owl:versionInfo xml:lang="en">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
     </owl:Class>
     
 

@@ -1,0 +1,156 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/ecodigit/ontology/grade#"
+     xml:base="https://w3id.org/ecodigit/ontology/grade"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="https://w3id.org/ecodigit/ontology/grade"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/ecodigit/ontology/grade/hasGrade -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ecodigit/ontology/grade/hasGrade">
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="https://w3id.org/ecodigit/ontology/grade/Grade"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ecodigit/ontology/grade/hasGradingScale -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ecodigit/ontology/grade/hasGradingScale">
+        <rdfs:domain rdf:resource="https://w3id.org/ecodigit/ontology/grade/Grade"/>
+        <rdfs:range rdf:resource="https://w3id.org/ecodigit/ontology/grade/GradingScale"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ecodigit/ontology/grade/hasMaximumGrade -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ecodigit/ontology/grade/hasMaximumGrade">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/ecodigit/ontology/grade/hasGrade"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ecodigit/ontology/grade/GradingScale"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ecodigit/ontology/grade/hasMinimumGrade -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ecodigit/ontology/grade/hasMinimumGrade">
+        <rdfs:subPropertyOf rdf:resource="https://w3id.org/ecodigit/ontology/grade/hasGrade"/>
+        <rdfs:domain rdf:resource="https://w3id.org/ecodigit/ontology/grade/GradingScale"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ecodigit/ontology/grade/isGreaterThan -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ecodigit/ontology/grade/isGreaterThan">
+        <rdfs:domain rdf:resource="https://w3id.org/ecodigit/ontology/grade/LiteralReification"/>
+        <rdfs:range rdf:resource="https://w3id.org/ecodigit/ontology/grade/LiteralReification"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/ecodigit/ontology/grade/literalValue -->
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/ecodigit/ontology/grade/literalValue">
+        <rdfs:domain rdf:resource="https://w3id.org/ecodigit/ontology/grade/LiteralReification"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/ecodigit/ontology/grade/Grade -->
+
+    <owl:Class rdf:about="https://w3id.org/ecodigit/ontology/grade/Grade">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ecodigit/ontology/grade/LiteralReification"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ecodigit/ontology/grade/hasGradingScale"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/ecodigit/ontology/grade/GradingScale"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ecodigit/ontology/grade/GradingScale -->
+
+    <owl:Class rdf:about="https://w3id.org/ecodigit/ontology/grade/GradingScale">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://w3id.org/ecodigit/ontology/grade/hasMaximumGrade"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/ecodigit/ontology/grade/Grade"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://w3id.org/ecodigit/ontology/grade/hasMinimumGrade"/>
+                        <owl:someValuesFrom rdf:resource="https://w3id.org/ecodigit/ontology/grade/Grade"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ecodigit/ontology/grade/hasGrade"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/ecodigit/ontology/grade/Grade"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ecodigit/ontology/grade/LiteralReification -->
+
+    <owl:Class rdf:about="https://w3id.org/ecodigit/ontology/grade/LiteralReification">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ecodigit/ontology/grade/literalValue"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

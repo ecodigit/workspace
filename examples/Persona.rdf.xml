@@ -18,7 +18,9 @@
 	xmlns:TI="https://w3id.org/italia/onto/TI/"
 	xmlns:SM="https://w3id.org/italia/onto/SM/"
 	xmlns:prov="http://www.w3.org/ns/prov#"
+
 	xmlns:language="https://w3id.org/italia/onto/Language/"
+	xmlns:ecodigit-grade="https://w3id.org/ecodigit/ontology/grade/"
 	xmlns:ecodigit-eas="https://w3id.org/ecodigit/ontology/eas/">
 
 	<foaf:Person
@@ -123,7 +125,27 @@
 									rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-04-03</TI:startTime>
 							</TI:TemporalEntity>
 						</TI:atTime>
-						<ecodigit-eas:withGrade>100</ecodigit-eas:withGrade>
+						<ecodigit-grade:hasGrade>
+							<ecodigit-grade:Grade>
+								<ecodigit-grade:literalValue>100</ecodigit-grade:literalValue>
+								<ecodigit-grade:hasGradingScale>
+									<ecodigit-grade:GradingScale>
+										<ecodigit-grade:hasMaximumGrade>
+											<ecodigit-grade:Grade>
+												<ecodigit-grade:literalValue>100
+												</ecodigit-grade:literalValue>
+											</ecodigit-grade:Grade>
+										</ecodigit-grade:hasMaximumGrade>
+										<ecodigit-grade:hasMinimumGrade>
+											<ecodigit-grade:Grade>
+												<ecodigit-grade:literalValue>0
+												</ecodigit-grade:literalValue>
+											</ecodigit-grade:Grade>
+										</ecodigit-grade:hasMinimumGrade>
+									</ecodigit-grade:GradingScale>
+								</ecodigit-grade:hasGradingScale>
+							</ecodigit-grade:Grade>
+						</ecodigit-grade:hasGrade>
 						<ecodigit-eas:hasTrainingOutcome>
 							<bibo:Thesis
 								rdf:about="https://w3id.org/ecodigit/publication/Asprino2019Engineering">
@@ -160,7 +182,8 @@
 
 		<!-- Lista competenze -->
 		<ecodigit-eas:hasExpertise>
-			<ecodigit-eas:ExpertiseAndSkill rdf:about="https://w3id.org/ecodigit/skill/programmazione_java">
+			<ecodigit-eas:ExpertiseAndSkill
+				rdf:about="https://w3id.org/ecodigit/skill/programmazione_java">
 				<rdfs:label>Programmazione Java</rdfs:label>
 				<rdfs:comment>Programmazione Java</rdfs:comment>
 			</ecodigit-eas:ExpertiseAndSkill>
