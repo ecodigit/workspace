@@ -81,6 +81,19 @@
     
 
 
+    <!-- https://w3id.org/ecodigit/ontology/eas/hasActivity -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ecodigit/ontology/eas/hasActivity">
+        <rdfs:domain rdf:resource="https://w3id.org/ecodigit/ontology/eas/LevelInActivity"/>
+        <rdfs:range rdf:resource="https://w3id.org/italia/onto/l0/Activity"/>
+        <rdfs:label xml:lang="it">Associa il Livello in Attività con l&apos;attività a cui si riferisce.</rdfs:label>
+        <rdfs:label xml:lang="it">ha attività</rdfs:label>
+        <rdfs:label xml:lang="en">has activity</rdfs:label>
+        <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
+    </owl:ObjectProperty>
+    
+
+
     <!-- https://w3id.org/ecodigit/ontology/eas/hasCertification -->
 
     <owl:ObjectProperty rdf:about="https://w3id.org/ecodigit/ontology/eas/hasCertification">
@@ -109,6 +122,19 @@
         <owl:versionInfo xml:lang="it">instabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
         <prov:wasInfluencedBy rdf:resource="http://purl.org/ontology/cco/core#expertise"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/ecodigit/ontology/eas/hasLevel -->
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/ecodigit/ontology/eas/hasLevel">
+        <rdfs:domain rdf:resource="https://w3id.org/ecodigit/ontology/eas/LevelInActivity"/>
+        <rdfs:range rdf:resource="https://w3id.org/ecodigit/ontology/eas/Level"/>
+        <rdfs:comment xml:lang="it">Associa un Livello in Attività con il Livello a cui si riferisce.</rdfs:comment>
+        <rdfs:label xml:lang="it">ha livello</rdfs:label>
+        <rdfs:label xml:lang="en">has level</rdfs:label>
+        <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
     </owl:ObjectProperty>
     
 
@@ -321,7 +347,6 @@
 
     <owl:Class rdf:about="https://w3id.org/ecodigit/ontology/eas/CERFLevel">
         <rdfs:subClassOf rdf:resource="https://w3id.org/ecodigit/ontology/eas/Level"/>
-        <rdfs:comment xml:lang="en">Questa classe rappresenta i sei livelli (A1, A2, B1, B2, C1, C2) previsti dal Common European Framework of Reference for Languages (CEFR).</rdfs:comment>
         <rdfs:comment xml:lang="it">Questa classe rappresenta i sei livelli (A1, A2, B1, B2, C1, C2) previsti dal Quadro comune europeo di riferimento per la conoscenza delle lingue (QCER), in inglese Common European Framework of Reference for Languages (CEFR).</rdfs:comment>
         <rdfs:label xml:lang="en">CERF Level</rdfs:label>
         <rdfs:label xml:lang="it">Livello CERF</rdfs:label>
@@ -338,7 +363,14 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/ecodigit/ontology/eas/attests"/>
-                <owl:allValuesFrom rdf:resource="https://w3id.org/ecodigit/ontology/eas/Level"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="https://w3id.org/ecodigit/ontology/eas/Level"/>
+                            <rdf:Description rdf:about="https://w3id.org/ecodigit/ontology/eas/LevelInActivity"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="it">Questa classe rappresenta la documentazione, che può essere istituzionale o autodichiarata, relativa alla Certificazione del Livello di Istruzione e Competenza di una persona.</rdfs:comment>
@@ -446,6 +478,15 @@
     
 
 
+    <!-- https://w3id.org/ecodigit/ontology/eas/LanguageActivity -->
+
+    <owl:Class rdf:about="https://w3id.org/ecodigit/ontology/eas/LanguageActivity">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Activity"/>
+        <rdfs:label xml:lang="it">Attività linguistiche</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/ecodigit/ontology/eas/LanguageSkill -->
 
     <owl:Class rdf:about="https://w3id.org/ecodigit/ontology/eas/LanguageSkill">
@@ -471,6 +512,30 @@
         <owl:versionInfo xml:lang="it">instabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
         <prov:wasInfluencedBy rdf:resource="http://www.bbc.co.uk/ontologies/curriculum/Level"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/ecodigit/ontology/eas/LevelInActivity -->
+
+    <owl:Class rdf:about="https://w3id.org/ecodigit/ontology/eas/LevelInActivity">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/l0/Characteristic"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ecodigit/ontology/eas/hasActivity"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/italia/onto/l0/Activity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/ecodigit/ontology/eas/hasLevel"/>
+                <owl:someValuesFrom rdf:resource="https://w3id.org/ecodigit/ontology/eas/Level"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment xml:lang="it">Questa classe rappresenta il Livello attestato da un Certificato in una certa Attività. Questa classe è una reificazione della proprietà eas:attests. La classe permette di specificare oltre al livello attestato una eventuale attività a cui si riferisce il livello. La modellazione di questa classe è influenzata dal Common European Framework of Reference for Languages (CERF). In CERF è possibile esprimere il fatto che una persona ha raggiunto un certo livello (e.g. B1) in una attività del linguaggio (e.g. Listening Comprehension) e un altro livello (e.g. C1) in un&apos;altra attività del linguaggio (e.g. Reading Compehension).</rdfs:comment>
+        <rdfs:label xml:lang="en">Level in Activity</rdfs:label>
+        <rdfs:label xml:lang="it">Livello in Attività</rdfs:label>
+        <owl:versionInfo xml:lang="it">unstable</owl:versionInfo>
     </owl:Class>
     
 
@@ -624,6 +689,78 @@
         <rdfs:label xml:lang="it">Livello C2</rdfs:label>
         <owl:versionInfo xml:lang="it">instabile</owl:versionInfo>
         <owl:versionInfo xml:lang="en">unstable</owl:versionInfo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ecodigit/ontology/eas/Interaction -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ecodigit/ontology/eas/Interaction">
+        <rdf:type rdf:resource="https://w3id.org/ecodigit/ontology/eas/LanguageActivity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ecodigit/ontology/eas/ListeningComprehension -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ecodigit/ontology/eas/ListeningComprehension">
+        <rdf:type rdf:resource="https://w3id.org/ecodigit/ontology/eas/LanguageActivity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ecodigit/ontology/eas/Production -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ecodigit/ontology/eas/Production">
+        <rdf:type rdf:resource="https://w3id.org/ecodigit/ontology/eas/LanguageActivity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ecodigit/ontology/eas/ReadingComprehension -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ecodigit/ontology/eas/ReadingComprehension">
+        <rdf:type rdf:resource="https://w3id.org/ecodigit/ontology/eas/LanguageActivity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ecodigit/ontology/eas/Reception -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ecodigit/ontology/eas/Reception">
+        <rdf:type rdf:resource="https://w3id.org/ecodigit/ontology/eas/LanguageActivity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ecodigit/ontology/eas/SpokenInteraction -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ecodigit/ontology/eas/SpokenInteraction">
+        <rdf:type rdf:resource="https://w3id.org/ecodigit/ontology/eas/LanguageActivity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ecodigit/ontology/eas/SpokenProduction -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ecodigit/ontology/eas/SpokenProduction">
+        <rdf:type rdf:resource="https://w3id.org/ecodigit/ontology/eas/LanguageActivity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ecodigit/ontology/eas/WrittenInteraction -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ecodigit/ontology/eas/WrittenInteraction">
+        <rdf:type rdf:resource="https://w3id.org/ecodigit/ontology/eas/LanguageActivity"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/ecodigit/ontology/eas/WrittenProduction -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/ecodigit/ontology/eas/WrittenProduction">
+        <rdf:type rdf:resource="https://w3id.org/ecodigit/ontology/eas/LanguageActivity"/>
     </owl:NamedIndividual>
 </rdf:RDF>
 

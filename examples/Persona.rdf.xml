@@ -2,7 +2,6 @@
 <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 	xmlns:project="https://w3id.org/italia/onto/Project/"
-	xmlns:cerif="http://eurocris.org/ontology/cerif/0.1#"
 	xmlns:foaf="http://xmlns.com/foaf/0.1/"
 	xmlns:dc="http://purl.org/dc/elements/1.1/"
 	xmlns:bibo="http://purl.org/ontology/bibo/"
@@ -10,7 +9,6 @@
 	xmlns:org="http://www.w3.org/ns/org#"
 	xmlns:CLV="https://w3id.org/italia/onto/CLV/"
 	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
-	xmlns:curric="https://www.bbc.co.uk/ontologies/curriculum/"
 	xmlns:RO="https://w3id.org/italia/onto/RO/"
 	xmlns:CPV="https://w3id.org/italia/onto/CPV/"
 	xmlns:COV="https://w3id.org/italia/onto/COV/"
@@ -18,7 +16,6 @@
 	xmlns:TI="https://w3id.org/italia/onto/TI/"
 	xmlns:SM="https://w3id.org/italia/onto/SM/"
 	xmlns:prov="http://www.w3.org/ns/prov#"
-
 	xmlns:language="https://w3id.org/italia/onto/Language/"
 	xmlns:ecodigit-grade="https://w3id.org/ecodigit/ontology/grade/"
 	xmlns:ecodigit-eas="https://w3id.org/ecodigit/ontology/eas/">
@@ -168,12 +165,31 @@
 		<!-- Lingue conosciute -->
 		<ecodigit-eas:hasExpertise>
 			<ecodigit-eas:LanguageSkill>
-				<language:hasLanguage
-					rdf:resource="http://publications.europa.eu/resource/authority/language/ENG" />
+				<language:hasLanguage>
+					<language:Language
+						rdf:about="http://publications.europa.eu/resource/authority/language/ENG">
+						<rdfs:label xml:lang="it">Inglese</rdfs:label>
+					</language:Language>
+				</language:hasLanguage>
 				<ecodigit-eas:hasCertification>
 					<ecodigit-eas:SelfCertification>
-						<ecodigit-eas:attests
-							rdf:resource="https://w3id.org/ecodigit/ontology/eas/C1" />
+						<ecodigit-eas:attests>
+							<ecodigit-eas:LevelInActivity>
+								<ecodigit-eas:hasLevel>
+									<ecodigit-eas:Level
+										rdf:about="https://w3id.org/ecodigit/ontology/eas/C1">
+										<rdfs:label>C1</rdfs:label>
+									</ecodigit-eas:Level>
+								</ecodigit-eas:hasLevel>
+								<ecodigit-eas:hasActivity>
+									<ecodigit-eas:LanguageActivity
+										rdf:about="https://w3id.org/ecodigit/ontology/eas/WrittenProduction">
+										<rdfs:label xml:lang="it">Produzione Scritta
+										</rdfs:label>
+									</ecodigit-eas:LanguageActivity>
+								</ecodigit-eas:hasActivity>
+							</ecodigit-eas:LevelInActivity>
+						</ecodigit-eas:attests>
 					</ecodigit-eas:SelfCertification>
 				</ecodigit-eas:hasCertification>
 			</ecodigit-eas:LanguageSkill>
