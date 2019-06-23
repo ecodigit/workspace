@@ -173,6 +173,17 @@
 				</language:hasLanguage>
 				<ecodigit-eas:hasCertification>
 					<ecodigit-eas:SelfCertification>
+
+						<!-- Classificazione CUSTOM -->
+						<ecodigit-eas:attests>
+							<ecodigit-eas:Level
+								rdf:about="https://w3id.org/ecodigit/resource/BuonaConoscenza">
+								<rdfs:label xml:lang="it">Buona Conoscenza della Lingua
+								</rdfs:label>
+							</ecodigit-eas:Level>
+						</ecodigit-eas:attests>
+
+						<!-- Classificazione CERF -->
 						<ecodigit-eas:attests>
 							<ecodigit-eas:LevelInActivity>
 								<ecodigit-eas:hasLevel>
@@ -190,6 +201,26 @@
 								</ecodigit-eas:hasActivity>
 							</ecodigit-eas:LevelInActivity>
 						</ecodigit-eas:attests>
+
+						<ecodigit-eas:attests>
+							<ecodigit-eas:LevelInActivity>
+								<ecodigit-eas:hasLevel>
+									<ecodigit-eas:Level
+										rdf:about="https://w3id.org/ecodigit/ontology/eas/C1">
+										<rdfs:label>C1</rdfs:label>
+									</ecodigit-eas:Level>
+								</ecodigit-eas:hasLevel>
+								<ecodigit-eas:hasActivity>
+									<ecodigit-eas:LanguageActivity
+										rdf:about="https://w3id.org/ecodigit/ontology/eas/ListeningComprehension">
+										<rdfs:label xml:lang="it">Comprensione Orale
+										</rdfs:label>
+									</ecodigit-eas:LanguageActivity>
+								</ecodigit-eas:hasActivity>
+							</ecodigit-eas:LevelInActivity>
+						</ecodigit-eas:attests>
+
+
 					</ecodigit-eas:SelfCertification>
 				</ecodigit-eas:hasCertification>
 			</ecodigit-eas:LanguageSkill>
