@@ -14,23 +14,134 @@
 	xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/"
 	xmlns:schemaorg="https://schema.org/"
 	xmlns:frbr="http://purl.org/vocab/frbr/core#"
+	xmlns:SM="https://w3id.org/italia/onto/SM/"
+	xmlns:DUL="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#"
 	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#">
 
 
 	<rdf:Description
 		rdf:about="https://w3id.org/ecodigit/publication/Lodi2017Semantic">
 
-		<dc:title><![CDATA[Semantic Web for Cultural Heritage Valorisation]]></dc:title>
+		<!-- Vista Generica sull'oggetto -->
 
+		<rdf:type>
+			<rdf:Description
+				rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object">
+				<rdfs:label xml:lang="it">Oggetto</rdfs:label>
+			</rdf:Description>
+		</rdf:type>
+
+		<dc:title><![CDATA[Semantic Web for Cultural Heritage Valorisation]]></dc:title>
+		<dc:identifier><![CDATA[10.1007/978-3-319-54499-1_1]]></dc:identifier>
+		<dc:description xml:lang="en"><![CDATA[Cultural heritage consists of heterogeneous resources: archaeological artefacts, monuments, sites, landscapes, paintings, photos, books and expressions of human creativity, often enjoyed in different forms: tangible, intangible or digital. Each resource is usually documented, conserved and managed by cultural institutes like museums, libraries or holders of archives. These institutes make available a detailed description of the objects as catalog records. In this context, the Chapter proposes both a classification of cultural heritage data types and a process for cultural heritage valorisation through the wide-spreading Linked Open Data paradigm. The classification and process have been defined in the context of a collaboration between the Semantic Technology Laboratory of the National Research Council (STLab) and the Italian Ministry of Cultural Heritage and Activities and Tourism (MIBACT) that the Chapter describes, although we claim they are sufficiently general to be adopted in every cultural heritage scenario. In particular, the Chapter introduces both a suite of ontology modules named Cultural-ON to model the principal elements identified in the cultural heritage data type classification, and the process we employed for data valorisation purposes. To this end, semantic technologies are exploited; that is, technologies that allow us to conceptualise and describe the meaning of data forming the cultural heritage and including such entities as places, institutions, cultural heritage events, availability, etc.. These entities have special characteristics and are connected with each other in a profound way. The result is a knowledge base consisting of semantic interconnections with also other data available in the Web to be exploited according to different tasks and users preferences. By navigating the semantic relationships between the various objects of the knowledge base, new semantic paths can be revealed and utilised with the aim to develop innovative services and applications. The process is compliant with Linked Open Data and W3C Semantic Web best practices so that to enable a wider promotion of cultural heritage, and of sharing and reuse of cultural heritage data in the Web. The Chapter concludes presenting a number of methodological principles and lessons learnt from the STLab/MIBACT collaboration that are applicable to any cultural heritage context and, in some cases, also to other domains.]]></dc:description>
 		<dc:language>en</dc:language>
+		<dc:date>2017</dc:date>
+		<dc:creator><![CDATA[Lodi, Giorgia and Asprino, Luigi and Nuzzolese, Andrea Giovanni and Presutti, Valentina and Gangemi, Aldo and Recupero, Diego Reforgiato and Veninata, Chiara and Orsini, Annarita]]></dc:creator>
+
+		<dc:contributor>
+			<org:Organization
+				rdf:about="https://w3id.org/ecodigit/organization/stlab">
+				<foaf:name>Semantic Technology Laboratory</foaf:name>
+			</org:Organization>
+		</dc:contributor>
+
+		<dc:coverage>
+			<rdf:Description
+				rdf:about="http://sws.geonames.org/3175395/">
+				<rdfs:label xml:lang="it">Italia</rdfs:label>
+			</rdf:Description>
+		</dc:coverage>
+
+		<dcterms:subject>
+			<rdf:Description
+				rdf:about="http://dbpedia.org/resource/Cultural_heritage">
+				<rdfs:label xml:lang="en">Cultural Heritage</rdfs:label>
+				<rdfs:label xml:lang="it">Patrimonio Culturale</rdfs:label>
+			</rdf:Description>
+		</dcterms:subject>
+
+		<dcterms:subject>
+			<rdf:Description
+				rdf:about="http://dbpedia.org/resource/Linked_Data">
+				<rdfs:label xml:lang="en">Linked Data</rdfs:label>
+				<rdfs:label xml:lang="it">Linked Data</rdfs:label>
+			</rdf:Description>
+		</dcterms:subject>
+
+		<dcterms:rightsHolder>
+			<org:Organization
+				rdf:about="https://w3id.org/ecodigit/organization/Springer">
+				<foaf:name>Springer</foaf:name>
+			</org:Organization>
+		</dcterms:rightsHolder>
+
+		<dc:relation>
+			<rdf:Description
+				rdf:about="https://w3id.org/ecodigit/publication/Carriero2019">
+				<dc:title><![CDATA[ArCo: the Italian Cultural Heritage Knowledge Graph]]></dc:title>
+				<fabio:hasURL
+					rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"><![CDATA[https://arxiv.org/abs/1905.02840]]></fabio:hasURL>
+			</rdf:Description>
+		</dc:relation>
+
+		<SM:URL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"><![CDATA[https://link.springer.com/chapter/10.1007/978-3-319-54499-1_1]]></SM:URL>
+
+		<frbr:creator>
+			<foaf:Person
+				rdf:about="https://w3id.org/ecodigit/person/giorgia.lodi">
+				<foaf:name>Giorgia Lodi</foaf:name>
+			</foaf:Person>
+		</frbr:creator>
+		<frbr:creator>
+			<foaf:Person
+				rdf:about="https://w3id.org/ecodigit/person/luigi.asprino">
+				<foaf:name>Luigi Asprino</foaf:name>
+			</foaf:Person>
+		</frbr:creator>
+		<frbr:creator>
+			<foaf:Person
+				rdf:about="https://w3id.org/ecodigit/person/andreagiovanni.nuzzolese">
+				<foaf:name>Andrea Giovanni Nuzzolese</foaf:name>
+				<foaf:givenname>Andrea Giovanni</foaf:givenname>
+				<foaf:family_name>Nuzzolese</foaf:family_name>
+			</foaf:Person>
+		</frbr:creator>
+		<frbr:creator>
+			<foaf:Person
+				rdf:about="https://w3id.org/ecodigit/person/valentina.presutti">
+				<foaf:name>Valentina Presutti</foaf:name>
+			</foaf:Person>
+		</frbr:creator>
+		<frbr:creator>
+			<foaf:Person
+				rdf:about="https://w3id.org/ecodigit/person/aldo.gangemi">
+				<foaf:name>Aldo Gangemi</foaf:name>
+			</foaf:Person>
+		</frbr:creator>
+		<frbr:creator>
+			<foaf:Person
+				rdf:about="https://w3id.org/ecodigit/person/diego.reforgiatorecupero">
+				<foaf:name>Diego Reforgiato Recupero</foaf:name>
+			</foaf:Person>
+		</frbr:creator>
+		<frbr:creator>
+			<foaf:Person
+				rdf:about="https://w3id.org/ecodigit/person/chiara.veninata">
+				<foaf:name>Chiara Veninata</foaf:name>
+			</foaf:Person>
+		</frbr:creator>
+		<frbr:creator>
+			<foaf:Person
+				rdf:about="https://w3id.org/ecodigit/person/annarita.orsini">
+				<foaf:name>Annarita Orsini</foaf:name>
+			</foaf:Person>
+		</frbr:creator>
+
+		<!-- Vista particolare per pubblicazioni -->
+
 		<bibo:pageStart>3</bibo:pageStart>
 		<bibo:pageEnd>37</bibo:pageEnd>
 		<dcterms:extent>35</dcterms:extent>
-		<dc:date>2017</dc:date>
-		<fabio:hasURL
-			rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://link.springer.com/chapter/10.1007/978-3-319-54499-1_1
-		</fabio:hasURL>
-
 
 		<datacite:hasIdentifier>
 			<datacite:ResourceIdentifier>
@@ -57,11 +168,33 @@
 				</datacite:usesIdentifierScheme>
 			</datacite:ResourceIdentifier>
 		</datacite:hasIdentifier>
-		<prism:keyword>Semantic Web</prism:keyword>
-		<prism:keyword>Linked Open Data</prism:keyword>
-		<prism:keyword>Cultural Heritage</prism:keyword>
 		<bibo:doi><![CDATA[10.1007/978-3-319-54499-1_1]]></bibo:doi>
-		<dc:identifier><![CDATA[10.1007/978-3-319-54499-1_1]]></dc:identifier>
+
+		<datacite:hasIdentifier>
+			<datacite:ResourceIdentifier>
+				<literal:hasLiteralValue><![CDATA[978-3-319-54498-4]]></literal:hasLiteralValue>
+				<datacite:usesIdentifierScheme>
+					<!-- Usare Vocabolario datacite https://sparontologies.github.io/datacite/current/datacite.html 
+						per i resource identifier schema più comuni: arkni, arxivni, bibcodeni, doini, 
+						ean13ni, eissnni, handleni, infourini, isbnni, issnni, istcni, lissnni, local 
+						resource identifier schemeni, lsidni, nihmsidni, ocini, piini, pmcidni, pmidni, 
+						purlni, sicini, upcni, urini, urlni, urnniark, arxiv, bibcode, doi, ean13, 
+						eissn, handle, infouri, isbn, issn, istc, lissn, local resource identifier 
+						scheme, lsid, nihmsid, oci, pii, pmcid, pmid, purl, sici, upc, uri, url, 
+						urn. -->
+					<!-- per quelli non definiti usare il seguente schema di uri https://w3id.org/ecodigit/resource/[nome 
+						schema] e.g. https://w3id.org/ecodigit/resource/googlescholar specificando 
+						il nome del servizio (e.g. Google Scholar) e la URL alla homepage -->
+					<datacite:ResourceIdentifierScheme
+						rdf:about="http://purl.org/spar/datacite/isbn">
+						<rdfs:label>ISBN</rdfs:label>
+					</datacite:ResourceIdentifierScheme>
+				</datacite:usesIdentifierScheme>
+			</datacite:ResourceIdentifier>
+		</datacite:hasIdentifier>
+		<bibo:isbn><![CDATA[978-3-319-54498-4]]></bibo:isbn>
+
+
 		<rdf:type>
 			<rdf:Description
 				rdf:about="http://purl.org/spar/fabio/Chapter">
@@ -80,19 +213,16 @@
 				<rdfs:label xml:lang="it">Contributo in volume</rdfs:label>
 			</rdf:Description>
 		</rdf:type>
-		<rdf:type>
-			<rdf:Description
-				rdf:about="http://purl.org/vocab/frbr/core#Work">
-				<rdfs:label xml:lang="it">Lavoro</rdfs:label>
-			</rdf:Description>
-		</rdf:type>
 
-		<bibo:abstract><![CDATA[Cultural heritage consists of heterogeneous resources: archaeological artefacts, monuments, sites, landscapes, paintings, photos, books and expressions of human creativity, often enjoyed in different forms: tangible, intangible or digital. Each resource is usually documented, conserved and managed by cultural institutes like museums, libraries or holders of archives. These institutes make available a detailed description of the objects as catalog records. In this context, the Chapter proposes both a classification of cultural heritage data types and a process for cultural heritage valorisation through the wide-spreading Linked Open Data paradigm. The classification and process have been defined in the context of a collaboration between the Semantic Technology Laboratory of the National Research Council (STLab) and the Italian Ministry of Cultural Heritage and Activities and Tourism (MIBACT) that the Chapter describes, although we claim they are sufficiently general to be adopted in every cultural heritage scenario. In particular, the Chapter introduces both a suite of ontology modules named Cultural-ON to model the principal elements identified in the cultural heritage data type classification, and the process we employed for data valorisation purposes. To this end, semantic technologies are exploited; that is, technologies that allow us to conceptualise and describe the meaning of data forming the cultural heritage and including such entities as places, institutions, cultural heritage events, availability, etc.. These entities have special characteristics and are connected with each other in a profound way. The result is a knowledge base consisting of semantic interconnections with also other data available in the Web to be exploited according to different tasks and users preferences. By navigating the semantic relationships between the various objects of the knowledge base, new semantic paths can be revealed and utilised with the aim to develop innovative services and applications. The process is compliant with Linked Open Data and W3C Semantic Web best practices so that to enable a wider promotion of cultural heritage, and of sharing and reuse of cultural heritage data in the Web. The Chapter concludes presenting a number of methodological principles and lessons learnt from the STLab/MIBACT collaboration that are applicable to any cultural heritage context and, in some cases, also to other domains.]]></bibo:abstract>
-		<dc:description><![CDATA[Cultural heritage consists of heterogeneous resources: archaeological artefacts, monuments, sites, landscapes, paintings, photos, books and expressions of human creativity, often enjoyed in different forms: tangible, intangible or digital. Each resource is usually documented, conserved and managed by cultural institutes like museums, libraries or holders of archives. These institutes make available a detailed description of the objects as catalog records. In this context, the Chapter proposes both a classification of cultural heritage data types and a process for cultural heritage valorisation through the wide-spreading Linked Open Data paradigm. The classification and process have been defined in the context of a collaboration between the Semantic Technology Laboratory of the National Research Council (STLab) and the Italian Ministry of Cultural Heritage and Activities and Tourism (MIBACT) that the Chapter describes, although we claim they are sufficiently general to be adopted in every cultural heritage scenario. In particular, the Chapter introduces both a suite of ontology modules named Cultural-ON to model the principal elements identified in the cultural heritage data type classification, and the process we employed for data valorisation purposes. To this end, semantic technologies are exploited; that is, technologies that allow us to conceptualise and describe the meaning of data forming the cultural heritage and including such entities as places, institutions, cultural heritage events, availability, etc.. These entities have special characteristics and are connected with each other in a profound way. The result is a knowledge base consisting of semantic interconnections with also other data available in the Web to be exploited according to different tasks and users preferences. By navigating the semantic relationships between the various objects of the knowledge base, new semantic paths can be revealed and utilised with the aim to develop innovative services and applications. The process is compliant with Linked Open Data and W3C Semantic Web best practices so that to enable a wider promotion of cultural heritage, and of sharing and reuse of cultural heritage data in the Web. The Chapter concludes presenting a number of methodological principles and lessons learnt from the STLab/MIBACT collaboration that are applicable to any cultural heritage context and, in some cases, also to other domains.]]></dc:description>
+		<prism:keyword xml:lang="en">Semantic Web</prism:keyword>
+		<prism:keyword xml:lang="en">Linked Open Data</prism:keyword>
+
+
+		<bibo:abstract xml:lang="en"><![CDATA[Cultural heritage consists of heterogeneous resources: archaeological artefacts, monuments, sites, landscapes, paintings, photos, books and expressions of human creativity, often enjoyed in different forms: tangible, intangible or digital. Each resource is usually documented, conserved and managed by cultural institutes like museums, libraries or holders of archives. These institutes make available a detailed description of the objects as catalog records. In this context, the Chapter proposes both a classification of cultural heritage data types and a process for cultural heritage valorisation through the wide-spreading Linked Open Data paradigm. The classification and process have been defined in the context of a collaboration between the Semantic Technology Laboratory of the National Research Council (STLab) and the Italian Ministry of Cultural Heritage and Activities and Tourism (MIBACT) that the Chapter describes, although we claim they are sufficiently general to be adopted in every cultural heritage scenario. In particular, the Chapter introduces both a suite of ontology modules named Cultural-ON to model the principal elements identified in the cultural heritage data type classification, and the process we employed for data valorisation purposes. To this end, semantic technologies are exploited; that is, technologies that allow us to conceptualise and describe the meaning of data forming the cultural heritage and including such entities as places, institutions, cultural heritage events, availability, etc.. These entities have special characteristics and are connected with each other in a profound way. The result is a knowledge base consisting of semantic interconnections with also other data available in the Web to be exploited according to different tasks and users preferences. By navigating the semantic relationships between the various objects of the knowledge base, new semantic paths can be revealed and utilised with the aim to develop innovative services and applications. The process is compliant with Linked Open Data and W3C Semantic Web best practices so that to enable a wider promotion of cultural heritage, and of sharing and reuse of cultural heritage data in the Web. The Chapter concludes presenting a number of methodological principles and lessons learnt from the STLab/MIBACT collaboration that are applicable to any cultural heritage context and, in some cases, also to other domains.]]></bibo:abstract>
 
 		<dcterms:isPartOf>
 			<rdf:Description
-				rdf:about="https://w3id.org/ecodigit/publication/DADH">
+				rdf:about="https://w3id.org/ecodigit/publication/Hai-Jew2017Data">
 
 				<dc:title><![CDATA[Data Analytics in Digital Humanities]]></dc:title>
 
@@ -103,7 +233,19 @@
 					</rdf:Description>
 				</rdf:type>
 
-				<bibo:isbn>978-3-319-54498-4</bibo:isbn>
+				<datacite:hasIdentifier>
+					<datacite:ResourceIdentifier>
+						<literal:hasLiteralValue><![CDATA[978-3-319-54498-4]]></literal:hasLiteralValue>
+						<datacite:usesIdentifierScheme>
+							<datacite:ResourceIdentifierScheme
+								rdf:about="http://purl.org/spar/datacite/isbn">
+								<rdfs:label>ISBN</rdfs:label>
+							</datacite:ResourceIdentifierScheme>
+						</datacite:usesIdentifierScheme>
+					</datacite:ResourceIdentifier>
+				</datacite:hasIdentifier>
+
+				<bibo:isbn><![CDATA[978-3-319-54498-4]]></bibo:isbn>
 				<dc:identifier><![CDATA[978-3-319-54498-4]]></dc:identifier>
 
 				<bibo:editor>
@@ -136,77 +278,8 @@
 						</org:hasSite>
 					</org:Organization>
 				</dcterms:publisher>
-
-
 			</rdf:Description>
 		</dcterms:isPartOf>
-
-		<dc:creator><![CDATA[Lodi, Giorgia and Asprino, Luigi and Nuzzolese, Andrea Giovanni and Presutti, Valentina and Gangemi, Aldo and Recupero, Diego Reforgiato and Veninata, Chiara and Orsini, Annarita]]></dc:creator>
-
-		<frbr:creator>
-			<foaf:Person
-				rdf:about="https://w3id.org/ecodigit/person/giorgia.lodi">
-				<foaf:givenname>Giorgia</foaf:givenname>
-				<foaf:family_name>Lodi</foaf:family_name>
-			</foaf:Person>
-		</frbr:creator>
-
-
-		<frbr:creator>
-			<foaf:Person
-				rdf:about="https://w3id.org/ecodigit/person/luigi.asprino">
-				<foaf:givenname>Luigi</foaf:givenname>
-				<foaf:family_name>Asprino</foaf:family_name>
-			</foaf:Person>
-		</frbr:creator>
-
-		<frbr:creator>
-			<foaf:Person
-				rdf:about="https://w3id.org/ecodigit/person/andreagiovanni.nuzzolese">
-				<foaf:givenname>Andrea Giovanni</foaf:givenname>
-				<foaf:family_name>Nuzzolese</foaf:family_name>
-			</foaf:Person>
-		</frbr:creator>
-
-		<frbr:creator>
-			<foaf:Person
-				rdf:about="https://w3id.org/ecodigit/person/valentina.presutti">
-				<foaf:givenname>Valentina</foaf:givenname>
-				<foaf:family_name>Presutti</foaf:family_name>
-			</foaf:Person>
-		</frbr:creator>
-
-		<frbr:creator>
-			<foaf:Person
-				rdf:about="https://w3id.org/ecodigit/person/aldo.gangemi">
-				<foaf:givenname>Aldo</foaf:givenname>
-				<foaf:family_name>Gangemi</foaf:family_name>
-			</foaf:Person>
-		</frbr:creator>
-
-		<frbr:creator>
-			<foaf:Person
-				rdf:about="https://w3id.org/ecodigit/person/diego.reforgiatorecupero">
-				<foaf:givenname>Diego</foaf:givenname>
-				<foaf:family_name>Reforgiato Recupero</foaf:family_name>
-			</foaf:Person>
-		</frbr:creator>
-
-		<frbr:creator>
-			<foaf:Person
-				rdf:about="https://w3id.org/ecodigit/person/chiara.veninata">
-				<foaf:givenname>Chiara</foaf:givenname>
-				<foaf:family_name>Veninata</foaf:family_name>
-			</foaf:Person>
-		</frbr:creator>
-
-		<frbr:creator>
-			<foaf:Person
-				rdf:about="https://w3id.org/ecodigit/person/annarita.orsini">
-				<foaf:givenname>Annarita</foaf:givenname>
-				<foaf:family_name>Orsini</foaf:family_name>
-			</foaf:Person>
-		</frbr:creator>
 
 		<bibo:authorList>
 			<rdf:Seq>
@@ -230,10 +303,7 @@
 
 			</rdf:Seq>
 		</bibo:authorList>
-
-
 	</rdf:Description>
-
 
 
 	<!-- Provenance -->
@@ -250,6 +320,10 @@
 				</prov:wasAssociatedWith>
 				<prov:used
 					rdf:resource="https://doi.org/10.1007/978-3-319-54499-1_1" />
+				<prov:startedAtTime
+					rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-05-01T03:40:00Z</prov:startedAtTime>
+				<prov:endedAtTime
+					rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2019-05-01T03:40:00Z</prov:endedAtTime>
 			</prov:Activity>
 		</prov:wasGeneratedBy>
 	</prov:Entity>
@@ -265,7 +339,7 @@
 		<schemaorg:inLanguage>en</schemaorg:inLanguage>
 		<schemaorg:mainEntity
 			rdf:resource="https://w3id.org/ecodigit/publication/Lodi2017Semantic" />
-		<schemaorg:url rdf:resource="...." />
+		<schemaorg:url rdf:resource="https://testurl.org" />
 	</schemaorg:DigitalDocument>
 
 </rdf:RDF>
