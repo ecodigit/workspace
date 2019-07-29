@@ -38,6 +38,40 @@
 			</foaf:OnlineAccount>
 		</foaf:account>
 
+		<foaf:account>
+			<foaf:OnlineAccount>
+				<foaf:accountServiceHomepage
+					rdf:resource="https://scholar.google.it/" />
+				<foaf:accountName>HM_1HQUAAAAJ</foaf:accountName>
+			</foaf:OnlineAccount>
+		</foaf:account>
+
+		<foaf:account>
+			<foaf:OnlineAccount>
+				<foaf:accountServiceHomepage
+					rdf:resource="https://www.scopus.com" />
+				<foaf:accountName>57191745706</foaf:accountName>
+			</foaf:OnlineAccount>
+		</foaf:account>
+
+		<foaf:account>
+			<foaf:OnlineAccount>
+				<foaf:accountServiceHomepage
+					rdf:resource="https://www.researchgate.net" />
+				<foaf:accountName>Luigi_Asprino</foaf:accountName>
+			</foaf:OnlineAccount>
+		</foaf:account>
+
+		<foaf:account>
+			<foaf:OnlineAccount>
+				<foaf:accountServiceHomepage
+					rdf:resource="https://www.linkedin.com" />
+				<foaf:accountName>luigi-asprino-4326a741</foaf:accountName>
+			</foaf:OnlineAccount>
+		</foaf:account>
+
+
+
 		<!-- Breve descrizione della persona -->
 		<l0:description xml:lang="it"><![CDATA[Luigi Asprino è un Assistente di Ricerca presso l'Istituto di Scienze e Tecnologie della Cognizione del Consiglio Nazionale delle Ricerche. Nel 2019 ha conseguito un dottorato in Computer Science and Engineering presso l'Università di Bologna. I suoi interessi di ricerca riguardano l'Intelligenza Artificiale e l'Informatica, in particolare Knowledge Representation and Reasoning, Natural Language Processing e Machine Learning.]]></l0:description>
 		<l0:description xml:lang="en"><![CDATA[Luigi Asprino is a research assistant at the Institute of Cognitive Science and Technologies of National Research Council in Italy. He received a PhD in Computer Science and Engineering in 2019 from the University of Bologna. His research interests include Knowledge Representation and Reasoning, Natural Language Processing e Machine Learning.]]></l0:description>
@@ -78,6 +112,8 @@
 								</CLV:hasAddress>
 							</org:Site>
 						</org:hasSite>
+						<foaf:homepage
+							rdf:resource="https://www.istc.cnr.it/" />
 					</org:Organization>
 				</COV:employmentFor>
 				<TI:atTime>
@@ -106,12 +142,29 @@
 
 		<ecodigit-eas:attends>
 			<ecodigit-eas:Training>
+				<TI:atTime>
+					<TI:TemporalEntity>
+						<TI:startTime
+							rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2015-11-01</TI:startTime>
+						<TI:endTime
+							rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-04-03</TI:endTime>
+					</TI:TemporalEntity>
+				</TI:atTime>
 				<ecodigit-eas:isAttendedBy
 					rdf:resource="https://w3id.org/ecodigit/person/luigi.asprino" />
 				<ecodigit-eas:providedBy>
 					<org:Organization
 						rdf:about="https://w3id.org/ecodigit/organization/unibo">
 						<foaf:name><![CDATA[Università di Bologna]]></foaf:name>
+						<org:hasSite>
+							<org:Site>
+								<CLV:hasAddress>
+									<CLV:Address>
+										<CLV:fullAddress><![CDATA[Via Zamboni, 33, 40126 Bologna, Italia]]></CLV:fullAddress>
+									</CLV:Address>
+								</CLV:hasAddress>
+							</org:Site>
+						</org:hasSite>
 					</org:Organization>
 				</ecodigit-eas:providedBy>
 				<ecodigit-eas:includesAnExamination>
@@ -151,8 +204,14 @@
 						</ecodigit-eas:hasTrainingOutcome>
 						<ecodigit-eas:leadsTo>
 							<ecodigit-eas:IstitutionalCertification>
-								<ecodigit-eas:attests
-									rdf:resource="https://w3id.org/italia/controlled-vocabulary/classifications-for-people/education-level/RDD" />
+								<ecodigit-eas:attests>
+									<rdf:Description
+										rdf:about="https://w3id.org/italia/controlled-vocabulary/classifications-for-people/education-level/RDD">
+										<rdfs:label xml:lang="it">Dottorato di ricerca/Diploma
+											accademico di formazione alla ricerca
+										</rdfs:label>
+									</rdf:Description>
+								</ecodigit-eas:attests>
 								<ecodigit-eas:issuedBy
 									rdf:resource="https://w3id.org/ecodigit/organization/unibo" />
 							</ecodigit-eas:IstitutionalCertification>
@@ -177,9 +236,10 @@
 						<!-- Classificazione CUSTOM -->
 						<ecodigit-eas:attests>
 							<ecodigit-eas:Level
-								rdf:about="https://w3id.org/ecodigit/resource/BuonaConoscenza">
-								<rdfs:label xml:lang="it">Buona Conoscenza della Lingua
-								</rdfs:label>
+								rdf:about="https://w3id.org/ecodigit/ontology/eas/C1">
+								<l0:name xml:lang="it">C1</l0:name>
+								<l0:description xml:lang="it">Livello Avanzato
+								</l0:description>
 							</ecodigit-eas:Level>
 						</ecodigit-eas:attests>
 
@@ -189,7 +249,9 @@
 								<ecodigit-eas:hasLevel>
 									<ecodigit-eas:Level
 										rdf:about="https://w3id.org/ecodigit/ontology/eas/C1">
-										<rdfs:label>C1</rdfs:label>
+										<l0:name xml:lang="it">C1</l0:name>
+										<l0:description xml:lang="it">Livello Avanzato
+										</l0:description>
 									</ecodigit-eas:Level>
 								</ecodigit-eas:hasLevel>
 								<ecodigit-eas:hasActivity>
@@ -207,7 +269,9 @@
 								<ecodigit-eas:hasLevel>
 									<ecodigit-eas:Level
 										rdf:about="https://w3id.org/ecodigit/ontology/eas/C1">
-										<rdfs:label>C1</rdfs:label>
+										<l0:name xml:lang="it">C1</l0:name>
+										<l0:description xml:lang="it">Livello Avanzato
+										</l0:description>
 									</ecodigit-eas:Level>
 								</ecodigit-eas:hasLevel>
 								<ecodigit-eas:hasActivity>
@@ -223,6 +287,43 @@
 
 					</ecodigit-eas:SelfCertification>
 				</ecodigit-eas:hasCertification>
+
+
+				<ecodigit-eas:hasCertification>
+					<ecodigit-eas:IstitutionalCertification>
+
+						<rdfs:label xml:lang="it">Certificazione di test
+						</rdfs:label>
+
+						<ecodigit-eas:issuedBy>
+							<org:Organization
+								rdf:about="https://w3id.org/ecodigit/organization/testorganization">
+								<foaf:name><![CDATA[Test Organization]]></foaf:name>
+								<org:hasSite>
+									<org:Site>
+										<CLV:hasAddress>
+											<CLV:Address>
+												<CLV:fullAddress><![CDATA[Test address organization]]></CLV:fullAddress>
+											</CLV:Address>
+										</CLV:hasAddress>
+									</org:Site>
+								</org:hasSite>
+							</org:Organization>
+						</ecodigit-eas:issuedBy>
+
+						<ecodigit-eas:issueDate
+							rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2019-07-29</ecodigit-eas:issueDate>
+
+						<ecodigit-grade:hasGrade>
+							<ecodigit-grade:Grade>
+								<ecodigit-grade:literalValue>100</ecodigit-grade:literalValue>
+							</ecodigit-grade:Grade>
+						</ecodigit-grade:hasGrade>
+
+					</ecodigit-eas:IstitutionalCertification>
+				</ecodigit-eas:hasCertification>
+
+
 			</ecodigit-eas:LanguageSkill>
 		</ecodigit-eas:hasExpertise>
 
@@ -241,7 +342,9 @@
 		<foaf:made>
 			<rdf:Description
 				rdf:about="https://w3id.org/ecodigit/publication/Asprino2018Empirical">
+				<dc:title xml:lang="en"><![CDATA[Empirical Analysis of Foundational Distinctions in Linked Open Data]]></dc:title>
 				<rdfs:label xml:lang="en"><![CDATA[Empirical Analysis of Foundational Distinctions in Linked Open Data]]></rdfs:label>
+				<dc:date>2018</dc:date>
 			</rdf:Description>
 		</foaf:made>
 
@@ -249,18 +352,29 @@
 		<foaf:made>
 			<rdf:Description
 				rdf:about="https://w3id.org/ecodigit/publication/Lodi2017Semantic">
-				<rdfs:label xml:lang="en"><![CDATA[Semantic Web for Cultural Heritage Valorisation]]></rdfs:label>
+				<dc:title xml:lang="en"><![CDATA[Semantic Web for Cultural Heritage Valorisation]]></dc:title>
+				<dc:date>2017</dc:date>
 			</rdf:Description>
 		</foaf:made>
 
 
 		<!-- Projects -->
-		<project:hasParticipantingAgent>
+		<project:isParticipantingAgentOfProject>
 			<project:PublicInvestmentProject
 				rdf:about="https://w3id.org/ecodigit/project/ecodigit">
+				<project:projectTitle xml:lang="it"><![CDATA[Ecosistema Digitale per la fruizione e la valorizzazione dei beni e delle attività culturali del Lazio]]></project:projectTitle>
 				<rdfs:label xml:lang="it"><![CDATA[Ecosistema Digitale per la fruizione e la valorizzazione dei beni e delle attività culturali del Lazio]]></rdfs:label>
+				<project:projectAcronym>EcoDigit</project:projectAcronym>
+				<TI:hasDuration>
+					<TI:TimeInterval>
+						<TI:startTime
+							rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2018-10-02</TI:startTime>
+						<TI:endTime
+							rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-01-02</TI:endTime>
+					</TI:TimeInterval>
+				</TI:hasDuration>
 			</project:PublicInvestmentProject>
-		</project:hasParticipantingAgent>
+		</project:isParticipantingAgentOfProject>
 
 
 	</foaf:Person>
