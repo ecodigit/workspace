@@ -78,22 +78,34 @@
 
 
 		<!-- Affiliazione -->
-		<org:memberOf>
-			<org:Organization
-				rdf:about="https://w3id.org/ecodigit/organization/istc">
-				<foaf:name><![CDATA[Istituto di Scienze e Tecnologie della Cognizione]]></foaf:name>
-				<foaf:acronym>ISTC</foaf:acronym>
-				<org:hasSite>
-					<org:Site geo:lat="41.905973" geo:long="12.504686">
-						<CLV:hasAddress>
-							<CLV:Address>
-								<CLV:fullAddress><![CDATA[Via San Martino della Battaglia, 44, 00185 Roma, Italia]]></CLV:fullAddress>
-							</CLV:Address>
-						</CLV:hasAddress>
-					</org:Site>
-				</org:hasSite>
-			</org:Organization>
-		</org:memberOf>
+		<org:hasMembership>
+			<org:Membership>
+				<org:organization>
+					<org:Organization
+						rdf:about="https://w3id.org/ecodigit/organization/istc">
+						<foaf:name><![CDATA[Istituto di Scienze e Tecnologie della Cognizione]]></foaf:name>
+						<foaf:acronym>ISTC</foaf:acronym>
+						<org:hasSite>
+							<org:Site geo:lat="41.905973" geo:long="12.504686">
+								<CLV:hasAddress>
+									<CLV:Address>
+										<CLV:fullAddress><![CDATA[Via San Martino della Battaglia, 44, 00185 Roma, Italia]]></CLV:fullAddress>
+									</CLV:Address>
+								</CLV:hasAddress>
+							</org:Site>
+						</org:hasSite>
+					</org:Organization>
+				</org:organization>
+				<org:role>
+					<org:Role
+						rdf:about="https://w3id.org/ecodigit/role/assegnista_di_ricerca">
+						<l0:name xml:lang="it">Assegnista di Ricerca</l0:name>
+					</org:Role>
+				</org:role>
+			</org:Membership>
+		</org:hasMembership>
+
+
 
 		<!-- Attività lavorativa -->
 		<COV:holdEmployment>
