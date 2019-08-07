@@ -345,6 +345,18 @@
 				<dc:title xml:lang="en"><![CDATA[Empirical Analysis of Foundational Distinctions in Linked Open Data]]></dc:title>
 				<rdfs:label xml:lang="en"><![CDATA[Empirical Analysis of Foundational Distinctions in Linked Open Data]]></rdfs:label>
 				<dc:date>2018</dc:date>
+				<rdf:type>
+					<rdf:Description
+						rdf:about="http://purl.org/spar/fabio/ProceedingsPaper">
+						<rdfs:label xml:lang="en">Proceedings Paper</rdfs:label>
+					</rdf:Description>
+				</rdf:type>
+				<rdf:type>
+					<rdf:Description
+						rdf:about="https://w3id.org/ecodigit/publication/CNR_DL_TYPE_2301">
+						<rdfs:label xml:lang="it"><![CDATA[Contributo in atti di convegno]]></rdfs:label>
+					</rdf:Description>
+				</rdf:type>
 			</rdf:Description>
 		</foaf:made>
 
@@ -354,6 +366,24 @@
 				rdf:about="https://w3id.org/ecodigit/publication/Lodi2017Semantic">
 				<dc:title xml:lang="en"><![CDATA[Semantic Web for Cultural Heritage Valorisation]]></dc:title>
 				<dc:date>2017</dc:date>
+				<rdf:type>
+					<rdf:Description
+						rdf:about="http://purl.org/spar/fabio/Chapter">
+						<rdfs:label xml:lang="en">Chapter</rdfs:label>
+					</rdf:Description>
+				</rdf:type>
+				<rdf:type>
+					<rdf:Description
+						rdf:about="http://purl.org/spar/fabio/BookChapter">
+						<rdfs:label xml:lang="en">Book Chapter</rdfs:label>
+					</rdf:Description>
+				</rdf:type>
+				<rdf:type>
+					<rdf:Description
+						rdf:about="https://w3id.org/ecodigit/publication/CNR_DL_TYPE_2201">
+						<rdfs:label xml:lang="it">Contributo in volume</rdfs:label>
+					</rdf:Description>
+				</rdf:type>
 			</rdf:Description>
 		</foaf:made>
 

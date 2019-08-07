@@ -90,50 +90,104 @@
 			<foaf:Person
 				rdf:about="https://w3id.org/ecodigit/person/giorgia.lodi">
 				<foaf:name>Giorgia Lodi</foaf:name>
+				<org:memberOf>
+					<org:Organization
+						rdf:about="https://w3id.org/ecodigit/organization/istc">
+						<foaf:name><![CDATA[Istituto di Scienze e Tecnologie della Cognizione]]></foaf:name>
+						<foaf:acronym>ISTC</foaf:acronym>
+					</org:Organization>
+				</org:memberOf>
 			</foaf:Person>
 		</frbr:creator>
 		<frbr:creator>
 			<foaf:Person
 				rdf:about="https://w3id.org/ecodigit/person/luigi.asprino">
 				<foaf:name>Luigi Asprino</foaf:name>
+				<org:memberOf>
+					<org:Organization
+						rdf:about="https://w3id.org/ecodigit/organization/istc">
+						<foaf:name><![CDATA[Istituto di Scienze e Tecnologie della Cognizione]]></foaf:name>
+						<foaf:acronym>ISTC</foaf:acronym>
+					</org:Organization>
+				</org:memberOf>
 			</foaf:Person>
 		</frbr:creator>
 		<frbr:creator>
 			<foaf:Person
 				rdf:about="https://w3id.org/ecodigit/person/andreagiovanni.nuzzolese">
 				<foaf:name>Andrea Giovanni Nuzzolese</foaf:name>
-				<foaf:givenname>Andrea Giovanni</foaf:givenname>
-				<foaf:family_name>Nuzzolese</foaf:family_name>
+				<org:memberOf>
+					<org:Organization
+						rdf:about="https://w3id.org/ecodigit/organization/istc">
+						<foaf:name><![CDATA[Istituto di Scienze e Tecnologie della Cognizione]]></foaf:name>
+						<foaf:acronym>ISTC</foaf:acronym>
+					</org:Organization>
+				</org:memberOf>
 			</foaf:Person>
 		</frbr:creator>
 		<frbr:creator>
 			<foaf:Person
 				rdf:about="https://w3id.org/ecodigit/person/valentina.presutti">
 				<foaf:name>Valentina Presutti</foaf:name>
+				<org:memberOf>
+					<org:Organization
+						rdf:about="https://w3id.org/ecodigit/organization/istc">
+						<foaf:name><![CDATA[Istituto di Scienze e Tecnologie della Cognizione]]></foaf:name>
+						<foaf:acronym>ISTC</foaf:acronym>
+					</org:Organization>
+				</org:memberOf>
 			</foaf:Person>
 		</frbr:creator>
 		<frbr:creator>
 			<foaf:Person
 				rdf:about="https://w3id.org/ecodigit/person/aldo.gangemi">
 				<foaf:name>Aldo Gangemi</foaf:name>
+				<org:memberOf>
+					<org:Organization
+						rdf:about="https://w3id.org/ecodigit/organization/istc">
+						<foaf:name><![CDATA[Istituto di Scienze e Tecnologie della Cognizione]]></foaf:name>
+						<foaf:acronym>ISTC</foaf:acronym>
+					</org:Organization>
+				</org:memberOf>
 			</foaf:Person>
 		</frbr:creator>
 		<frbr:creator>
 			<foaf:Person
 				rdf:about="https://w3id.org/ecodigit/person/diego.reforgiatorecupero">
 				<foaf:name>Diego Reforgiato Recupero</foaf:name>
+				<org:memberOf>
+					<org:Organization
+						rdf:about="https://w3id.org/ecodigit/organization/istc">
+						<foaf:name><![CDATA[Istituto di Scienze e Tecnologie della Cognizione]]></foaf:name>
+						<foaf:acronym>ISTC</foaf:acronym>
+					</org:Organization>
+				</org:memberOf>
 			</foaf:Person>
 		</frbr:creator>
 		<frbr:creator>
 			<foaf:Person
 				rdf:about="https://w3id.org/ecodigit/person/chiara.veninata">
 				<foaf:name>Chiara Veninata</foaf:name>
+				<org:memberOf>
+					<org:Organization
+						rdf:about="https://w3id.org/ecodigit/organization/mibact">
+						<foaf:name><![CDATA[Ministero dei Beni e delle Attività Culturali e Turismo]]></foaf:name>
+						<foaf:acronym>MIBACT</foaf:acronym>
+					</org:Organization>
+				</org:memberOf>
 			</foaf:Person>
 		</frbr:creator>
 		<frbr:creator>
 			<foaf:Person
 				rdf:about="https://w3id.org/ecodigit/person/annarita.orsini">
 				<foaf:name>Annarita Orsini</foaf:name>
+				<org:memberOf>
+					<org:Organization
+						rdf:about="https://w3id.org/ecodigit/organization/mibact">
+						<foaf:name><![CDATA[Ministero dei Beni e delle Attività Culturali e Turismo]]></foaf:name>
+						<foaf:acronym>MIBACT</foaf:acronym>
+					</org:Organization>
+				</org:memberOf>
 			</foaf:Person>
 		</frbr:creator>
 
