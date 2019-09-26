@@ -1,0 +1,163 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:j.0="http://www.w3.org/2004/02/skos/core#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/quadri_programmatici">
+    <j.0:inScheme>
+      <j.0:ConceptScheme rdf:about="https://w3id.org/ecodigit/resource/tipologia"/>
+    </j.0:inScheme>
+    <j.0:definition>quadri programmatici</j.0:definition>
+    <j.0:prefLabel>quadri programmatici</j.0:prefLabel>
+    <rdfs:label>quadri programmatici</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/mappatura_ex_ante_e_ex_post">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/tipologia"/>
+    <j.0:definition>mappatura ex ante e ex post</j.0:definition>
+    <j.0:prefLabel>mappatura ex ante e ex post</j.0:prefLabel>
+    <rdfs:label>mappatura ex ante e ex post</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/Articolo">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/tipologia"/>
+    <j.0:definition>Articolo</j.0:definition>
+    <j.0:prefLabel>Articolo</j.0:prefLabel>
+    <rdfs:label>Articolo</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/Immagini">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/tipologia"/>
+    <j.0:definition>Immagini</j.0:definition>
+    <j.0:prefLabel>Immagini</j.0:prefLabel>
+    <rdfs:label>Immagini</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/Grafici">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/tipologia"/>
+    <j.0:definition>Grafici</j.0:definition>
+    <j.0:prefLabel>Grafici</j.0:prefLabel>
+    <rdfs:label>Grafici</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/Modelli">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/tipologia"/>
+    <j.0:definition>Modelli</j.0:definition>
+    <j.0:prefLabel>Modelli</j.0:prefLabel>
+    <rdfs:label>Modelli</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/Blogs">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/tipologia"/>
+    <j.0:definition>Blogs</j.0:definition>
+    <j.0:prefLabel>Blogs</j.0:prefLabel>
+    <rdfs:label>Blogs</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/risultati_economico-finanziari">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/tipologia"/>
+    <j.0:definition>risultati economico-finanziari</j.0:definition>
+    <j.0:prefLabel>risultati economico-finanziari</j.0:prefLabel>
+    <rdfs:label>risultati economico-finanziari</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/Visori">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/tipologia"/>
+    <j.0:definition>Visori</j.0:definition>
+    <j.0:prefLabel>Visori</j.0:prefLabel>
+    <rdfs:label>Visori</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/Scheda_informativa">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/tipologia"/>
+    <j.0:definition>Scheda informativa</j.0:definition>
+    <j.0:prefLabel>Scheda informativa</j.0:prefLabel>
+    <rdfs:label>Scheda informativa</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/governance">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/tipologia"/>
+    <j.0:definition>governance</j.0:definition>
+    <j.0:prefLabel>governance</j.0:prefLabel>
+    <rdfs:label>governance</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/Scenari">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/tipologia"/>
+    <j.0:definition>Scenari</j.0:definition>
+    <j.0:prefLabel>Scenari</j.0:prefLabel>
+    <rdfs:label>Scenari</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/Cartografia_storica">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/tipologia"/>
+    <j.0:definition>Cartografia storica</j.0:definition>
+    <j.0:prefLabel>Cartografia storica</j.0:prefLabel>
+    <rdfs:label>Cartografia storica</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/Metadati">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/tipologia"/>
+    <j.0:definition>Metadati</j.0:definition>
+    <j.0:prefLabel>Metadati</j.0:prefLabel>
+    <rdfs:label>Metadati</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/Fonti">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/tipologia"/>
+    <j.0:definition>Fonti</j.0:definition>
+    <j.0:prefLabel>Fonti</j.0:prefLabel>
+    <rdfs:label>Fonti</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/Ricostruzioni_3d_di_ambienti_virtuali">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/tipologia"/>
+    <j.0:definition>Ricostruzioni 3d di ambienti virtuali</j.0:definition>
+    <j.0:prefLabel>Ricostruzioni 3d di ambienti virtuali</j.0:prefLabel>
+    <rdfs:label>Ricostruzioni 3d di ambienti virtuali</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/Video">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/tipologia"/>
+    <j.0:definition>Video</j.0:definition>
+    <j.0:prefLabel>Video</j.0:prefLabel>
+    <rdfs:label>Video</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/SHAPE_File">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/tipologia"/>
+    <j.0:definition>SHAPE File</j.0:definition>
+    <j.0:prefLabel>SHAPE File</j.0:prefLabel>
+    <rdfs:label>SHAPE File</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/Piani_strategici">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/tipologia"/>
+    <j.0:definition>Piani strategici</j.0:definition>
+    <j.0:prefLabel>Piani strategici</j.0:prefLabel>
+    <rdfs:label>Piani strategici</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/App">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/tipologia"/>
+    <j.0:definition>App</j.0:definition>
+    <j.0:prefLabel>App</j.0:prefLabel>
+    <rdfs:label>App</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/modelli_formativi">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/tipologia"/>
+    <j.0:definition>modelli formativi</j.0:definition>
+    <j.0:prefLabel>modelli formativi</j.0:prefLabel>
+    <rdfs:label>modelli formativi</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/News_%2FEventi">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/tipologia"/>
+    <j.0:definition>News /Eventi</j.0:definition>
+    <j.0:prefLabel>News /Eventi</j.0:prefLabel>
+    <rdfs:label>News /Eventi</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/mappatura_modelli_gestione">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/tipologia"/>
+    <j.0:definition>mappatura modelli gestione</j.0:definition>
+    <j.0:prefLabel>mappatura modelli gestione</j.0:prefLabel>
+    <rdfs:label>mappatura modelli gestione</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/Cartografia_e_mappe_tematiche">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/tipologia"/>
+    <j.0:definition>Cartografia e mappe tematiche</j.0:definition>
+    <j.0:prefLabel>Cartografia e mappe tematiche</j.0:prefLabel>
+    <rdfs:label>Cartografia e mappe tematiche</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/Esercitazioni">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/tipologia"/>
+    <j.0:definition>Esercitazioni</j.0:definition>
+    <j.0:prefLabel>Esercitazioni</j.0:prefLabel>
+    <rdfs:label>Esercitazioni</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/Infographic">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/tipologia"/>
+    <j.0:definition>Infographic</j.0:definition>
+    <j.0:prefLabel>Infographic</j.0:prefLabel>
+    <rdfs:label>Infographic</rdfs:label>
+  </j.0:Concept>
+</rdf:RDF>

@@ -1,0 +1,175 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:j.0="http://www.w3.org/2004/02/skos/core#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/Modellazione_3d">
+    <j.0:inScheme>
+      <j.0:ConceptScheme rdf:about="https://w3id.org/ecodigit/resource/tematica"/>
+    </j.0:inScheme>
+    <j.0:definition>Modellazione 3d</j.0:definition>
+    <j.0:prefLabel>Modellazione 3d</j.0:prefLabel>
+    <rdfs:label>Modellazione 3d</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/Fotografie_e_rappresentazioni_artistiche">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/tematica"/>
+    <j.0:definition>Fotografie e rappresentazioni artistiche</j.0:definition>
+    <j.0:prefLabel>Fotografie e rappresentazioni artistiche</j.0:prefLabel>
+    <rdfs:label>Fotografie e rappresentazioni artistiche</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/Scavi_archeologici_e_ricostruzioni_virtuali">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/tematica"/>
+    <j.0:definition>Scavi archeologici e ricostruzioni virtuali</j.0:definition>
+    <j.0:prefLabel>Scavi archeologici e ricostruzioni virtuali</j.0:prefLabel>
+    <rdfs:label>Scavi archeologici e ricostruzioni virtuali</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/Economia_per_l%27ambiente_e_la_cultura">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/tematica"/>
+    <j.0:definition>Economia per l'ambiente e la cultura</j.0:definition>
+    <j.0:prefLabel>Economia per l'ambiente e la cultura</j.0:prefLabel>
+    <rdfs:label>Economia per l'ambiente e la cultura</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/Progettazione_e_gestione_di_sistemi_turistici">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/tematica"/>
+    <j.0:definition>Progettazione e gestione di sistemi turistici</j.0:definition>
+    <j.0:prefLabel>Progettazione e gestione di sistemi turistici</j.0:prefLabel>
+    <rdfs:label>Progettazione e gestione di sistemi turistici</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/Architettura_del_Paesaggio">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/tematica"/>
+    <j.0:definition>Architettura del Paesaggio</j.0:definition>
+    <j.0:prefLabel>Architettura del Paesaggio</j.0:prefLabel>
+    <rdfs:label>Architettura del Paesaggio</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/Conservazione_e_restauro_dei_beni_culturali">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/tematica"/>
+    <j.0:definition>Conservazione e restauro dei beni culturali</j.0:definition>
+    <j.0:prefLabel>Conservazione e restauro dei beni culturali</j.0:prefLabel>
+    <rdfs:label>Conservazione e restauro dei beni culturali</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/Storytelling">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/tematica"/>
+    <j.0:definition>Storytelling</j.0:definition>
+    <j.0:prefLabel>Storytelling</j.0:prefLabel>
+    <rdfs:label>Storytelling</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/Rilievo_dell%27architettura">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/tematica"/>
+    <j.0:definition>Rilievo dell'architettura</j.0:definition>
+    <j.0:prefLabel>Rilievo dell'architettura</j.0:prefLabel>
+    <rdfs:label>Rilievo dell'architettura</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/Voci_del_territorio">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/tematica"/>
+    <j.0:definition>Voci del territorio</j.0:definition>
+    <j.0:prefLabel>Voci del territorio</j.0:prefLabel>
+    <rdfs:label>Voci del territorio</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/Cartografia_storica_e_HGIS">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/tematica"/>
+    <j.0:definition>Cartografia storica e HGIS</j.0:definition>
+    <j.0:prefLabel>Cartografia storica e HGIS</j.0:prefLabel>
+    <rdfs:label>Cartografia storica e HGIS</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/Tecnologie_per_la_conservazione_e_il_restauro_dei_beni_culturali">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/tematica"/>
+    <j.0:definition>Tecnologie per la conservazione e il restauro dei beni culturali</j.0:definition>
+    <j.0:prefLabel>Tecnologie per la conservazione e il restauro dei beni culturali</j.0:prefLabel>
+    <rdfs:label>Tecnologie per la conservazione e il restauro dei beni culturali</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/Valutazioni_VAS_e_TIA">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/tematica"/>
+    <j.0:definition>Valutazioni VAS e TIA</j.0:definition>
+    <j.0:prefLabel>Valutazioni VAS e TIA</j.0:prefLabel>
+    <rdfs:label>Valutazioni VAS e TIA</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/Archeologia">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/tematica"/>
+    <j.0:definition>Archeologia</j.0:definition>
+    <j.0:prefLabel>Archeologia</j.0:prefLabel>
+    <rdfs:label>Archeologia</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/Ricostruzione_virtuale_in_ambito_architettonico">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/tematica"/>
+    <j.0:definition>Ricostruzione virtuale in ambito architettonico</j.0:definition>
+    <j.0:prefLabel>Ricostruzione virtuale in ambito architettonico</j.0:prefLabel>
+    <rdfs:label>Ricostruzione virtuale in ambito architettonico</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/Metolodogia_informatica_per_le_discipline_umanistiche">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/tematica"/>
+    <j.0:definition>Metolodogia informatica per le discipline umanistiche</j.0:definition>
+    <j.0:prefLabel>Metolodogia informatica per le discipline umanistiche</j.0:prefLabel>
+    <rdfs:label>Metolodogia informatica per le discipline umanistiche</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/Competenze">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/tematica"/>
+    <j.0:definition>Competenze</j.0:definition>
+    <j.0:prefLabel>Competenze</j.0:prefLabel>
+    <rdfs:label>Competenze</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/Formazione">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/tematica"/>
+    <j.0:definition>Formazione</j.0:definition>
+    <j.0:prefLabel>Formazione</j.0:prefLabel>
+    <rdfs:label>Formazione</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/Beni_Culturali">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/tematica"/>
+    <j.0:definition>Beni Culturali</j.0:definition>
+    <j.0:prefLabel>Beni Culturali</j.0:prefLabel>
+    <rdfs:label>Beni Culturali</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/Conservazione_dei_beni_architettonici_e_ambientali">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/tematica"/>
+    <j.0:definition>Conservazione dei beni architettonici e ambientali</j.0:definition>
+    <j.0:prefLabel>Conservazione dei beni architettonici e ambientali</j.0:prefLabel>
+    <rdfs:label>Conservazione dei beni architettonici e ambientali</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/Economia">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/tematica"/>
+    <j.0:definition>Economia</j.0:definition>
+    <j.0:prefLabel>Economia</j.0:prefLabel>
+    <rdfs:label>Economia</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/Cartografia_e_GIS">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/tematica"/>
+    <j.0:definition>Cartografia e GIS</j.0:definition>
+    <j.0:prefLabel>Cartografia e GIS</j.0:prefLabel>
+    <rdfs:label>Cartografia e GIS</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/Restauro">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/tematica"/>
+    <j.0:definition>Restauro</j.0:definition>
+    <j.0:prefLabel>Restauro</j.0:prefLabel>
+    <rdfs:label>Restauro</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/Pianificazione_economica_territoriale">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/tematica"/>
+    <j.0:definition>Pianificazione economica territoriale</j.0:definition>
+    <j.0:prefLabel>Pianificazione economica territoriale</j.0:prefLabel>
+    <rdfs:label>Pianificazione economica territoriale</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/Geografia">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/tematica"/>
+    <j.0:definition>Geografia</j.0:definition>
+    <j.0:prefLabel>Geografia</j.0:prefLabel>
+    <rdfs:label>Geografia</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/Turismo">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/tematica"/>
+    <j.0:definition>Turismo</j.0:definition>
+    <j.0:prefLabel>Turismo</j.0:prefLabel>
+    <rdfs:label>Turismo</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/Pianificazione_territoriale%2C_urbanistica%2C_paesaggistica_e_ambientale">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/tematica"/>
+    <j.0:definition>Pianificazione territoriale, urbanistica, paesaggistica e ambientale</j.0:definition>
+    <j.0:prefLabel>Pianificazione territoriale, urbanistica, paesaggistica e ambientale</j.0:prefLabel>
+    <rdfs:label>Pianificazione territoriale, urbanistica, paesaggistica e ambientale</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/Anastilosi_virtuale_in_ambito_archeologico">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/tematica"/>
+    <j.0:definition>Anastilosi virtuale in ambito archeologico</j.0:definition>
+    <j.0:prefLabel>Anastilosi virtuale in ambito archeologico</j.0:prefLabel>
+    <rdfs:label>Anastilosi virtuale in ambito archeologico</rdfs:label>
+  </j.0:Concept>
+</rdf:RDF>

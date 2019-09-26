@@ -19,10 +19,13 @@ import it.cnr.istc.stlab.lgu.commons.files.FileUtils;
 
 public class ArcoPlaceEnhancer {
 
+//	private static Logger logger = LoggerFactory.getLogger(ArcoPlaceEnhancer.class);
+
 	private static void addGeoNames(String folder) {
 
-		String q = "SELECT ?a ?l {" + "?c <https://w3id.org/arco/ontology/location/hasCulturalPropertyAddress> ?a . "
-				+ "?a <http://www.w3.org/2000/01/rdf-schema#label> ?l" + "}";
+		String q = "SELECT ?a ?l {" + "?c <https://w3id.org/arco/ontology/location/hasCulturalPropertyAddress> ?ad . "
+				+ "?ad <https://w3id.org/italia/onto/CLV/hasCity> ?a . "
+				+ "?a <https://w3id.org/italia/onto/l0/name> ?l ." + "}";
 
 		String q2 = "PREFIX gn: <http://www.geonames.org/ontology#> "
 				+ "PREFIX wgs84: <http://www.w3.org/2003/01/geo/wgs84_pos#> " + "SELECT ?lat ?lon {"
@@ -30,7 +33,7 @@ public class ArcoPlaceEnhancer {
 
 		for (String f : FileUtils.getFilesUnderTreeRec(folder)) {
 			Model m = ModelFactory.createDefaultModel();
-			System.out.println(f);
+			System.out.print("Processing file " + f + " ");
 			try {
 				RDFDataMgr.read(m, f);
 				QueryExecution qexec = QueryExecutionFactory.create(q, m);
@@ -44,20 +47,18 @@ public class ArcoPlaceEnhancer {
 						if (la.length > 0) {
 							String gn = Geonames.getGeoNamesRDF(la[la.length - 1]);
 							if (gn != null) {
+								System.out.print("Found GeoNames");
 								Model gn_model = ModelFactory.createDefaultModel();
 								RDFDataMgr.read(gn_model, new ByteArrayInputStream(gn.getBytes()), Lang.RDFXML);
 								QueryExecution qexecGn = QueryExecutionFactory.create(q2, gn_model);
 								ResultSet rsGn = qexecGn.execSelect();
-								while (rsGn.hasNext()) {
+								if (rsGn.hasNext()) {
 									QuerySolution qsGn = (QuerySolution) rsGn.next();
 									String lat = qsGn.getLiteral("lat").toString();
 									String lon = qsGn.getLiteral("lon").toString();
-//									System.out.println(la[la.length - 1] + " " + lat + " " + lon);
-//									System.out.println(m.size());
 									m.add(getGeometry(a, lat, lon));
-//									System.out.println(m.size());
-//									m.write(System.out,"NT");
 									m.write(new FileOutputStream(new File(f)));
+									System.out.print(" model written!");
 								}
 							}
 						}
@@ -68,6 +69,7 @@ public class ArcoPlaceEnhancer {
 			} catch (Exception e) {
 				e.getMessage();
 			}
+			System.out.println();
 		}
 
 	}
@@ -88,7 +90,7 @@ public class ArcoPlaceEnhancer {
 	}
 
 	public static void main(String[] args) {
-		addGeoNames("/Users/lgu/Desktop/CulturalObject");
+		addGeoNames("/Users/lgu/Desktop/ecodigit/CulturalObject");
 	}
 
 }

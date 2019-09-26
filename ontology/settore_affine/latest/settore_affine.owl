@@ -1,0 +1,235 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:j.0="http://www.w3.org/2004/02/skos/core#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/GEOGRAFIA">
+    <j.0:inScheme>
+      <j.0:ConceptScheme rdf:about="https://w3id.org/ecodigit/resource/settore_affine"/>
+    </j.0:inScheme>
+    <j.0:definition>GEOGRAFIA</j.0:definition>
+    <j.0:prefLabel>GEOGRAFIA</j.0:prefLabel>
+    <rdfs:label>GEOGRAFIA</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/CHIMICA_FISICA">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/settore_affine"/>
+    <j.0:definition>CHIMICA FISICA</j.0:definition>
+    <j.0:prefLabel>CHIMICA FISICA</j.0:prefLabel>
+    <rdfs:label>CHIMICA FISICA</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/CHIMICA_GENERALE_E_INORGANICA">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/settore_affine"/>
+    <j.0:definition>CHIMICA GENERALE E INORGANICA</j.0:definition>
+    <j.0:prefLabel>CHIMICA GENERALE E INORGANICA</j.0:prefLabel>
+    <rdfs:label>CHIMICA GENERALE E INORGANICA</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/FILOLOGIA_ITALICA%2C_ILLIRICA_E_CELTICA">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/settore_affine"/>
+    <j.0:definition>FILOLOGIA ITALICA, ILLIRICA E CELTICA</j.0:definition>
+    <j.0:prefLabel>FILOLOGIA ITALICA, ILLIRICA E CELTICA</j.0:prefLabel>
+    <rdfs:label>FILOLOGIA ITALICA, ILLIRICA E CELTICA</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/CHIMICA_ANALITICA">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/settore_affine"/>
+    <j.0:definition>CHIMICA ANALITICA</j.0:definition>
+    <j.0:prefLabel>CHIMICA ANALITICA</j.0:prefLabel>
+    <rdfs:label>CHIMICA ANALITICA</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/BOTANICA_GENERALE">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/settore_affine"/>
+    <j.0:definition>BOTANICA GENERALE</j.0:definition>
+    <j.0:prefLabel>BOTANICA GENERALE</j.0:prefLabel>
+    <rdfs:label>BOTANICA GENERALE</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/ARCHEOLOGIA_CLASSICA">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/settore_affine"/>
+    <j.0:definition>ARCHEOLOGIA CLASSICA</j.0:definition>
+    <j.0:prefLabel>ARCHEOLOGIA CLASSICA</j.0:prefLabel>
+    <rdfs:label>ARCHEOLOGIA CLASSICA</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/ARCHEOLOGIA_FENICIO-PUNICA">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/settore_affine"/>
+    <j.0:definition>ARCHEOLOGIA FENICIO-PUNICA</j.0:definition>
+    <j.0:prefLabel>ARCHEOLOGIA FENICIO-PUNICA</j.0:prefLabel>
+    <rdfs:label>ARCHEOLOGIA FENICIO-PUNICA</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/ANTROPOLOGIA">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/settore_affine"/>
+    <j.0:definition>ANTROPOLOGIA</j.0:definition>
+    <j.0:prefLabel>ANTROPOLOGIA</j.0:prefLabel>
+    <rdfs:label>ANTROPOLOGIA</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/STORIA">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/settore_affine"/>
+    <j.0:definition>STORIA</j.0:definition>
+    <j.0:prefLabel>STORIA</j.0:prefLabel>
+    <rdfs:label>STORIA</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/STORIA_MEDIEVALE%2FMODERNA">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/settore_affine"/>
+    <j.0:definition>STORIA MEDIEVALE/MODERNA</j.0:definition>
+    <j.0:prefLabel>STORIA MEDIEVALE/MODERNA</j.0:prefLabel>
+    <rdfs:label>STORIA MEDIEVALE/MODERNA</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/URBANISTICA">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/settore_affine"/>
+    <j.0:definition>URBANISTICA</j.0:definition>
+    <j.0:prefLabel>URBANISTICA</j.0:prefLabel>
+    <rdfs:label>URBANISTICA</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/METODOLOGIE_DELLA_RICERCA_ARCHEOLOGICA">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/settore_affine"/>
+    <j.0:definition>METODOLOGIE DELLA RICERCA ARCHEOLOGICA</j.0:definition>
+    <j.0:prefLabel>METODOLOGIE DELLA RICERCA ARCHEOLOGICA</j.0:prefLabel>
+    <rdfs:label>METODOLOGIE DELLA RICERCA ARCHEOLOGICA</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/FISICA_SPERIMENTALE">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/settore_affine"/>
+    <j.0:definition>FISICA SPERIMENTALE</j.0:definition>
+    <j.0:prefLabel>FISICA SPERIMENTALE</j.0:prefLabel>
+    <rdfs:label>FISICA SPERIMENTALE</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/GEOGRAFIA_ECONOMICO-POLITICA">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/settore_affine"/>
+    <j.0:definition>GEOGRAFIA ECONOMICO-POLITICA</j.0:definition>
+    <j.0:prefLabel>GEOGRAFIA ECONOMICO-POLITICA</j.0:prefLabel>
+    <rdfs:label>GEOGRAFIA ECONOMICO-POLITICA</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/ARCHEOLOGIA_E_STORIA_DELL%27ARTE_DEL_VICINO_ORIENTE_ANTICO">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/settore_affine"/>
+    <j.0:definition>ARCHEOLOGIA E STORIA DELL'ARTE DEL VICINO ORIENTE ANTICO</j.0:definition>
+    <j.0:prefLabel>ARCHEOLOGIA E STORIA DELL'ARTE DEL VICINO ORIENTE ANTICO</j.0:prefLabel>
+    <rdfs:label>ARCHEOLOGIA E STORIA DELL'ARTE DEL VICINO ORIENTE ANTICO</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/STORIA_MEDIEVALE%2FCONTEMPORANEA">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/settore_affine"/>
+    <j.0:definition>STORIA MEDIEVALE/CONTEMPORANEA</j.0:definition>
+    <j.0:prefLabel>STORIA MEDIEVALE/CONTEMPORANEA</j.0:prefLabel>
+    <rdfs:label>STORIA MEDIEVALE/CONTEMPORANEA</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/ARCHEOLOGIA_E_STORIA_DELL%27ARTE_DELL%27INDIA_E_DELL%27ASIA_CENTRALE">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/settore_affine"/>
+    <j.0:definition>ARCHEOLOGIA E STORIA DELL'ARTE DELL'INDIA E DELL'ASIA CENTRALE</j.0:definition>
+    <j.0:prefLabel>ARCHEOLOGIA E STORIA DELL'ARTE DELL'INDIA E DELL'ASIA CENTRALE</j.0:prefLabel>
+    <rdfs:label>ARCHEOLOGIA E STORIA DELL'ARTE DELL'INDIA E DELL'ASIA CENTRALE</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/TECNICA_E_PIANIFICAZIONE_URBANISTICA">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/settore_affine"/>
+    <j.0:definition>TECNICA E PIANIFICAZIONE URBANISTICA</j.0:definition>
+    <j.0:prefLabel>TECNICA E PIANIFICAZIONE URBANISTICA</j.0:prefLabel>
+    <rdfs:label>TECNICA E PIANIFICAZIONE URBANISTICA</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/STORIA_GRECA">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/settore_affine"/>
+    <j.0:definition>STORIA GRECA</j.0:definition>
+    <j.0:prefLabel>STORIA GRECA</j.0:prefLabel>
+    <rdfs:label>STORIA GRECA</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/STORIA_MODERNA%2FCONTEMPORANEA">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/settore_affine"/>
+    <j.0:definition>STORIA MODERNA/CONTEMPORANEA</j.0:definition>
+    <j.0:prefLabel>STORIA MODERNA/CONTEMPORANEA</j.0:prefLabel>
+    <rdfs:label>STORIA MODERNA/CONTEMPORANEA</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/TOPOGRAFIA_ANTICA">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/settore_affine"/>
+    <j.0:definition>TOPOGRAFIA ANTICA</j.0:definition>
+    <j.0:prefLabel>TOPOGRAFIA ANTICA</j.0:prefLabel>
+    <rdfs:label>TOPOGRAFIA ANTICA</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/PREISTORIA_E_PROTOSTORIA">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/settore_affine"/>
+    <j.0:definition>PREISTORIA E PROTOSTORIA</j.0:definition>
+    <j.0:prefLabel>PREISTORIA E PROTOSTORIA</j.0:prefLabel>
+    <rdfs:label>PREISTORIA E PROTOSTORIA</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/STORIA_ROMANA">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/settore_affine"/>
+    <j.0:definition>STORIA ROMANA</j.0:definition>
+    <j.0:prefLabel>STORIA ROMANA</j.0:prefLabel>
+    <rdfs:label>STORIA ROMANA</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/RESTAURO">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/settore_affine"/>
+    <j.0:definition>RESTAURO</j.0:definition>
+    <j.0:prefLabel>RESTAURO</j.0:prefLabel>
+    <rdfs:label>RESTAURO</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/ARCHITETTURA_DEL_PAESAGGIO">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/settore_affine"/>
+    <j.0:definition>ARCHITETTURA DEL PAESAGGIO</j.0:definition>
+    <j.0:prefLabel>ARCHITETTURA DEL PAESAGGIO</j.0:prefLabel>
+    <rdfs:label>ARCHITETTURA DEL PAESAGGIO</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/STORIA_DELL%E2%80%99ARTE_MEDIEVALE%2FCONTEMPORANEA">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/settore_affine"/>
+    <j.0:definition>STORIA DELL’ARTE MEDIEVALE/CONTEMPORANEA</j.0:definition>
+    <j.0:prefLabel>STORIA DELL’ARTE MEDIEVALE/CONTEMPORANEA</j.0:prefLabel>
+    <rdfs:label>STORIA DELL’ARTE MEDIEVALE/CONTEMPORANEA</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/MINERALOGIA">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/settore_affine"/>
+    <j.0:definition>MINERALOGIA</j.0:definition>
+    <j.0:prefLabel>MINERALOGIA</j.0:prefLabel>
+    <rdfs:label>MINERALOGIA</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/METODOLOGIE_DELLA_RICERCA_ARCHEOLOGICA_ARCHEOLOGIA_DEL_PAESAGGIO">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/settore_affine"/>
+    <j.0:definition>METODOLOGIE DELLA RICERCA ARCHEOLOGICA ARCHEOLOGIA DEL PAESAGGIO</j.0:definition>
+    <j.0:prefLabel>METODOLOGIE DELLA RICERCA ARCHEOLOGICA ARCHEOLOGIA DEL PAESAGGIO</j.0:prefLabel>
+    <rdfs:label>METODOLOGIE DELLA RICERCA ARCHEOLOGICA ARCHEOLOGIA DEL PAESAGGIO</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/CHIMICA_ORGANICA">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/settore_affine"/>
+    <j.0:definition>CHIMICA ORGANICA</j.0:definition>
+    <j.0:prefLabel>CHIMICA ORGANICA</j.0:prefLabel>
+    <rdfs:label>CHIMICA ORGANICA</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/ARCHEOLOGIA_CRISTIANA_E_MEDIEVALE">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/settore_affine"/>
+    <j.0:definition>ARCHEOLOGIA CRISTIANA E MEDIEVALE</j.0:definition>
+    <j.0:prefLabel>ARCHEOLOGIA CRISTIANA E MEDIEVALE</j.0:prefLabel>
+    <rdfs:label>ARCHEOLOGIA CRISTIANA E MEDIEVALE</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/STORIA_MODERNA">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/settore_affine"/>
+    <j.0:definition>STORIA MODERNA</j.0:definition>
+    <j.0:prefLabel>STORIA MODERNA</j.0:prefLabel>
+    <rdfs:label>STORIA MODERNA</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/PIETROLOGIA_E_PETROGRAFIA">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/settore_affine"/>
+    <j.0:definition>PIETROLOGIA E PETROGRAFIA</j.0:definition>
+    <j.0:prefLabel>PIETROLOGIA E PETROGRAFIA</j.0:prefLabel>
+    <rdfs:label>PIETROLOGIA E PETROGRAFIA</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/STORIA_DELL%E2%80%99ARTE_MODERNA%2FCONTEMPORANEA">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/settore_affine"/>
+    <j.0:definition>STORIA DELL’ARTE MODERNA/CONTEMPORANEA</j.0:definition>
+    <j.0:prefLabel>STORIA DELL’ARTE MODERNA/CONTEMPORANEA</j.0:prefLabel>
+    <rdfs:label>STORIA DELL’ARTE MODERNA/CONTEMPORANEA</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/BOTANICA_SISTEMATICA">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/settore_affine"/>
+    <j.0:definition>BOTANICA SISTEMATICA</j.0:definition>
+    <j.0:prefLabel>BOTANICA SISTEMATICA</j.0:prefLabel>
+    <rdfs:label>BOTANICA SISTEMATICA</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/ETRUSCOLOGIA_E_ANTICHITA%27_ITALICHE">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/settore_affine"/>
+    <j.0:definition>ETRUSCOLOGIA E ANTICHITA' ITALICHE</j.0:definition>
+    <j.0:prefLabel>ETRUSCOLOGIA E ANTICHITA' ITALICHE</j.0:prefLabel>
+    <rdfs:label>ETRUSCOLOGIA E ANTICHITA' ITALICHE</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/ARCHITETTURA_DEGLI_INTERNI_E_ALLESTIMENTO">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/settore_affine"/>
+    <j.0:definition>ARCHITETTURA DEGLI INTERNI E ALLESTIMENTO</j.0:definition>
+    <j.0:prefLabel>ARCHITETTURA DEGLI INTERNI E ALLESTIMENTO</j.0:prefLabel>
+    <rdfs:label>ARCHITETTURA DEGLI INTERNI E ALLESTIMENTO</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/STORIA_DELL%E2%80%99ARTE_MEDIEVALE%2FMODERNA">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/settore_affine"/>
+    <j.0:definition>STORIA DELL’ARTE MEDIEVALE/MODERNA</j.0:definition>
+    <j.0:prefLabel>STORIA DELL’ARTE MEDIEVALE/MODERNA</j.0:prefLabel>
+    <rdfs:label>STORIA DELL’ARTE MEDIEVALE/MODERNA</rdfs:label>
+  </j.0:Concept>
+</rdf:RDF>

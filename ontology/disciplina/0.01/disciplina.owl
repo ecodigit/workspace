@@ -1,0 +1,217 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:j.0="http://www.w3.org/2004/02/skos/core#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/GEOGRAFIA">
+    <j.0:inScheme>
+      <j.0:ConceptScheme rdf:about="https://w3id.org/ecodigit/resource/disciplina"/>
+    </j.0:inScheme>
+    <j.0:definition>GEOGRAFIA</j.0:definition>
+    <j.0:prefLabel>GEOGRAFIA</j.0:prefLabel>
+    <rdfs:label>GEOGRAFIA</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/STORIA_DELL%E2%80%99ARTE_MODERNA">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/disciplina"/>
+    <j.0:definition>STORIA DELL’ARTE MODERNA</j.0:definition>
+    <j.0:prefLabel>STORIA DELL’ARTE MODERNA</j.0:prefLabel>
+    <rdfs:label>STORIA DELL’ARTE MODERNA</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/ECOLOGIA">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/disciplina"/>
+    <j.0:definition>ECOLOGIA</j.0:definition>
+    <j.0:prefLabel>ECOLOGIA</j.0:prefLabel>
+    <rdfs:label>ECOLOGIA</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/INFORMATICA">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/disciplina"/>
+    <j.0:definition>INFORMATICA</j.0:definition>
+    <j.0:prefLabel>INFORMATICA</j.0:prefLabel>
+    <rdfs:label>INFORMATICA</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/GEORISORSE_MINERARIE_E_APPLICAZIONI_MINERALOGICO-_PETROGRAFICHE_PER_L%27AMBIENTE_ED_I_BENI_CULTURALI">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/disciplina"/>
+    <j.0:definition>GEORISORSE MINERARIE E APPLICAZIONI MINERALOGICO- PETROGRAFICHE PER L'AMBIENTE ED I BENI CULTURALI</j.0:definition>
+    <j.0:prefLabel>GEORISORSE MINERARIE E APPLICAZIONI MINERALOGICO- PETROGRAFICHE PER L'AMBIENTE ED I BENI CULTURALI</j.0:prefLabel>
+    <rdfs:label>GEORISORSE MINERARIE E APPLICAZIONI MINERALOGICO- PETROGRAFICHE PER L'AMBIENTE ED I BENI CULTURALI</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/GEOGRAFIA_FISICA_E_GEOMORFOLOGIA">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/disciplina"/>
+    <j.0:definition>GEOGRAFIA FISICA E GEOMORFOLOGIA</j.0:definition>
+    <j.0:prefLabel>GEOGRAFIA FISICA E GEOMORFOLOGIA</j.0:prefLabel>
+    <rdfs:label>GEOGRAFIA FISICA E GEOMORFOLOGIA</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/ARCHIVISTICA%2C_BIBLIOGRAFIA_E_BIBLIOTECONOMIA">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/disciplina"/>
+    <j.0:definition>ARCHIVISTICA, BIBLIOGRAFIA E BIBLIOTECONOMIA</j.0:definition>
+    <j.0:prefLabel>ARCHIVISTICA, BIBLIOGRAFIA E BIBLIOTECONOMIA</j.0:prefLabel>
+    <rdfs:label>ARCHIVISTICA, BIBLIOGRAFIA E BIBLIOTECONOMIA</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/LETTERATURA_ITALIANA">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/disciplina"/>
+    <j.0:definition>LETTERATURA ITALIANA</j.0:definition>
+    <j.0:prefLabel>LETTERATURA ITALIANA</j.0:prefLabel>
+    <rdfs:label>LETTERATURA ITALIANA</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/STORIA_MEDIEVALE">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/disciplina"/>
+    <j.0:definition>STORIA MEDIEVALE</j.0:definition>
+    <j.0:prefLabel>STORIA MEDIEVALE</j.0:prefLabel>
+    <rdfs:label>STORIA MEDIEVALE</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/FONDAMENTI_CHIMICI_DELLE_TECNOLOGIE">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/disciplina"/>
+    <j.0:definition>FONDAMENTI CHIMICI DELLE TECNOLOGIE</j.0:definition>
+    <j.0:prefLabel>FONDAMENTI CHIMICI DELLE TECNOLOGIE</j.0:prefLabel>
+    <rdfs:label>FONDAMENTI CHIMICI DELLE TECNOLOGIE</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/ARCHEOLOGIA_CLASSICA">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/disciplina"/>
+    <j.0:definition>ARCHEOLOGIA CLASSICA</j.0:definition>
+    <j.0:prefLabel>ARCHEOLOGIA CLASSICA</j.0:prefLabel>
+    <rdfs:label>ARCHEOLOGIA CLASSICA</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/TOPOGRAFIA_E_CARTOGRAFIA">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/disciplina"/>
+    <j.0:definition>TOPOGRAFIA E CARTOGRAFIA</j.0:definition>
+    <j.0:prefLabel>TOPOGRAFIA E CARTOGRAFIA</j.0:prefLabel>
+    <rdfs:label>TOPOGRAFIA E CARTOGRAFIA</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/ANTROPOLOGIA">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/disciplina"/>
+    <j.0:definition>ANTROPOLOGIA</j.0:definition>
+    <j.0:prefLabel>ANTROPOLOGIA</j.0:prefLabel>
+    <rdfs:label>ANTROPOLOGIA</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/URBANISTICA">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/disciplina"/>
+    <j.0:definition>URBANISTICA</j.0:definition>
+    <j.0:prefLabel>URBANISTICA</j.0:prefLabel>
+    <rdfs:label>URBANISTICA</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/CHIMICA_DELL%27AMBIENTE_E_DEI_BENI_CULTURALI">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/disciplina"/>
+    <j.0:definition>CHIMICA DELL'AMBIENTE E DEI BENI CULTURALI</j.0:definition>
+    <j.0:prefLabel>CHIMICA DELL'AMBIENTE E DEI BENI CULTURALI</j.0:prefLabel>
+    <rdfs:label>CHIMICA DELL'AMBIENTE E DEI BENI CULTURALI</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/STORIA_DELL%E2%80%99ARTE_MEDIEVALE">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/disciplina"/>
+    <j.0:definition>STORIA DELL’ARTE MEDIEVALE</j.0:definition>
+    <j.0:prefLabel>STORIA DELL’ARTE MEDIEVALE</j.0:prefLabel>
+    <rdfs:label>STORIA DELL’ARTE MEDIEVALE</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/METODOLOGIE_DELLA_RICERCA_ARCHEOLOGICA">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/disciplina"/>
+    <j.0:definition>METODOLOGIE DELLA RICERCA ARCHEOLOGICA</j.0:definition>
+    <j.0:prefLabel>METODOLOGIE DELLA RICERCA ARCHEOLOGICA</j.0:prefLabel>
+    <rdfs:label>METODOLOGIE DELLA RICERCA ARCHEOLOGICA</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/BOTANICA_AMBIENTALE_E_APPLICATA">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/disciplina"/>
+    <j.0:definition>BOTANICA AMBIENTALE E APPLICATA</j.0:definition>
+    <j.0:prefLabel>BOTANICA AMBIENTALE E APPLICATA</j.0:prefLabel>
+    <rdfs:label>BOTANICA AMBIENTALE E APPLICATA</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/GEOGRAFIA_ECONOMICO-POLITICA">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/disciplina"/>
+    <j.0:definition>GEOGRAFIA ECONOMICO-POLITICA</j.0:definition>
+    <j.0:prefLabel>GEOGRAFIA ECONOMICO-POLITICA</j.0:prefLabel>
+    <rdfs:label>GEOGRAFIA ECONOMICO-POLITICA</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/COMPOSIZIONE_ARCHITETTONICA_E_URBANA">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/disciplina"/>
+    <j.0:definition>COMPOSIZIONE ARCHITETTONICA E URBANA</j.0:definition>
+    <j.0:prefLabel>COMPOSIZIONE ARCHITETTONICA E URBANA</j.0:prefLabel>
+    <rdfs:label>COMPOSIZIONE ARCHITETTONICA E URBANA</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/RAPPRESENTAZIONE">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/disciplina"/>
+    <j.0:definition>RAPPRESENTAZIONE</j.0:definition>
+    <j.0:prefLabel>RAPPRESENTAZIONE</j.0:prefLabel>
+    <rdfs:label>RAPPRESENTAZIONE</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/MUSEOLOGIA_E_CRITICA_ARTISTICA_E_DEL_RESTAURO">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/disciplina"/>
+    <j.0:definition>MUSEOLOGIA E CRITICA ARTISTICA E DEL RESTAURO</j.0:definition>
+    <j.0:prefLabel>MUSEOLOGIA E CRITICA ARTISTICA E DEL RESTAURO</j.0:prefLabel>
+    <rdfs:label>MUSEOLOGIA E CRITICA ARTISTICA E DEL RESTAURO</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/TECNICA_E_PIANIFICAZIONE_URBANISTICA">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/disciplina"/>
+    <j.0:definition>TECNICA E PIANIFICAZIONE URBANISTICA</j.0:definition>
+    <j.0:prefLabel>TECNICA E PIANIFICAZIONE URBANISTICA</j.0:prefLabel>
+    <rdfs:label>TECNICA E PIANIFICAZIONE URBANISTICA</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/TOPOGRAFIA_ANTICA">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/disciplina"/>
+    <j.0:definition>TOPOGRAFIA ANTICA</j.0:definition>
+    <j.0:prefLabel>TOPOGRAFIA ANTICA</j.0:prefLabel>
+    <rdfs:label>TOPOGRAFIA ANTICA</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/PREISTORIA_E_PROTOSTORIA">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/disciplina"/>
+    <j.0:definition>PREISTORIA E PROTOSTORIA</j.0:definition>
+    <j.0:prefLabel>PREISTORIA E PROTOSTORIA</j.0:prefLabel>
+    <rdfs:label>PREISTORIA E PROTOSTORIA</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/RESTAURO">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/disciplina"/>
+    <j.0:definition>RESTAURO</j.0:definition>
+    <j.0:prefLabel>RESTAURO</j.0:prefLabel>
+    <rdfs:label>RESTAURO</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/ETRUSCOLOGIA_E_ANTICHIT%C3%80_ITALICHE">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/disciplina"/>
+    <j.0:definition>ETRUSCOLOGIA E ANTICHITÀ ITALICHE</j.0:definition>
+    <j.0:prefLabel>ETRUSCOLOGIA E ANTICHITÀ ITALICHE</j.0:prefLabel>
+    <rdfs:label>ETRUSCOLOGIA E ANTICHITÀ ITALICHE</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/FISICA_APPLICATA_%28A_BENI_CULTURALI%2C_AMBIENTALI%2C_BIOLOGIA_E_MEDICINA%29">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/disciplina"/>
+    <j.0:definition>FISICA APPLICATA (A BENI CULTURALI, AMBIENTALI, BIOLOGIA E MEDICINA)</j.0:definition>
+    <j.0:prefLabel>FISICA APPLICATA (A BENI CULTURALI, AMBIENTALI, BIOLOGIA E MEDICINA)</j.0:prefLabel>
+    <rdfs:label>FISICA APPLICATA (A BENI CULTURALI, AMBIENTALI, BIOLOGIA E MEDICINA)</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/STORIA_CONTEMPORANEA">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/disciplina"/>
+    <j.0:definition>STORIA CONTEMPORANEA</j.0:definition>
+    <j.0:prefLabel>STORIA CONTEMPORANEA</j.0:prefLabel>
+    <rdfs:label>STORIA CONTEMPORANEA</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/ARCHITETTURA_DEL_PAESAGGIO">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/disciplina"/>
+    <j.0:definition>ARCHITETTURA DEL PAESAGGIO</j.0:definition>
+    <j.0:prefLabel>ARCHITETTURA DEL PAESAGGIO</j.0:prefLabel>
+    <rdfs:label>ARCHITETTURA DEL PAESAGGIO</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/STORIA_DELL%E2%80%99ARTE_CONTEMPORANEA">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/disciplina"/>
+    <j.0:definition>STORIA DELL’ARTE CONTEMPORANEA</j.0:definition>
+    <j.0:prefLabel>STORIA DELL’ARTE CONTEMPORANEA</j.0:prefLabel>
+    <rdfs:label>STORIA DELL’ARTE CONTEMPORANEA</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/ARCHEOLOGIA_CRISTIANA_E_MEDIEVALE">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/disciplina"/>
+    <j.0:definition>ARCHEOLOGIA CRISTIANA E MEDIEVALE</j.0:definition>
+    <j.0:prefLabel>ARCHEOLOGIA CRISTIANA E MEDIEVALE</j.0:prefLabel>
+    <rdfs:label>ARCHEOLOGIA CRISTIANA E MEDIEVALE</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/STORIA_MODERNA">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/disciplina"/>
+    <j.0:definition>STORIA MODERNA</j.0:definition>
+    <j.0:prefLabel>STORIA MODERNA</j.0:prefLabel>
+    <rdfs:label>STORIA MODERNA</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/ECONOMIA_E_PIANIFICAZIONE_TERRITORIALE">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/disciplina"/>
+    <j.0:definition>ECONOMIA E PIANIFICAZIONE TERRITORIALE</j.0:definition>
+    <j.0:prefLabel>ECONOMIA E PIANIFICAZIONE TERRITORIALE</j.0:prefLabel>
+    <rdfs:label>ECONOMIA E PIANIFICAZIONE TERRITORIALE</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/PALEONTOLOGIA_E_PALEOECOLOGIA">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/disciplina"/>
+    <j.0:definition>PALEONTOLOGIA E PALEOECOLOGIA</j.0:definition>
+    <j.0:prefLabel>PALEONTOLOGIA E PALEOECOLOGIA</j.0:prefLabel>
+    <rdfs:label>PALEONTOLOGIA E PALEOECOLOGIA</rdfs:label>
+  </j.0:Concept>
+</rdf:RDF>

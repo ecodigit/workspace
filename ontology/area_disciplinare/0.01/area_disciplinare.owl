@@ -1,0 +1,55 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:j.0="http://www.w3.org/2004/02/skos/core#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/Scienze_storiche%2C_filosofiche%2C_pedagogiche_e_psicologiche">
+    <j.0:inScheme>
+      <j.0:ConceptScheme rdf:about="https://w3id.org/ecodigit/resource/area_disciplinare"/>
+    </j.0:inScheme>
+    <j.0:definition>Scienze storiche, filosofiche, pedagogiche e psicologiche</j.0:definition>
+    <j.0:prefLabel>Scienze storiche, filosofiche, pedagogiche e psicologiche</j.0:prefLabel>
+    <rdfs:label>Scienze storiche, filosofiche, pedagogiche e psicologiche</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/Scienze_fisiche">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/area_disciplinare"/>
+    <j.0:definition>Scienze fisiche</j.0:definition>
+    <j.0:prefLabel>Scienze fisiche</j.0:prefLabel>
+    <rdfs:label>Scienze fisiche</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/Scienze_chimiche">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/area_disciplinare"/>
+    <j.0:definition>Scienze chimiche</j.0:definition>
+    <j.0:prefLabel>Scienze chimiche</j.0:prefLabel>
+    <rdfs:label>Scienze chimiche</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/Scienze_matematiche_e_informatiche">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/area_disciplinare"/>
+    <j.0:definition>Scienze matematiche e informatiche</j.0:definition>
+    <j.0:prefLabel>Scienze matematiche e informatiche</j.0:prefLabel>
+    <rdfs:label>Scienze matematiche e informatiche</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/Scienze_dell%27antichit%C3%A0%2C_filologico-letterarie_e_storico-artistiche">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/area_disciplinare"/>
+    <j.0:definition>Scienze dell'antichità, filologico-letterarie e storico-artistiche</j.0:definition>
+    <j.0:prefLabel>Scienze dell'antichità, filologico-letterarie e storico-artistiche</j.0:prefLabel>
+    <rdfs:label>Scienze dell'antichità, filologico-letterarie e storico-artistiche</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/Ingegneria_civile_e_Architettura">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/area_disciplinare"/>
+    <j.0:definition>Ingegneria civile e Architettura</j.0:definition>
+    <j.0:prefLabel>Ingegneria civile e Architettura</j.0:prefLabel>
+    <rdfs:label>Ingegneria civile e Architettura</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/Scienze_biologiche">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/area_disciplinare"/>
+    <j.0:definition>Scienze biologiche</j.0:definition>
+    <j.0:prefLabel>Scienze biologiche</j.0:prefLabel>
+    <rdfs:label>Scienze biologiche</rdfs:label>
+  </j.0:Concept>
+  <j.0:Concept rdf:about="https://w3id.org/ecodigit/resource/Scienze_della_terra">
+    <j.0:inScheme rdf:resource="https://w3id.org/ecodigit/resource/area_disciplinare"/>
+    <j.0:definition>Scienze della terra</j.0:definition>
+    <j.0:prefLabel>Scienze della terra</j.0:prefLabel>
+    <rdfs:label>Scienze della terra</rdfs:label>
+  </j.0:Concept>
+</rdf:RDF>

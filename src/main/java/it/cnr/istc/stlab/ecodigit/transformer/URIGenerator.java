@@ -32,8 +32,8 @@ public class URIGenerator {
 			return BASE + "person/" + lastName.toLowerCase();
 	}
 
-	public static String getURIFromString(String s) {
-		return BASE + "resource/" + s.replaceAll("\\s", "_");
+	public static String getURIFromString(String s) throws UnsupportedEncodingException {
+		return BASE + "resource/" + URLEncoder.encode(s.replaceAll("\\s", "_"), "UTF-8");
 	}
 
 	public static String getURIOrganization(String name) {
