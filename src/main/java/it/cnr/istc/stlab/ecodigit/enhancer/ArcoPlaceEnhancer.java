@@ -3,6 +3,7 @@ package it.cnr.istc.stlab.ecodigit.enhancer;
 import java.io.ByteArrayInputStream;
 import java.io.File;
 import java.io.FileOutputStream;
+import java.util.List;
 
 import org.apache.jena.query.QueryExecution;
 import org.apache.jena.query.QueryExecutionFactory;
@@ -14,14 +15,17 @@ import org.apache.jena.riot.Lang;
 import org.apache.jena.riot.RDFDataMgr;
 import org.apache.jena.vocabulary.RDF;
 
+import it.cnr.istc.stlab.lgu.commons.entitylinking.DBPedia;
 import it.cnr.istc.stlab.lgu.commons.entitylinking.Geonames;
+import it.cnr.istc.stlab.lgu.commons.entitylinking.TagMe;
 import it.cnr.istc.stlab.lgu.commons.files.FileUtils;
+import it.cnr.istc.stlab.lgu.commons.model.Entity;
 
 public class ArcoPlaceEnhancer {
 
 //	private static Logger logger = LoggerFactory.getLogger(ArcoPlaceEnhancer.class);
 
-	private static void addGeoNames(String folder) {
+	static void addGeoNames(String folder) {
 
 		String q = "SELECT ?a ?l {" + "?c <https://w3id.org/arco/ontology/location/hasCulturalPropertyAddress> ?ad . "
 				+ "?ad <https://w3id.org/italia/onto/CLV/hasCity> ?a . "
@@ -89,8 +93,60 @@ public class ArcoPlaceEnhancer {
 		return m;
 	}
 
+	private static void addDBPediaGeoLocalizations(String folder) {
+
+		String q = "SELECT ?site ?l {"
+				+ "?c <https://w3id.org/arco/ontology/location/hasTimeIndexedTypedLocation> ?tl . "
+				+ "?tl <https://w3id.org/arco/ontology/location/atSite> ?site . "
+				+ "?site <https://w3id.org/italia/onto/l0/name> ?l ." + "}";
+
+		int c = 0;
+		int fileNumber = 0;
+
+		for (String f : FileUtils.getFilesUnderTreeRec(folder)) {
+			Model m = ModelFactory.createDefaultModel();
+			System.out.print(fileNumber++ + ") Processing file " + f + " ");
+			try {
+				RDFDataMgr.read(m, f);
+				QueryExecution qexec = QueryExecutionFactory.create(q, m);
+				ResultSet rs = qexec.execSelect();
+				while (rs.hasNext()) {
+					QuerySolution qs = (QuerySolution) rs.next();
+					String l = qs.getLiteral("l").toString();
+					String a = qs.getResource("site").getURI();
+					if (l != null) {
+						List<String> entities = TagMe.getMentionedEntitiesURIUsingTagMe(l,
+								it.cnr.istc.stlab.lgu.commons.model.Lang.IT);
+						for (String uriEntity : entities) {
+							System.out.print(" dbr ");
+							Entity e = DBPedia.getGeoCodingFromURI(uriEntity);
+							if (e.isGeoLocated()) {
+								System.out.println(" geo ");
+								m.add(getGeometry(a, e.getLatitude(), e.getLongitude()));
+								m.write(new FileOutputStream(new File(f)));
+								c++;
+							}
+						}
+					}
+
+				}
+
+			} catch (Exception e) {
+				e.getMessage();
+			}
+			System.out.println();
+		}
+
+		System.out.println("Added geolocalization of " + c + " sites");
+
+	}
+
 	public static void main(String[] args) {
-		addGeoNames("/Users/lgu/Desktop/ecodigit/CulturalObject");
+//		addGeoNames("/Users/lgu/Desktop/ecodigit/CulturalObject");
+		addDBPediaGeoLocalizations("/Users/lgu/Desktop/ecodigit/CulturalObject");
+//		Model m = ModelFactory.createDefaultModel();
+//		RDFDataMgr.read(m, "http://dbpedia.org/resource/Palazzo_Montecitorio");
+//		System.out.println(m.size());
 	}
 
 }
