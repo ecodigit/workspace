@@ -212,6 +212,15 @@
     
 
 
+    <!-- https://w3id.org/ecodigit/ontology/organization/Dipartimento -->
+
+    <owl:Class rdf:about="https://w3id.org/ecodigit/ontology/organization/Dipartimento">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ecodigit/ontology/organization/EnteDiRicerca"/>
+        <rdfs:label xml:lang="it">Dipartimento</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/ecodigit/ontology/organization/EnteDiRicerca -->
 
     <owl:Class rdf:about="https://w3id.org/ecodigit/ontology/organization/EnteDiRicerca">
