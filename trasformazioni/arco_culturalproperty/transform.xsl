@@ -18,7 +18,7 @@
 	xmlns:org="http://www.w3.org/ns/org#"
 	xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/"
 	xmlns:prov="http://www.w3.org/ns/prov#"
-	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
 	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
 	xmlns:schemaorg="https://schema.org/"
 	xmlns:skos="http://www.w3.org/2004/02/skos/core#"
@@ -70,8 +70,10 @@
 
 				<xsl:if test="rdfs:label">
 					<dc:title>
+						<xsl:text disable-output-escaping="yes">&lt;![CDATA[</xsl:text>
 						<xsl:value-of
 							select="normalize-space(rdfs:label/text())" />
+						<xsl:text disable-output-escaping="yes">]]&gt;</xsl:text>
 					</dc:title>
 				</xsl:if>
 
@@ -79,14 +81,18 @@
 				<xsl:if
 					test="a-cat:isDescribedByCatalogueRecord/*/a-cat:systemRecordCode">
 					<dc:identifier>
+						<xsl:text disable-output-escaping="yes">&lt;![CDATA[</xsl:text>
 						<xsl:value-of
 							select="normalize-space(a-cat:isDescribedByCatalogueRecord/*/a-cat:systemRecordCode/text())" />
+						<xsl:text disable-output-escaping="yes">]]&gt;</xsl:text>
 					</dc:identifier>
 
 					<SM:URL
 						rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">
+						<xsl:text disable-output-escaping="yes">&lt;![CDATA[</xsl:text>
 						<xsl:value-of
 							select="normalize-space(concat('http://www.catalogo.beniculturali.it/sigecSSU_FE/schedaCompleta.action?keycode=', a-cat:isDescribedByCatalogueRecord/*/a-cat:systemRecordCode/text()))" />
+						<xsl:text disable-output-escaping="yes">]]&gt;</xsl:text>
 					</SM:URL>
 
 
@@ -94,8 +100,10 @@
 
 				<xsl:if test="arco:description">
 					<dc:description xml:lang="it">
+						<xsl:text disable-output-escaping="yes">&lt;![CDATA[</xsl:text>
 						<xsl:value-of
 							select="normalize-space(arco:description/text())" />
+						<xsl:text disable-output-escaping="yes">]]&gt;</xsl:text>
 					</dc:description>
 				</xsl:if>
 
@@ -110,42 +118,35 @@
 				<dcterms:subject>
 					<rdf:Description
 						rdf:about="https://w3id.org/ecodigit/resource/Scienze_dell%27antichit%C3%A0%2C_filologico-letterarie_e_storico-artistiche">
-						<rdfs:label xml:lang="it">Scienze dell'antichità,
-							filologico-letterarie e storico-artistiche
-						</rdfs:label>
+						<rdfs:label xml:lang="it"><![CDATA[Scienze dell'antichità, filologico-letterarie e storico-artistiche]]></rdfs:label>
 					</rdf:Description>
 				</dcterms:subject>
 
 				<dcterms:subject>
 					<rdf:Description
 						rdf:about="https://w3id.org/ecodigit/resource/Beni_Culturali">
-						<rdfs:label xml:lang="it">Beni Culturali
-						</rdfs:label>
+						<rdfs:label xml:lang="it"><![CDATA[Beni Culturali]]></rdfs:label>
 					</rdf:Description>
 				</dcterms:subject>
 
 				<dcterms:subject>
 					<rdf:Description
 						rdf:about="https://w3id.org/ecodigit/resource/Turismo">
-						<rdfs:label xml:lang="it">Turismo
-						</rdfs:label>
+						<rdfs:label xml:lang="it"><![CDATA[Turismo]]></rdfs:label>
 					</rdf:Description>
 				</dcterms:subject>
 
 				<dcterms:subject>
 					<rdf:Description
 						rdf:about="https://w3id.org/ecodigit/resource/Scheda_informativa">
-						<rdfs:label xml:lang="it">Scheda informativa
-						</rdfs:label>
+						<rdfs:label xml:lang="it"><![CDATA[Scheda informativa]]></rdfs:label>
 					</rdf:Description>
 				</dcterms:subject>
 
 				<dcterms:rightsHolder>
 					<org:Organization
 						rdf:about="https://w3id.org/ecodigit/organization/mibact">
-						<foaf:name>Ministero dei Beni e delle attività Culturali e del
-							Turismo
-						</foaf:name>
+						<foaf:name><![CDATA[Ministero dei Beni e delle attività Culturali e del Turismo]]></foaf:name>
 					</org:Organization>
 				</dcterms:rightsHolder>
 

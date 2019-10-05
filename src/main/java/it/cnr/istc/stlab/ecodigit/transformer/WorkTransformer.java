@@ -34,6 +34,7 @@ import it.cnr.istc.stlab.ecodigit.transformer.work.model.ResourceIdentifierSchem
 import it.cnr.istc.stlab.ecodigit.transformer.work.model.Work;
 import it.cnr.istc.stlab.ecodigit.transformer.work.model.Work.Field;
 import it.cnr.istc.stlab.lgu.commons.entitylinking.Geonames;
+import it.cnr.istc.stlab.lgu.commons.model.Entity;
 import it.cnr.istc.stlab.lgu.commons.tables.RowsIterator;
 import it.cnr.istc.stlab.lgu.commons.tables.RowsIteratorGoogleSheets;
 import it.cnr.istc.stlab.lgu.commons.tables.XLS;
@@ -172,6 +173,13 @@ public class WorkTransformer {
 		String title = getStringField(row, bind.get(Field.TITLE));
 		w.setTitle(title);
 
+		Entity en = Geonames.getGeolocalization(title);
+		if (en != null) {
+			logger.trace("Has lat and long");
+			w.setLat(en.getLatitude());
+			w.setLon(en.getLongitude());
+		}
+
 		Integer year = getIntegerField(row, bind.get(Field.YEAR));
 		w.setYear(year);
 
@@ -202,6 +210,7 @@ public class WorkTransformer {
 			List<String> geonames = Geonames.getGeoNames(coverages[i]);
 			if (geonames.isEmpty()) {
 				geonames.addAll(Geonames.getGeoNames(coverages[i], null));
+
 			}
 
 			for (String gn : geonames) {
@@ -209,6 +218,7 @@ public class WorkTransformer {
 				r.setUri(gn);
 				r.setLabel(coverages[i]);
 				coveragesList.add(r);
+
 			}
 		}
 		w.setCoverages(coveragesList);

@@ -15,10 +15,10 @@ public class Work {
 		TITLE, LIST_OF_AUTHORS, YEAR, FIRST_PAGE, LAST_PAGE, URL, LANGUAGE, DOI, TYPE, ISBN_COLLECTION,
 		PUBLISHER_COLLECTION, PUBLISHER_PLACE_COLLECTION, TITLE_COLLECTION, ABSTRACT, IMGURL, COVERAGE,
 		RIGHTS_HOLDER_NAME, RIGHTS_HOLDER_ACRONYM, RELATION, AREA_SETTORE_DISCIPLINARE, DISCIPLINA, SETTORE_AFFINE,
-		TEMATICA
+		TEMATICA, LAT,LON
 	}
 
-	private String URI, title, language, URL, doi, _abstract, isbn, identifier, authorsString, imgURL;
+	private String URI, title, language, URL, doi, _abstract, isbn, identifier, authorsString, imgURL, lat, lon;
 	private Integer startPage, endPage, extent, year;
 	private List<Identifier> identifiers = new ArrayList<>();
 	private List<String> keywords = new ArrayList<>();
@@ -249,5 +249,23 @@ public class Work {
 	public void setImgURL(String imgURL) {
 		this.imgURL = imgURL;
 	}
+
+	public String getLat() {
+		return lat;
+	}
+
+	public void setLat(String lat) {
+		this.lat = lat;
+	}
+
+	public String getLon() {
+		return lon;
+	}
+
+	public void setLon(String lon) {
+		this.lon = lon;
+	}
+	
+	
 
 }

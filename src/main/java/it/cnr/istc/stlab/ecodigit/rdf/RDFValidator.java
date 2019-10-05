@@ -1,4 +1,4 @@
-package it.cnr.istc.stlab.ecodigit;
+package it.cnr.istc.stlab.ecodigit.rdf;
 
 import java.io.File;
 import java.util.ArrayList;
