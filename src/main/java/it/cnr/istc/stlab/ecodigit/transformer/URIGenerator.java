@@ -4,6 +4,7 @@ import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
 import java.nio.charset.StandardCharsets;
 
+import it.cnr.istc.stlab.ecodigit.transformer.model.Person;
 import it.cnr.istc.stlab.ecodigit.transformer.work.model.Work;
 
 public class URIGenerator {
@@ -30,6 +31,10 @@ public class URIGenerator {
 			return BASE + "person/" + firstName.toLowerCase() + "." + lastName.toLowerCase();
 		else
 			return BASE + "person/" + lastName.toLowerCase();
+	}
+
+	public static String getURIPerson(Person p) {
+		return getURIPerson(p.getGivenName(), p.getFamilyName());
 	}
 
 	public static String getURIFromString(String s) throws UnsupportedEncodingException {
