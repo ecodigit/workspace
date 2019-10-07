@@ -12,7 +12,7 @@
 	xmlns:fabio="http://purl.org/spar/fabio/"
 	xmlns:foaf="http://xmlns.com/foaf/0.1/"
 	xmlns:frbr="http://purl.org/vocab/frbr/core#"
-	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+	xmlns:geo="http://www.opengis.net/ont/geosparql#"
 	xmlns:l0="https://w3id.org/italia/onto/l0/"
 	xmlns:literal="http://www.essepuntato.it/2010/06/literalreification/"
 	xmlns:org="http://www.w3.org/ns/org#"
@@ -168,7 +168,7 @@
 									rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">
 									<xsl:text disable-output-escaping="yes">&lt;![CDATA[ &lt;http://www.opengis.net/def/crs/OGC/1.3/CRS84&gt; </xsl:text>
 									<xsl:value-of
-										select="normalize-space(concat('POINT(', a-loc:hasTimeIndexedTypedLocation/*/a-loc:atSite/*/locn:geometry/*/wgs84:long,',',a-loc:hasTimeIndexedTypedLocation/*/a-loc:atSite/*/locn:geometry/*/wgs84:lat,')'))" />
+										select="normalize-space(concat('POINT(', a-loc:hasTimeIndexedTypedLocation/*/a-loc:atSite/*/locn:geometry/*/wgs84:long,' ',a-loc:hasTimeIndexedTypedLocation/*/a-loc:atSite/*/locn:geometry/*/wgs84:lat,')'))" />
 									<xsl:text disable-output-escaping="yes">]]&gt;</xsl:text>
 								</geo:asWKT>
 
@@ -193,7 +193,7 @@
 										rdf:datatype="http://www.opengis.net/ont/geosparql#wktLiteral">
 										<xsl:text disable-output-escaping="yes">&lt;![CDATA[ &lt;http://www.opengis.net/def/crs/OGC/1.3/CRS84&gt; </xsl:text>
 										<xsl:value-of
-											select="normalize-space(concat('POINT(', a-loc:hasCulturalPropertyAddress/*/CLV:hasCity/*/locn:geometry/*/wgs84:long,',',a-loc:hasCulturalPropertyAddress/*/CLV:hasCity/*/locn:geometry/*/wgs84:lat,')'))" />
+											select="normalize-space(concat('POINT(', a-loc:hasCulturalPropertyAddress/*/CLV:hasCity/*/locn:geometry/*/wgs84:long,' ',a-loc:hasCulturalPropertyAddress/*/CLV:hasCity/*/locn:geometry/*/wgs84:lat,')'))" />
 										<xsl:text disable-output-escaping="yes">]]&gt;</xsl:text>
 									</geo:asWKT>
 
