@@ -49,10 +49,10 @@
 				<geo:asWKT rdf:datatype= "http://www.opengis.net/ont/geosparql#wktLiteral">
 					<![CDATA[<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POINT(${work.lon} ${work.lat})]]>
 				</geo:asWKT>
+				<geo_wgs84:lat>${work.lat}</geo_wgs84:lat>
+				<geo_wgs84:long>${work.lon}</geo_wgs84:long>
 			</sf:Point>
 		</locn:geometry>
-		<geo_wgs84:lat>${work.lat}</geo_wgs84:lat>
-		<geo_wgs84:long>${work.lon}</geo_wgs84:long>
 		</#if>
 		<#if work.authorsString??>
 		<dc:creator><![CDATA[${work.authorsString}]]></dc:creator>
