@@ -27,7 +27,7 @@
         <owl:imports rdf:resource="https://w3id.org/italia/onto/COV"/>
         <owl:imports rdf:resource="https://w3id.org/italia/onto/CPV"/>
         <owl:imports rdf:resource="https://w3id.org/italia/onto/Language"/>
-        <dc:description>https://raw.githubusercontent.com/ecodigit/workspace/master/ontology/eas/0.01/diagram.png</dc:description>
+        <dc:description rdf:resource="https://raw.githubusercontent.com/ecodigit/workspace/master/ontology/eas/0.01/diagram.png"/>
     </owl:Ontology>
     
 
