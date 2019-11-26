@@ -13,7 +13,7 @@
      xmlns:cpannotationschema="http://www.ontologydesignpatterns.org/schemas/cpannotationschema.owl#">
     <owl:Ontology rdf:about="https://w3id.org/ecodigit/ontology/grade">
         <owl:imports rdf:resource="http://purl.org/spar/literal"/>
-        <dc:description rdf:resource="https://raw.githubusercontent.com/ecodigit/workspace/master/ontology/grade/0.01/diagram.png"/>
+        <dc:description rdf:resource="https://raw.githubusercontent.com/ecodigit/workspace/master/ontology/grade/0.02/diagram.png"/>
     </owl:Ontology>
 
 
@@ -196,7 +196,7 @@
 
 
 
-    
+
 </rdf:RDF>
 
 
