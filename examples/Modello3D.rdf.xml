@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:bibo="http://purl.org/ontology/bibo/"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:ve="https://w3id.org/ecodigit/ontology/virtualEnvironments/"
+	xmlns:org="http://www.w3.org/ns/org#"
+	xmlns:CLV="https://w3id.org/italia/onto/CLV/"
+	xmlns:fabio="http://purl.org/spar/fabio/"
+	xmlns:prov="http://www.w3.org/ns/prov#"
+	xmlns:datacite="http://purl.org/spar/datacite/"
+	xmlns:literal="http://www.essepuntato.it/2010/06/literalreification/"
+	xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/"
+	xmlns:schemaorg="https://schema.org/"
+	xmlns:frbr="http://purl.org/vocab/frbr/core#"
+	xmlns:SM="https://w3id.org/italia/onto/SM/"
+	xmlns:project="https://w3id.org/italia/onto/Project/"
+	xmlns:DUL="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#"
+	xmlns:MU="https://w3id.org/italia/onto/MU/"
+	xmlns:l0="https://w3id.org/italia/onto/l0/"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#">
+
+	<!-- Istruzioni -->
+	<!-- Sostituire le variabili ${var} con i dati reali -->
+	<!-- Lasciare invariato il resto -->
+
+	<!-- Inserire un ID univoco -->
+
+	<rdf:Description
+		rdf:about="https://w3id.org/ecodigit/object/${id}">
+
+		<rdf:type>
+			<rdf:Description
+				rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object">
+				<rdfs:label xml:lang="it">Oggetto</rdfs:label>
+			</rdf:Description>
+		</rdf:type>
+
+		<rdf:type>
+			<rdf:Description
+				rdf:about="https://w3id.org/ecodigit/ontology/virtualEnvironments/3DModel">
+				<rdfs:label xml:lang="it">Modello 3D</rdfs:label>
+			</rdf:Description>
+		</rdf:type>
+
+		<!-- Inserire identificativo univoco del modello -->
+		<dc:identifier><![CDATA[${idModello}]]></dc:identifier>
+
+		<!-- (Se disponibile) Inserire una descrizione del modello in lingua inglese -->
+		<dc:description xml:lang="en"><![CDATA[${descrizioneEn}]]></dc:description>
+
+		<!-- (Se disponibile) Inserire una descrizione del modello in lingua italiana -->
+		<dc:description xml:lang="it"><![CDATA[${descrizioneIt}]]></dc:description>
+
+		<!-- Inserire anno di creazione del modello -->
+		<dc:date>${anno}</dc:date>
+
+		<!-- Inserire lista di autori in formato stringa -->
+		<!-- DA MAIL: nome di chi ha sviluppato il modello -->
+		<dc:creator><![CDATA[${stringaAutori}]]></dc:creator>
+		<!-- Possibilmente fornire gli autori in forma strutturata com segue per 
+			migliorare la possibilità di fare alcune interrogazioni (e.g. dammi tutti 
+			i modelli di un certo autore). -->
+		<!-- Per fare questo, per ogni autore replicare il seguente blocco <frbr:creator></frbr:creator> -->
+		<frbr:creator>
+			<foaf:Person
+				rdf:about="https://w3id.org/ecodigit/person/${nomeAutore}.${cognomeAutore}">
+				<foaf:name>${nomeAutore} ${cognomeAutore}</foaf:name>
+				<!-- Eventualmente fornire anche l'informazione riguardo all'organizzazione 
+					a cui la persona appartiene -->
+				<org:memberOf>
+					<org:Organization
+						rdf:about="https://w3id.org/ecodigit/organization/${acronimoOrganizzazione}">
+						<foaf:name><![CDATA[${nomeOrganizzazione}]]></foaf:name>
+						<foaf:acronym>${acronimoOrganizzazione}</foaf:acronym>
+					</org:Organization>
+				</org:memberOf>
+			</foaf:Person>
+		</frbr:creator>
+		<!-- Fine -->
+
+		<!-- Inserire evevntuali organizzazioni coinvolte nella realizzazione del 
+			modello. -->
+		<!-- Per aggiungere più organizzazini ricopiare il blocco <dc:contributor></dc:contributor> -->
+		<dc:contributor>
+			<org:Organization
+				rdf:about="https://w3id.org/ecodigit/organization/${acronimoOrganizzazione}">
+				<foaf:name>${nomeOrganizzazione}</foaf:name>
+			</org:Organization>
+		</dc:contributor>
+
+		<!-- Colui (persona o organizzazione) che detiene i diritti sul modello 
+			(proprietario) -->
+		<!-- DA MAIL: nome del proprietario del bene di cui si ha il modello -->
+		<!-- Nel caso in cui siano presenti più persone o più organizzazioni duplicare 
+			il blocco <dcterms:rightsHolder></dcterms:rightsHolder> -->
+		<!-- Nel caso in cui si voglia dire che una organizzazione sia proprietaria 
+			di un modello -->
+		<dcterms:rightsHolder>
+			<org:Organization
+				rdf:about="https://w3id.org/ecodigit/organization/${acronimoOrganizzazione}">
+				<foaf:name>${nomeOrganizzazione}</foaf:name>
+			</org:Organization>
+		</dcterms:rightsHolder>
+		<!-- Nel caso in cui si voglia dire che una persona è proprietaria di un 
+			modello -->
+		<dcterms:rightsHolder>
+			<foaf:Person
+				rdf:about="https://w3id.org/ecodigit/person/${nomePersona}.${cognomePersona}">
+				<foaf:name>${nomePersona} ${cognomePersona}</foaf:name>
+				<!-- Eventualmente fornire anche l'informazione riguardo all'organizzazione 
+					a cui la persona appartiene -->
+				<org:memberOf>
+					<org:Organization
+						rdf:about="https://w3id.org/ecodigit/organization/${acronimoOrganizzazione}">
+						<foaf:name><![CDATA[${nomeOrganizzazione}]]></foaf:name>
+						<foaf:acronym>${acronimoOrganizzazione}</foaf:acronym>
+					</org:Organization>
+				</org:memberOf>
+			</foaf:Person>
+		</dcterms:rightsHolder>
+
+
+		<!-- DA MAIL nome del progetto per il quale è stato prodotto il modello -->
+		<project:isOutcomeOfProject>
+			<project:PublicInvestmentProject
+				rdf:about="https://w3id.org/ecodigit/project/${acronimoProgetto}">
+				<project:projectTitle>${titoloProgetto}</project:projectTitle>
+				<project:projectAcronym>${acronimoProgetto}</project:projectAcronym>
+			</project:PublicInvestmentProject>
+		</project:isOutcomeOfProject>
+
+
+		<!-- DA MAIL nome (o comunque uri) del file del modello -->
+		<!-- Inserire nome del modello -->
+		<dc:title><![CDATA[${nomeModello}]]></dc:title>
+		<!-- qui mettere la URI del modello -->
+		<SM:URL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"><![CDATA[${uriModello}]]></SM:URL>
+
+		<!-- DA MAIL modello scalato: indica se il modello è scalato oppure no. -->
+		<!-- true/false -->
+		<ve:isScaled>${modelloScalato}</ve:isScaled>
+
+		<!-- unità di misura: se il modello è scalato, indica l'unità di misura. -->
+		<!-- Sostituire unità di misura con cm/m/mm -->
+		<ve:hasScale>
+			<ve:Scale>
+				<MU:hasMeasurementUnit>
+					<MU:MeasurementUnit
+						rdf:about="https://w3id.org/ecodigit/resource/${unitaDiMisura}">
+						<rdfs:label>${unitaDiMisura}</rdfs:label>
+					</MU:MeasurementUnit>
+				</MU:hasMeasurementUnit>
+			</ve:Scale>
+		</ve:hasScale>
+
+		<!-- orientamento lungo asse Z: riguarda l'informazione relativa all'orientamento 
+			del modello. Questo perché ptrebbe essere disallineato. -->
+		<ve:isOrientedAlongZAxis>${isOrientedAlongZAxis}
+		</ve:isOrientedAlongZAxis>
+
+		<!-- ha modelli legati: "true" se ha modelli legati, "false" altrimenti -->
+		<ve:containsSubModel>${containsSubModel}</ve:containsSubModel>
+
+		<!-- Per ogni modello "legato" copiare il blocco <ve:hasSubModel></ve:hasSubModel> -->
+		<ve:hasSubModel>
+			<ve:SubModel>
+				<!-- qui mettere la URI del modello -->
+				<!-- per ora ho messo solo questo campo non so se ve ne servono altri -->
+				<SM:URL
+					rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"><![CDATA[${uriModelloLegato}]]></SM:URL>
+			</ve:SubModel>
+		</ve:hasSubModel>
+
+		<!-- contiene hotspot o features: "true" se ha features/hotspot, "false" 
+			altrimenti -->
+		<ve:containsHotspot>${containsHotspot}</ve:containsHotspot>
+
+		<!-- Per ogni feature/hotspot copiare il blocco <hasHotspot></hasHotspot> -->
+		<ve:hasHotspot>
+			<ve:Hotspot>
+				<!-- nome -->
+				<l0:name>${nomeHotspot}</l0:name>
+				<!-- identificativo -->
+				<ve:hotspotIdentifier>${identificcativoHotspot}
+				</ve:hotspotIdentifier>
+				<!-- tipo inserire uno tra: "Sphere", "Point" o "Parallelepiped" -->
+				<rdf:type
+					rdfs:resource="https://w3id.org/ecodigit/ontology/virtualEnvironments/${tipoHotspot}" />
+
+				<!-- element con cui è relezionato l'hotspot -->
+				<dc:relation>
+					<rdf:Description rdf:about="${uriElemento}">
+						<dc:title><![CDATA[${titoloElemento}]]></dc:title>
+						<l0:description>${descrizioneElemento}</l0:description>
+						<!-- inserire il tipo -->
+						<!-- Per oggetto ${tipoFeature}=http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object -->
+						<!-- Per pubblicazione ${tipoFeature}=http://purl.org/spar/fabio/Work -->
+						<!-- Per organizzazione ${tipoFeature}=http://www.w3.org/ns/org#Organization -->
+						<rdf:type rdf:resource="${tipoFeature}" />
+						<!-- Eventualmente altri campi o anche altri tipi -->
+					</rdf:Description>
+				</dc:relation>
+			</ve:Hotspot>
+		</ve:hasHotspot>
+
+	</rdf:Description>
+
+</rdf:RDF>
