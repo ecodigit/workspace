@@ -144,6 +144,7 @@ public class PersonTransformer {
 			throws Exception {
 
 		new File(outFolder).mkdirs();
+		new File(publicationsFolder).mkdirs();
 
 		RowsIterator rit = new RowsIteratorGoogleSheets(sheet_id, "Risposte del modulo 1");
 
@@ -182,8 +183,8 @@ public class PersonTransformer {
 
 	public static void main(String[] args) throws Exception {
 
-		transformFromFormPerson("1sFKzCJFOo8Gw3-26Cj8CUr8ZjWN9CO6m1lZMBo-k_Ko", "/Users/lgu/Desktop/ecodigit/Persons",
-				"/Users/lgu/Desktop/ecodigit/Pubblicazioni");
+		transformFromFormPerson("1sFKzCJFOo8Gw3-26Cj8CUr8ZjWN9CO6m1lZMBo-k_Ko", "/Users/lgu/Desktop/Persons",
+				"/Users/lgu/Desktop/Pubblicazioni");
 
 	}
 
