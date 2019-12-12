@@ -33,6 +33,38 @@
 		<#if work.identifier??>
 		<dc:identifier><![CDATA[${work.identifier}]]></dc:identifier>
 		</#if>
+		<#if work.isbn??>
+		<datacite:hasIdentifier>
+			<datacite:ResourceIdentifier>
+				<literal:hasLiteralValue><![CDATA[${work.isbn}]]></literal:hasLiteralValue>
+				<datacite:usesIdentifierScheme>
+					<datacite:ResourceIdentifierScheme rdf:about="http://purl.org/spar/datacite/isbn">
+						<fabio:hasURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.isbn-international.org/</fabio:hasURL>
+						<rdfs:label>ISBN</rdfs:label>
+					</datacite:ResourceIdentifierScheme>
+				</datacite:usesIdentifierScheme>
+			</datacite:ResourceIdentifier>
+		</datacite:hasIdentifier>
+		<bibo:isbn>${work.isbn}</bibo:isbn>
+		</#if>
+		<#if work.publisher??>
+				<dcterms:publisher>
+					<org:Organization rdf:about="${work.publisher.URI}">
+						<foaf:name>${work.publisher.name}</foaf:name>
+						<#if work.publisher.fulladdress??>
+						<org:hasSite>
+							<org:Site>
+								<CLV:hasAddress>
+									<CLV:Address>
+										<CLV:fullAddress><![CDATA[${work.publisher.fulladdress}]]></CLV:fullAddress>
+								</CLV:Address>
+								</CLV:hasAddress>
+							</org:Site>
+						</org:hasSite>
+						</#if>
+				</org:Organization>
+			</dcterms:publisher>
+		</#if>
 		<#if work._abstract??>
 		<dc:description><![CDATA[${work._abstract}]]></dc:description>
 		<bibo:abstract><![CDATA[${work._abstract}]]></bibo:abstract>
@@ -153,8 +185,21 @@
 		<dcterms:isPartOf>
 			<rdf:Description rdf:about="${work.isPartOf.URI}">
 				<dc:title><![CDATA[${work.isPartOf.title}]]></dc:title>
+				<#if work.isPartOf.isbn??>
+				<datacite:hasIdentifier>
+					<datacite:ResourceIdentifier>
+						<literal:hasLiteralValue><![CDATA[${work.isPartOf.isbn}]]></literal:hasLiteralValue>
+						<datacite:usesIdentifierScheme>
+							<datacite:ResourceIdentifierScheme rdf:about="http://purl.org/spar/datacite/isbn">
+								<fabio:hasURL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://www.isbn-international.org/</fabio:hasURL>
+								<rdfs:label>ISBN</rdfs:label>
+							</datacite:ResourceIdentifierScheme>
+						</datacite:usesIdentifierScheme>
+					</datacite:ResourceIdentifier>
+				</datacite:hasIdentifier>
 				<bibo:isbn>${work.isPartOf.isbn}</bibo:isbn>
 				<dc:identifier><![CDATA[${work.isPartOf.isbn}]]></dc:identifier>
+				</#if>
 				<#if work.isPartOf.publisher??>
 				<dcterms:publisher>
 					<org:Organization rdf:about="${work.isPartOf.publisher.URI}">

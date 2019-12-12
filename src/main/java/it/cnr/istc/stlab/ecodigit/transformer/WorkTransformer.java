@@ -43,7 +43,7 @@ public class WorkTransformer {
 
 	private static Logger logger = LoggerFactory.getLogger(WorkTransformer.class);
 
-	private static List<Person> getListOfPersonsFromAuthorList(String list) {
+	public static List<Person> getListOfPersonsFromAuthorList(String list) {
 		List<Person> result = new ArrayList<>();
 
 		for (String persona : list.split(";")) {
