@@ -25,6 +25,11 @@ Di seguito la lista delle ontologie definite ex-novo per EcoDigit:
 	- Namespace: `https://w3id.org/ecodigit/ontology/grade/`
 	- Obiettivo: L'ontologia ha lo scopo di definire un vocabolario di termini per la descrizione di qualsiasi cosa abbiamo una valutazione associata espressa rispetto una certa scala.
 	
+- [Ontologia dei Progetti](https://w3id.org/italia/onto/Project)
+	- Namespace: `https://w3id.org/italia/onto/Project`
+	- Obiettivo: L'ontologia ha lo scopo di definire un modello computazionale per i dati relativi ai progetti pubblici.
+	- Nota: L'ontologia è stata sviluppata in collaborazione con l'Agenzia per l'Italia Digitale ed è parte del network di ontologie di OntoPiA. Una discussione riguardo la modellazione dell'ontologia è disponibile al seguenti [indirizzo](https://github.com/italia/daf-ontologie-vocabolari-controllati/issues/59).
+	
 
 
 
