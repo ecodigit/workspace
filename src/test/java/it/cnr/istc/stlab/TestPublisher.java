@@ -1,7 +1,5 @@
 package it.cnr.istc.stlab;
 
-import java.io.File;
-import java.io.FileWriter;
 import java.io.IOException;
 import java.io.StringReader;
 import java.io.StringWriter;
@@ -23,11 +21,10 @@ import it.cnr.istc.stlab.ecodigit.transformer.WorkTransformer;
 import it.cnr.istc.stlab.ecodigit.transformer.model.Organization;
 import it.cnr.istc.stlab.ecodigit.transformer.model.Person;
 import it.cnr.istc.stlab.ecodigit.transformer.work.model.Work;
-import it.cnr.istc.stlab.ecodigit.transformer.work.model.Work.Field;
 
 public class TestPublisher {
 
-	private static List<Person> getListOfPersonsFromAuthorList(String list) {
+	static List<Person> getListOfPersonsFromAuthorList(String list) {
 		List<Person> result = new ArrayList<>();
 
 		for (String persona : list.split(";")) {
@@ -55,7 +52,7 @@ public class TestPublisher {
 		w.setYear(2019);
 		List<Person> authors = WorkTransformer.getListOfPersonsFromAuthorList(authorString);
 		w.setAuthor(authors);
-		String work_id = "http://example.org/"+URIGenerator.getIDWork(w);
+		String work_id = "http://example.org/" + URIGenerator.getIDWork(w);
 		w.setURI(work_id);
 		w.setIsbn("ISBN-DI-PROVA");
 		Organization o = new Organization();

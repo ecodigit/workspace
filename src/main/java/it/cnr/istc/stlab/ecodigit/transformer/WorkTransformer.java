@@ -203,7 +203,14 @@ public class WorkTransformer {
 		w.setImgURL(imgURL);
 
 		String coverageString = getStringField(row, bind.get(Field.COVERAGE));
-		String[] coverages = coverageString.split(",");
+		String[] coverages = {};
+		if (coverageString != null && coverageString.contains(",")) {
+			coverages = coverageString.split(",");
+		} else if (coverageString != null && coverageString.length() > 0) {
+			coverages = new String[1];
+			coverages[0] = coverageString;
+		}
+
 		List<Resource> coveragesList = new ArrayList<>();
 		for (int i = 0; i < coverages.length; i++) {
 			coverages[i] = coverages[i].trim();
@@ -448,8 +455,8 @@ public class WorkTransformer {
 		}
 	}
 
-	private static void transformFromFormObject(String sheet_id, String outFolder, String publicationsFolder)
-			throws Exception {
+	private static void transformFromFormObject(String sheet_id, String outFolder, String publicationsFolder,
+			boolean concatenateIdAndDate) throws Exception {
 
 		new File(outFolder).mkdirs();
 
@@ -468,7 +475,10 @@ public class WorkTransformer {
 
 			Work w = wt.transformObjectFromForm(row, binding, publicationsFolder);
 
-			String id = URIGenerator.getIDFromString(w.getTitle() + "_" + row[0]);
+			String fileName = URIGenerator.getIDFromString(w.getTitle() + "_" + row[0]);
+			if (!concatenateIdAndDate) {
+				fileName = URIGenerator.getIDFromString(w.getTitle());
+			}
 
 			System.out.println(w.getURI());
 
@@ -476,7 +486,7 @@ public class WorkTransformer {
 			root.put("work", w);
 
 			Template temp = TransformerConfiguration.getInstance().getFreemarkerCfg().getTemplate("work.ftlh");
-			FileWriter out = new FileWriter(new File(outFolder + "/" + id + ".rdf.xml"));
+			FileWriter out = new FileWriter(new File(outFolder + "/" + fileName + ".rdf.xml"));
 			StringWriter sw = new StringWriter();
 			temp.process(root, out);
 			temp.process(root, sw);
@@ -498,9 +508,12 @@ public class WorkTransformer {
 		if (pub)
 			transformPublications("/Users/lgu/Desktop/ecodigit/pub.xlsx", "/Users/lgu/Desktop/ecodigit/Pubblicazioni");
 
-		if (formObject)
+		if (formObject) {
 			transformFromFormObject("1zy_98Jz2AvCEg_r4MyZnMt2QHJnTo0X_2mLLaVeIZ90",
-					"/Users/lgu/Desktop/ecodigit/FormObjects", "/Users/lgu/Desktop/ecodigit/Pubblicazioni");
+					"/Users/lgu/Desktop/ecodigit/FormObjects", "/Users/lgu/Desktop/ecodigit/Pubblicazioni", true);
+			transformFromFormObject("1zy_98Jz2AvCEg_r4MyZnMt2QHJnTo0X_2mLLaVeIZ90",
+					"/Users/lgu/Desktop/ecodigit/FormObjects", "/Users/lgu/Desktop/ecodigit/Pubblicazioni", false);
+		}
 
 		// controllo validità dati
 
