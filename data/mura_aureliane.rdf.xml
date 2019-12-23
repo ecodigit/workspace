@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:bibo="http://purl.org/ontology/bibo/"
+	xmlns:dcterms="http://purl.org/dc/terms/"
+	xmlns:ve="https://w3id.org/ecodigit/ontology/virtualEnvironments/"
+	xmlns:org="http://www.w3.org/ns/org#"
+	xmlns:CLV="https://w3id.org/italia/onto/CLV/"
+	xmlns:fabio="http://purl.org/spar/fabio/"
+	xmlns:prov="http://www.w3.org/ns/prov#"
+	xmlns:datacite="http://purl.org/spar/datacite/"
+	xmlns:literal="http://www.essepuntato.it/2010/06/literalreification/"
+	xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/"
+	xmlns:schemaorg="https://schema.org/"
+	xmlns:frbr="http://purl.org/vocab/frbr/core#"
+	xmlns:SM="https://w3id.org/italia/onto/SM/"
+	xmlns:project="https://w3id.org/italia/onto/Project/"
+	xmlns:DUL="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#"
+	xmlns:MU="https://w3id.org/italia/onto/MU/"
+	xmlns:l0="https://w3id.org/italia/onto/l0/"
+	xmlns:skos="http://www.w3.org/2008/05/skos#"
+	xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#">
+
+	<!-- Istruzioni -->
+	<!-- Sostituire le variabili ${var} con i dati reali -->
+	<!-- Lasciare invariato il resto -->
+
+	<!-- Inserire un ID univoco -->
+
+	<rdf:Description
+		rdf:about="https://w3id.org/ecodigit/object/saccone/porta_latina">
+
+		<rdf:type>
+			<rdf:Description
+				rdf:about="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object">
+				<rdfs:label xml:lang="it">Oggetto</rdfs:label>
+			</rdf:Description>
+		</rdf:type>
+
+		<rdf:type>
+			<rdf:Description
+				rdf:about="https://w3id.org/ecodigit/ontology/virtualEnvironments/3DModel">
+				<rdfs:label xml:lang="it">Modello 3D</rdfs:label>
+			</rdf:Description>
+		</rdf:type>
+
+		<rdf:type
+			rdf:resource="https://w3id.org/ecodigit/resource/Ricostruzioni_3d_di_ambienti_virtuali" />
+
+		<!-- Inserire identificativo univoco del modello -->
+		<!-- <dc:identifier><![CDATA[${idModello}]]></dc:identifier> -->
+
+		<!-- DA MAIL nome (o comunque uri) del file del modello -->
+		<!-- Inserire nome del modello -->
+		<dc:title><![CDATA[Porta Latina]]></dc:title>
+
+		<!-- (Se disponibile) Inserire una descrizione del modello in lingua inglese -->
+		<dc:description xml:lang="en"><![CDATA[integrated 3D survey model, made by photogrammetry, laser scanner and topography. The model show Porta Latina one of the ancient doors of Arelian Walls in Rome]]></dc:description>
+
+		<!-- (Se disponibile) Inserire una descrizione del modello in lingua italiana -->
+		<dc:description xml:lang="it"><![CDATA[modello 3d di rilievo, realizzato con tecniche di rilievo integrato, fotogrammetrico, laser scanner e topografico, del complesso di Porta Latina, appartenente al circuito delle mura Aureliane in Roma.]]></dc:description>
+
+		<!-- Inserire anno di creazione del modello -->
+		<dc:date>2019</dc:date>
+
+		<!-- Inserire lista di autori in formato stringa -->
+		<!-- DA MAIL: nome di chi ha sviluppato il modello -->
+		<dc:creator><![CDATA[Mauro Saccone, Marco Canciani, Manuela Michelini}]]></dc:creator>
+
+		<!-- Possibilmente fornire gli autori in forma strutturata com segue per
+			migliorare la possibilità di fare alcune interrogazioni (e.g. dammi tutti
+			i modelli di un certo autore). -->
+		<!-- Per fare questo, per ogni autore replicare il seguente blocco <frbr:creator></frbr:creator> -->
+		<frbr:creator>
+			<foaf:Person
+				rdf:about="https://w3id.org/ecodigit/person/mauro.saccone">
+				<foaf:name>Mauro Saccone</foaf:name>
+				<!-- Eventualmente fornire anche l'informazione riguardo all'organizzazione
+					a cui la persona appartiene -->
+				<org:memberOf>
+					<org:Organization
+						rdf:about="https://w3id.org/ecodigit/organization/DAR-RM3">
+						<foaf:name><![CDATA[Dipartimento di Architettura Università degli studi Roma Tre]]></foaf:name>
+						<foaf:acronym>DAR-RM3</foaf:acronym>
+					</org:Organization>
+				</org:memberOf>
+			</foaf:Person>
+		</frbr:creator>
+		<frbr:creator>
+			<foaf:Person
+				rdf:about="https://w3id.org/ecodigit/person/marco.canciani">
+				<foaf:name>Marco Canciani</foaf:name>
+				<!-- Eventualmente fornire anche l'informazione riguardo all'organizzazione
+					a cui la persona appartiene -->
+				<org:memberOf>
+					<org:Organization
+						rdf:about="https://w3id.org/ecodigit/organization/DAR-RM3">
+						<foaf:name><![CDATA[Dipartimento di Architettura Università degli studi Roma Tre]]></foaf:name>
+						<foaf:acronym>DAR-RM3</foaf:acronym>
+					</org:Organization>
+				</org:memberOf>
+			</foaf:Person>
+		</frbr:creator>
+		<frbr:creator>
+			<foaf:Person
+				rdf:about="https://w3id.org/ecodigit/person/manuela.michelini">
+				<foaf:name>Manuela Michelini</foaf:name>
+				<!-- Eventualmente fornire anche l'informazione riguardo all'organizzazione
+					a cui la persona appartiene -->
+				<org:memberOf>
+					<org:Organization
+						rdf:about="https://w3id.org/ecodigit/organization/DAR-RM3">
+						<foaf:name><![CDATA[Dipartimento di Architettura Università degli studi Roma Tre]]></foaf:name>
+						<foaf:acronym>DAR-RM3</foaf:acronym>
+					</org:Organization>
+				</org:memberOf>
+			</foaf:Person>
+		</frbr:creator>
+
+
+
+
+
+		<!-- Fine -->
+
+		<!-- Inserire evevntuali organizzazioni coinvolte nella realizzazione del
+			modello. -->
+		<!-- Per aggiungere più organizzazini ricopiare il blocco <dc:contributor></dc:contributor> -->
+		<dc:contributor>
+			<org:Organization
+				rdf:about="https://w3id.org/ecodigit/organization/SCBC">
+				<foaf:name>Sovrintendenza Capitolina ai Beni Culturali</foaf:name>
+			</org:Organization>
+		</dc:contributor>
+
+
+		<!-- Colui (persona o organizzazione) che detiene i diritti sul modello
+			(proprietario) -->
+		<!-- DA MAIL: nome del proprietario del bene di cui si ha il modello -->
+		<!-- Nel caso in cui siano presenti più persone o più organizzazioni duplicare
+			il blocco <dcterms:rightsHolder></dcterms:rightsHolder> -->
+		<!-- Nel caso in cui si voglia dire che una organizzazione sia proprietaria
+			di un modello -->
+		<dcterms:rightsHolder>
+			<org:Organization
+				rdf:about="https://w3id.org/ecodigit/organization/DAR-RM3">
+				<foaf:name>Dipartimento di Architettura Università degli studi Roma
+					Tre</foaf:name>
+			</org:Organization>
+		</dcterms:rightsHolder>
+
+
+		<!-- Nel caso in cui si voglia dire che una persona è proprietaria di un
+			modello -->
+		<!-- <dcterms:rightsHolder> <foaf:Person rdf:about="https://w3id.org/ecodigit/person/${nomePersona}.${cognomePersona}">
+			<foaf:name>${nomePersona} ${cognomePersona}</foaf:name> -->
+		<!-- Eventualmente fornire anche l'informazione riguardo all'organizzazione
+			a cui la persona appartiene -->
+		<!-- <org:memberOf> <org:Organization rdf:about="https://w3id.org/ecodigit/organization/${acronimoOrganizzazione}">
+			<foaf:name><![CDATA[${nomeOrganizzazione}]]></foaf:name> <foaf:acronym>${acronimoOrganizzazione}</foaf:acronym>
+			</org:Organization> </org:memberOf> </foaf:Person> </dcterms:rightsHolder> -->
+
+
+		<!-- Informazioni di Licenza -->
+		<!-- <dcterms:license rdf:resource="${URL al documento descrittivo della
+			licenza}" /> -->
+
+
+		<!-- DA MAIL nome del progetto per il quale è stato prodotto il modello -->
+		<project:isOutcomeOfProject>
+			<project:PublicInvestmentProject
+				rdf:about="https://w3id.org/ecodigit/project/MuraAureliane">
+				<project:projectTitle>progetto Mura Aureliane, convenzione con la
+					Sovrintendenza Capitolina ai Beni Culturali</project:projectTitle>
+				<project:projectAcronym>Mura Aureliane</project:projectAcronym>
+			</project:PublicInvestmentProject>
+		</project:isOutcomeOfProject>
+
+
+		<!-- qui mettere la URI del modello -->
+		<!-- dove sta fisicamente il file del modello 3d -->
+		<SM:URL rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"><![CDATA[http://www.w3.org/2001/models/Porta_Latina_e.nxz]]></SM:URL>
+
+		<!-- Keyword -->
+		<prism:keyword xml:lang="english"><![CDATA[photogrammetry]]></prism:keyword>
+		<prism:keyword xml:lang="english"><![CDATA[Cultural Heritage]]></prism:keyword>
+		<prism:keyword xml:lang="english"><![CDATA[3D models]]></prism:keyword>
+		<prism:keyword xml:lang="english"><![CDATA[Aurelian Walls]]></prism:keyword>
+		<prism:keyword xml:lang="english"><![CDATA[Porta Latina]]></prism:keyword>
+
+
+
+		<!-- Relation: altri oggetti (e.g. schede, pubblicazioni) legate al modello
+			3d <dcterms:relation rdf:resource="${URI Metadati dell'oggetto con cui è
+			in relazione}"> </dcterms:relation> -->
+
+		<!-- Categorie EcoDigit https://github.com/ecodigit/workspace/tree/master/ontology
+			<dcterms:subject rdf:resource="${uriCategoria}" /> -->
+
+
+		<!-- ha modelli legati: "true" se ha modelli legati, "false" altrimenti -->
+		<ve:containsSubModel>true</ve:containsSubModel>
+
+		<!-- Per ogni modello "legato" copiare il blocco <ve:hasSubModel></ve:hasSubModel> -->
+
+		<ve:hasSubModel>
+			<ve:SubModel>
+				<!-- qui mettere la URI del modello -->
+				<!-- per ora ho messo solo questo campo non so se ve ne servono altri -->
+				<SM:URL
+					rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"><![CDATA[http://www.w3.org/2001/models/Porta_Latina_i_sx.nxz]]></SM:URL>
+			</ve:SubModel>
+		</ve:hasSubModel>
+
+		<ve:hasSubModel>
+			<ve:SubModel>
+				<!-- qui mettere la URI del modello -->
+				<!-- per ora ho messo solo questo campo non so se ve ne servono altri -->
+				<SM:URL
+					rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"><![CDATA[http://www.w3.org/2001/models/Porta_Latina_interno.nxz]]></SM:URL>
+			</ve:SubModel>
+		</ve:hasSubModel>
+
+		<ve:hasSubModel>
+			<ve:SubModel>
+				<!-- qui mettere la URI del modello -->
+				<!-- per ora ho messo solo questo campo non so se ve ne servono altri -->
+				<SM:URL
+					rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"><![CDATA[http://www.w3.org/2001/models/Porta_Latina_i_dx.nxz]]></SM:URL>
+			</ve:SubModel>
+		</ve:hasSubModel>
+
+		<ve:hasSubModel>
+			<ve:SubModel>
+				<!-- qui mettere la URI del modello -->
+				<!-- per ora ho messo solo questo campo non so se ve ne servono altri -->
+				<SM:URL
+					rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"><![CDATA[http://www.w3.org/2001/models/torre_j20_e.nxz]]></SM:URL>
+			</ve:SubModel>
+		</ve:hasSubModel>
+
+		<ve:hasSubModel>
+			<ve:SubModel>
+				<!-- qui mettere la URI del modello -->
+				<!-- per ora ho messo solo questo campo non so se ve ne servono altri -->
+				<SM:URL
+					rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"><![CDATA[http://www.w3.org/2001/models/torre_j20_i.nxz]]></SM:URL>
+			</ve:SubModel>
+		</ve:hasSubModel>
+
+		<ve:hasSubModel>
+			<ve:SubModel>
+				<!-- qui mettere la URI del modello -->
+				<!-- per ora ho messo solo questo campo non so se ve ne servono altri -->
+				<SM:URL
+					rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"><![CDATA[http://www.w3.org/2001/models/torre_k1_e.nxz]]></SM:URL>
+			</ve:SubModel>
+		</ve:hasSubModel>
+
+		<ve:hasSubModel>
+			<ve:SubModel>
+				<!-- qui mettere la URI del modello -->
+				<!-- per ora ho messo solo questo campo non so se ve ne servono altri -->
+				<SM:URL
+					rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"><![CDATA[http://www.w3.org/2001/models/torre_k1_i_dx.nxz]]></SM:URL>
+			</ve:SubModel>
+		</ve:hasSubModel>
+
+		<ve:hasSubModel>
+			<ve:SubModel>
+				<!-- qui mettere la URI del modello -->
+				<!-- per ora ho messo solo questo campo non so se ve ne servono altri -->
+				<SM:URL
+					rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"><![CDATA[http://www.w3.org/2001/models/torre_k1_i_sx.nxz]]></SM:URL>
+			</ve:SubModel>
+		</ve:hasSubModel>
+
+		<ve:hasSubModel>
+			<ve:SubModel>
+				<!-- qui mettere la URI del modello -->
+				<!-- per ora ho messo solo questo campo non so se ve ne servono altri -->
+				<SM:URL
+					rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI"><![CDATA[http://www.w3.org/2001/models/torre_k1_interno.nxz]]></SM:URL>
+			</ve:SubModel>
+		</ve:hasSubModel>
+
+
+
+		<!-- contiene hotspot o features: "true" se ha features/hotspot, "false"
+			altrimenti -->
+		<ve:containsHotspot>true</ve:containsHotspot>
+
+		<!-- Per ogni feature/hotspot copiare il blocco <hasHotspot></hasHotspot> -->
+		<ve:hasHotspot>
+			<ve:Hotspot>
+				<!-- nome -->
+				<l0:name>iconografia storica</l0:name>
+				<!-- identificativo -->
+				<ve:hotspotIdentifier>spot</ve:hotspotIdentifier>
+				<!-- tipo inserire uno tra: "Sphere", "Point", "Surface" -->
+				<rdf:type
+					rdfs:resource="https://w3id.org/ecodigit/ontology/virtualEnvironments/Sphere" />
+
+				<!-- element con cui è relezionato l'hotspot (con metadati) -->
+				<dc:relation>
+					<rdf:Description
+						rdf:about="https://w3id.org/ecodigit/resource/MuraAureliane_IconografiaStorica">
+						<dc:title><![CDATA[L'iconografia storica]]></dc:title>
+						<l0:description>Numerose sono le rappresentazioni della porta
+							Latina che descrivono le diverse fasi di vita del monumento, qui
+							sono riportate alcune viste dall'esterno delle Mura Aureliane
+						</l0:description>
+						<!-- inserire il tipo -->
+						<!-- Per oggetto ${tipoFeature}=http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object -->
+						<!-- Per pubblicazione ${tipoFeature}=http://purl.org/spar/fabio/Work -->
+						<!-- Per organizzazione ${tipoFeature}=http://www.w3.org/ns/org#Organization -->
+						<rdf:type
+							rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object" />
+						<!-- Eventualmente altri campi o anche altri tipi -->
+					</rdf:Description>
+				</dc:relation>
+
+				<!-- SOLO URL a oggetto in relazione con l'hotspot -->
+				<!-- <dcterms:relation rdf:resource="${URI Metadati dell'oggetto con
+					cui è in relazione}"> </dcterms:relation> -->
+			</ve:Hotspot>
+		</ve:hasHotspot>
+
+
+		<!-- - Metadati relativi alla visutalizazione -->
+		<ve:hasVisualization>
+			<ve:Visualization
+				rdf:about="https://w3id.org/ecodigit/object/saccone/porta_latina/Visualizzazione_1">
+
+				<!-- DA MAIL modello scalato: indica se il modello è scalato oppure no. -->
+				<!-- true/false -->
+				<ve:isScaled>true</ve:isScaled>
+
+				<!-- unità di misura: se il modello è scalato, indica l'unità di misura. -->
+				<!-- Sostituire unità di misura con cm/m/mm -->
+				<ve:hasScale>
+					<ve:Scale>
+						<MU:hasMeasurementUnit>
+							<MU:MeasurementUnit
+								rdf:about="https://w3id.org/ecodigit/resource/m">
+								<rdfs:label>m</rdfs:label>
+							</MU:MeasurementUnit>
+						</MU:hasMeasurementUnit>
+					</ve:Scale>
+				</ve:hasScale>
+
+				<!-- orientamento lungo asse Z: riguarda l'informazione relativa all'orientamento
+					del modello. Questo perché ptrebbe essere disallineato. -->
+				<ve:isOrientedAlongZAxis>true</ve:isOrientedAlongZAxis>
+
+			</ve:Visualization>
+		</ve:hasVisualization>
+
+
+
+
+	</rdf:Description>
+
+</rdf:RDF>

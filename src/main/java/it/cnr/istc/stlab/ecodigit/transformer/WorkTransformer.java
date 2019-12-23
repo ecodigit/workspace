@@ -502,8 +502,6 @@ public class WorkTransformer {
 			transformFromFormObject("1zy_98Jz2AvCEg_r4MyZnMt2QHJnTo0X_2mLLaVeIZ90",
 					"/Users/lgu/Desktop/ecodigit/FormObjects", "/Users/lgu/Desktop/ecodigit/Pubblicazioni");
 
-		// controllo validità dati
-
 	}
 
 }
