@@ -27,6 +27,7 @@ import freemarker.template.TemplateException;
 import it.cnr.istc.stlab.ecodigit.transformer.model.Klass;
 import it.cnr.istc.stlab.ecodigit.transformer.model.Organization;
 import it.cnr.istc.stlab.ecodigit.transformer.model.Person;
+import it.cnr.istc.stlab.ecodigit.transformer.model.Provenance;
 import it.cnr.istc.stlab.ecodigit.transformer.model.Resource;
 import it.cnr.istc.stlab.ecodigit.transformer.work.model.Agent;
 import it.cnr.istc.stlab.ecodigit.transformer.work.model.Identifier;
@@ -474,6 +475,14 @@ public class WorkTransformer {
 			String[] row = (String[]) rit.next();
 
 			Work w = wt.transformObjectFromForm(row, binding, publicationsFolder);
+			
+			Provenance provenance = new Provenance();
+			provenance.setActivity("Attività di trasformazione dati raccolti tramite form.");
+			Agent a = new Agent();
+			a.setName("Stlab");
+			a.setURI("https://w3id.org/ecodigit/organization/stlab");
+			a.setFulladdress("Via San Martino della Battaglia 44, 00185 Roma, Italia");
+			provenance.setAgent(a);
 
 			String fileName = URIGenerator.getIDFromString(w.getTitle() + "_" + row[0]);
 			if (!concatenateIdAndDate) {
@@ -481,6 +490,8 @@ public class WorkTransformer {
 			}
 
 			System.out.println(w.getURI());
+			
+			w.setProvenance(provenance);
 
 			Map<String, Object> root = new HashMap<>();
 			root.put("work", w);
