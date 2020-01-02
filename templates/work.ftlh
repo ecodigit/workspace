@@ -243,6 +243,15 @@
 					<prov:wasAssociatedWith>
 						<rdf:Description rdf:about="${work.provenance.agent.URI}">
 							<foaf:name><![CDATA[${work.provenance.agent.name}]]></foaf:name>
+							<org:hasSite>
+								<org:Site>
+									<CLV:hasAddress>
+										<CLV:Address>
+											<CLV:fullAddress>${work.provenance.agent.fulladdress}</CLV:fullAddress>
+										</CLV:Address>
+									</CLV:hasAddress>
+								</org:Site>
+							</org:hasSite>
 						</rdf:Description>
 					</prov:wasAssociatedWith>
 					<#if work.URL??>
