@@ -18,6 +18,7 @@
 	xmlns:locn="https://www.w3.org/ns/locn#"
 	xmlns:sf="http://www.opengis.net/ont/sf#"
 	xmlns:geo="http://www.opengis.net/ont/geosparql#"
+	xmlns:l0="https://w3id.org/italia/onto/l0/"
 	xmlns:DUL="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#"
 	xmlns:geo_wgs84="http://www.w3.org/2003/01/geo/wgs84_pos#">
 
@@ -57,8 +58,19 @@
 								<CLV:hasAddress>
 									<CLV:Address>
 										<CLV:fullAddress><![CDATA[${work.publisher.fulladdress}]]></CLV:fullAddress>
-								</CLV:Address>
+									</CLV:Address>
 								</CLV:hasAddress>
+								<#if m.lat && m._long??>
+								<locn:geometry>
+									<sf:Point>
+										<geo:asWKT rdf:datatype= "http://www.opengis.net/ont/geosparql#wktLiteral">
+											<![CDATA[<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POINT(${m._long} ${m.lat})]]>
+										</geo:asWKT>
+										<geo_wgs84:lat>${m.lat}</geo_wgs84:lat>
+										<geo_wgs84:long>${m.lat}</geo_wgs84:long>
+									</sf:Point>
+								</locn:geometry>
+								</#if>
 							</org:Site>
 						</org:hasSite>
 						</#if>
@@ -250,6 +262,17 @@
 											<CLV:fullAddress>${work.provenance.agent.fulladdress}</CLV:fullAddress>
 										</CLV:Address>
 									</CLV:hasAddress>
+									<#if work.provenance.agent.lat != 0 && work.provenance.agent._long != 0>
+								<locn:geometry>
+									<sf:Point>
+										<geo:asWKT rdf:datatype= "http://www.opengis.net/ont/geosparql#wktLiteral">
+											<![CDATA[<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POINT(${work.provenance.agent._long} ${work.provenance.agent.lat})]]>
+										</geo:asWKT>
+										<geo_wgs84:lat>${work.provenance.agent.lat}</geo_wgs84:lat>
+										<geo_wgs84:long>${work.provenance.agent._long}</geo_wgs84:long>
+									</sf:Point>
+								</locn:geometry>
+								</#if>
 								</org:Site>
 							</org:hasSite>
 						</rdf:Description>

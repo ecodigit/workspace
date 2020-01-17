@@ -475,13 +475,15 @@ public class WorkTransformer {
 			String[] row = (String[]) rit.next();
 
 			Work w = wt.transformObjectFromForm(row, binding, publicationsFolder);
-			
+
 			Provenance provenance = new Provenance();
 			provenance.setActivity("Attività di trasformazione dati raccolti tramite form.");
 			Agent a = new Agent();
 			a.setName("Stlab");
 			a.setURI("https://w3id.org/ecodigit/organization/stlab");
 			a.setFulladdress("Via San Martino della Battaglia 44, 00185 Roma, Italia");
+			a.setLat(12.5024974);
+			a.set_long(41.9058768);
 			provenance.setAgent(a);
 
 			String fileName = URIGenerator.getIDFromString(w.getTitle() + "_" + row[0]);
@@ -490,14 +492,15 @@ public class WorkTransformer {
 			}
 
 			System.out.println(w.getURI());
-			
+
 			w.setProvenance(provenance);
 
 			Map<String, Object> root = new HashMap<>();
 			root.put("work", w);
 
+			String outFile = outFolder + "/" + fileName + ".rdf.xml";
 			Template temp = TransformerConfiguration.getInstance().getFreemarkerCfg().getTemplate("work.ftlh");
-			FileWriter out = new FileWriter(new File(outFolder + "/" + fileName + ".rdf.xml"));
+			FileWriter out = new FileWriter(new File(outFile));
 			StringWriter sw = new StringWriter();
 			temp.process(root, out);
 			temp.process(root, sw);
@@ -508,6 +511,7 @@ public class WorkTransformer {
 			System.out.println();
 			logger.info("RDF valido");
 			logger.info("Numero di Triple {}", m.size());
+			logger.info("Outfile: {}", outFile);
 
 		}
 	}
