@@ -60,14 +60,14 @@
 										<CLV:fullAddress><![CDATA[${work.publisher.fulladdress}]]></CLV:fullAddress>
 									</CLV:Address>
 								</CLV:hasAddress>
-								<#if m.lat && m._long??>
+								<#if work.publisher.lat!=0 && work.publisher._long!=0 ??>
 								<locn:geometry>
 									<sf:Point>
 										<geo:asWKT rdf:datatype= "http://www.opengis.net/ont/geosparql#wktLiteral">
-											<![CDATA[<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POINT(${m._long} ${m.lat})]]>
+											<![CDATA[<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POINT(${work.publisher._long} ${work.publisher.lat})]]>
 										</geo:asWKT>
 										<geo_wgs84:lat>${m.lat}</geo_wgs84:lat>
-										<geo_wgs84:long>${m.lat}</geo_wgs84:long>
+										<geo_wgs84:long>${work.publisher._long}</geo_wgs84:long>
 									</sf:Point>
 								</locn:geometry>
 								</#if>
