@@ -27,6 +27,7 @@ import freemarker.template.TemplateException;
 import it.cnr.istc.stlab.ecodigit.transformer.model.Klass;
 import it.cnr.istc.stlab.ecodigit.transformer.model.Organization;
 import it.cnr.istc.stlab.ecodigit.transformer.model.Person;
+import it.cnr.istc.stlab.ecodigit.transformer.model.Provenance;
 import it.cnr.istc.stlab.ecodigit.transformer.model.Resource;
 import it.cnr.istc.stlab.ecodigit.transformer.work.model.Agent;
 import it.cnr.istc.stlab.ecodigit.transformer.work.model.Identifier;
@@ -43,7 +44,7 @@ public class WorkTransformer {
 
 	private static Logger logger = LoggerFactory.getLogger(WorkTransformer.class);
 
-	private static List<Person> getListOfPersonsFromAuthorList(String list) {
+	public static List<Person> getListOfPersonsFromAuthorList(String list) {
 		List<Person> result = new ArrayList<>();
 
 		for (String persona : list.split(";")) {
@@ -203,7 +204,14 @@ public class WorkTransformer {
 		w.setImgURL(imgURL);
 
 		String coverageString = getStringField(row, bind.get(Field.COVERAGE));
-		String[] coverages = coverageString.split(",");
+		String[] coverages = {};
+		if (coverageString != null && coverageString.contains(",")) {
+			coverages = coverageString.split(",");
+		} else if (coverageString != null && coverageString.length() > 0) {
+			coverages = new String[1];
+			coverages[0] = coverageString;
+		}
+
 		List<Resource> coveragesList = new ArrayList<>();
 		for (int i = 0; i < coverages.length; i++) {
 			coverages[i] = coverages[i].trim();
@@ -448,8 +456,8 @@ public class WorkTransformer {
 		}
 	}
 
-	private static void transformFromFormObject(String sheet_id, String outFolder, String publicationsFolder)
-			throws Exception {
+	private static void transformFromFormObject(String sheet_id, String outFolder, String publicationsFolder,
+			boolean concatenateIdAndDate) throws Exception {
 
 		new File(outFolder).mkdirs();
 
@@ -468,15 +476,31 @@ public class WorkTransformer {
 
 			Work w = wt.transformObjectFromForm(row, binding, publicationsFolder);
 
-			String id = URIGenerator.getIDFromString(w.getTitle() + "_" + row[0]);
+			Provenance provenance = new Provenance();
+			provenance.setActivity("Attività di trasformazione dati raccolti tramite form.");
+			Agent a = new Agent();
+			a.setName("Stlab");
+			a.setURI("https://w3id.org/ecodigit/organization/stlab");
+			a.setFulladdress("Via San Martino della Battaglia 44, 00185 Roma, Italia");
+			a.setLat(12.5024974);
+			a.set_long(41.9058768);
+			provenance.setAgent(a);
+
+			String fileName = URIGenerator.getIDFromString(w.getTitle() + "_" + row[0]);
+			if (!concatenateIdAndDate) {
+				fileName = URIGenerator.getIDFromString(w.getTitle());
+			}
 
 			System.out.println(w.getURI());
+
+			w.setProvenance(provenance);
 
 			Map<String, Object> root = new HashMap<>();
 			root.put("work", w);
 
+			String outFile = outFolder + "/" + fileName + ".rdf.xml";
 			Template temp = TransformerConfiguration.getInstance().getFreemarkerCfg().getTemplate("work.ftlh");
-			FileWriter out = new FileWriter(new File(outFolder + "/" + id + ".rdf.xml"));
+			FileWriter out = new FileWriter(new File(outFile));
 			StringWriter sw = new StringWriter();
 			temp.process(root, out);
 			temp.process(root, sw);
@@ -487,6 +511,7 @@ public class WorkTransformer {
 			System.out.println();
 			logger.info("RDF valido");
 			logger.info("Numero di Triple {}", m.size());
+			logger.info("Outfile: {}", outFile);
 
 		}
 	}
@@ -498,9 +523,12 @@ public class WorkTransformer {
 		if (pub)
 			transformPublications("/Users/lgu/Desktop/ecodigit/pub.xlsx", "/Users/lgu/Desktop/ecodigit/Pubblicazioni");
 
-		if (formObject)
+		if (formObject) {
 			transformFromFormObject("1zy_98Jz2AvCEg_r4MyZnMt2QHJnTo0X_2mLLaVeIZ90",
-					"/Users/lgu/Desktop/ecodigit/FormObjects", "/Users/lgu/Desktop/ecodigit/Pubblicazioni");
+					"/Users/lgu/Desktop/ecodigit/FormObjects", "/Users/lgu/Desktop/ecodigit/Pubblicazioni", true);
+			transformFromFormObject("1zy_98Jz2AvCEg_r4MyZnMt2QHJnTo0X_2mLLaVeIZ90",
+					"/Users/lgu/Desktop/ecodigit/FormObjects", "/Users/lgu/Desktop/ecodigit/Pubblicazioni", false);
+		}
 
 	}
 

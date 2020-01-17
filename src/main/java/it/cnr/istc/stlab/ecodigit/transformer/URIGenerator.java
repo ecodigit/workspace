@@ -15,11 +15,11 @@ public class URIGenerator {
 		return BASE + "work/" + lastNameFirstAuthor + year + firstTokenTitle;
 	}
 
-	public static String getIDWork(Work w) {
+	public static String getIDWork(Work w) throws UnsupportedEncodingException {
 		if (w.getAuthor().size() > 0) {
-			return w.getAuthor().iterator().next().getFamilyName() + w.getYear() + w.getTitle().split(" ")[0];
+			return URLEncoder.encode(w.getAuthor().iterator().next().getFamilyName() + w.getYear() + w.getTitle().split(" ")[0], "UTF-8");
 		}
-		return w.getTitle().replaceAll("\\s", "_");
+		return URLEncoder.encode(w.getTitle().replaceAll("\\s", "_"), "UTF-8");
 	}
 
 	public static String getURIWork(String title) {
@@ -33,8 +33,8 @@ public class URIGenerator {
 			return BASE + "person/" + lastName.toLowerCase();
 	}
 
-	public static String getURIPerson(Person p) {
-		return getURIPerson(p.getGivenName(), p.getFamilyName());
+	public static String getURIPerson(Person p) throws UnsupportedEncodingException {
+		return URLEncoder.encode(getURIPerson(p.getGivenName(), p.getFamilyName()), "UTF-8");
 	}
 
 	public static String getURIFromString(String s) throws UnsupportedEncodingException {
