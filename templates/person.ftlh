@@ -71,7 +71,7 @@
 										<CLV:fullAddress><![CDATA[${m.fulladdress}]]></CLV:fullAddress>
 									</CLV:Address>
 								</CLV:hasAddress>
-								<#if m.lat && m._long??>
+								<#if m.lat !=0 && m._long !=0 ??>
 								<locn:geometry>
 									<sf:Point>
 										<geo:asWKT rdf:datatype= "http://www.opengis.net/ont/geosparql#wktLiteral">
