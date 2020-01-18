@@ -60,7 +60,7 @@
 										<CLV:fullAddress><![CDATA[${work.publisher.fulladdress}]]></CLV:fullAddress>
 									</CLV:Address>
 								</CLV:hasAddress>
-								<#if work.publisher.lat!=0 && work.publisher._long!=0 ??>
+								<#if (work.publisher.lat!=0) && (work.publisher._long!=0) ??>
 								<locn:geometry>
 									<sf:Point>
 										<geo:asWKT rdf:datatype= "http://www.opengis.net/ont/geosparql#wktLiteral">
@@ -262,7 +262,7 @@
 											<CLV:fullAddress>${work.provenance.agent.fulladdress}</CLV:fullAddress>
 										</CLV:Address>
 									</CLV:hasAddress>
-									<#if work.provenance.agent.lat != 0 && work.provenance.agent._long != 0>
+									<#if (work.provenance.agent.lat != 0) && (work.provenance.agent._long != 0) ??>
 								<locn:geometry>
 									<sf:Point>
 										<geo:asWKT rdf:datatype= "http://www.opengis.net/ont/geosparql#wktLiteral">

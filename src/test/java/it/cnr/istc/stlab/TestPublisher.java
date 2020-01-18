@@ -8,7 +8,9 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import org.apache.jena.ext.com.google.common.collect.Lists;
 import org.apache.jena.rdf.model.Model;
+import org.junit.Test;
 
 import freemarker.core.ParseException;
 import freemarker.template.MalformedTemplateNameException;
@@ -43,8 +45,9 @@ public class TestPublisher {
 		return result;
 	}
 
-	public static void main(String[] args) throws TemplateNotFoundException, MalformedTemplateNameException,
-			ParseException, IOException, TemplateException {
+	@Test
+	public void testTemplateWork() throws TemplateNotFoundException, MalformedTemplateNameException, ParseException,
+			IOException, TemplateException {
 		Work w = new Work();
 		String authorString = "pippis, pippo; paperinis, paperino";
 		w.setAuthorsString(authorString);
@@ -60,12 +63,62 @@ public class TestPublisher {
 		o.setAcronym("PUB");
 		o.setURI("http://example.org/PUB");
 		o.setFulladdress("Indirizzo PUB");
+		o.setLat(11);
+		o.set_long(12);
 		w.setPublisher(o);
 
 		Map<String, Object> root = new HashMap<>();
 		root.put("work", w);
 
 		Template temp = TransformerConfiguration.getInstance().getFreemarkerCfg().getTemplate("work.ftlh");
+		StringWriter sw = new StringWriter();
+		temp.process(root, sw);
+
+		Model m = org.apache.jena.rdf.model.ModelFactory.createDefaultModel();
+		StringReader sr = new StringReader(sw.getBuffer().toString());
+		m.read(sr, null);
+		m.write(System.out, "TTL");
+
+	}
+	
+	@Test
+	public void testTemplatePerson() throws TemplateNotFoundException, MalformedTemplateNameException, ParseException,
+			IOException, TemplateException {
+		Person p = new Person();
+		
+		p.setName("Luigi Asprino");
+		p.setFamilyName("Asprino");
+		p.set_long(10);
+		p.setLat(11);
+		p.setDescription("He is a good boy.");
+		p.setFulladdress("Via San Martino della Battaglia 24");
+		p.setGivenName("Luigi");
+		p.setHomepage("http://luigiasprino.it");
+		p.setImg("http://luigiasprino.it/img");
+		Work w = new Work();
+		String authorString = "pippis, pippo; paperinis, paperino";
+		w.setAuthorsString(authorString);
+		w.setTitle("la casa nella prateria");
+		w.setYear(2019);
+		String work_id = "http://example.org/" + URIGenerator.getIDWork(w);
+		w.setURI(work_id);
+		p.setMade(Lists.newArrayList(w));
+		p.setMbox("luigi@luigi.it");
+		Organization o = new Organization();
+		o.setName("Organizzazione Publisher");
+		o.setAcronym("PUB");
+		o.setURI("http://example.org/PUB");
+		o.setFulladdress("Indirizzo PUB");
+		o.setLat(10);
+		o.set_long(11);
+		p.setMembership(Lists.newArrayList(o));
+		p.setOrcid("0000-00000-0000");
+		p.setURI("https://w3id/luigi");
+		
+		Map<String, Object> root = new HashMap<>();
+		root.put("person", p);
+
+		Template temp = TransformerConfiguration.getInstance().getFreemarkerCfg().getTemplate("person.ftlh");
 		StringWriter sw = new StringWriter();
 		temp.process(root, sw);
 
