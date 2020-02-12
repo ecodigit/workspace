@@ -155,6 +155,14 @@
     
 
 
+    <!-- https://w3id.org/ecodigit/ontology/virtualEnvironments/DigitalObject -->
+
+    <owl:Class rdf:about="https://w3id.org/ecodigit/ontology/virtualEnvironments/DigitalObject">
+        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object"/>
+    </owl:Class>
+    
+
+
     <!-- https://w3id.org/ecodigit/ontology/virtualEnvironments/Hotspot -->
 
     <owl:Class rdf:about="https://w3id.org/ecodigit/ontology/virtualEnvironments/Hotspot">
@@ -251,7 +259,7 @@
     <!-- https://w3id.org/ecodigit/ontology/virtualEnvironments/3DModel -->
 
     <owl:Class rdf:about="https://w3id.org/ecodigit/ontology/virtualEnvironments/3DModel">
-        <rdfs:subClassOf rdf:resource="http://www.ontologydesignpatterns.org/ont/dul/DUL.owl#Object"/>
+        <rdfs:subClassOf rdf:resource="https://w3id.org/ecodigit/ontology/virtualEnvironments/DigitalObject"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/ecodigit/ontology/virtualEnvironments/hasHotspot"/>
