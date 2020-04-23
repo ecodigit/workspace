@@ -107,6 +107,8 @@
 
 
 
+
+
 		<!-- Attività lavorativa -->
 		<COV:holdEmployment>
 			<COV:Employment>
@@ -415,8 +417,25 @@
 							rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2020-01-02</TI:endTime>
 					</TI:TimeInterval>
 				</TI:hasDuration>
+				
+				<!-- Ruolo della persona in un progetto -->
+				<RO:hasRiT>
+					<RO:TimeIndexedRole
+						rdf:about="https://w3id.org/ecodigit/resource/ruoloLuigiAsprinoInEcodigit">
+						<RO:withRole>
+							<RO:Role
+								rdf:about="https://w3id.org/ecodigit/resource/CTO">
+								<rdfs:label>Chief Technical Officer</rdfs:label>
+							</RO:Role>
+						</RO:withRole>
+						<RO:isRoleInTimeOf
+							rdf:resource="https://w3id.org/ecodigit/person/luigi.asprino" />
+					</RO:TimeIndexedRole>
+				</RO:hasRiT>
+				
 			</project:PublicInvestmentProject>
 		</project:isParticipantingAgentOfProject>
+
 
 
 	</foaf:Person>
