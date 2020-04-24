@@ -62,19 +62,30 @@
 			</SM:OnlineContactPoint>
 		</SM:hasContactPoint>
 		<!-- Ruolo della persona in un progetto -->
-				<RO:hasRiT>
-					<RO:TimeIndexedRole
-						rdf:about="https://w3id.org/ecodigit/resource/ruoloLuigiAsprinoInEcodigit">
-						<RO:withRole>
-							<RO:Role
-								rdf:about="https://w3id.org/ecodigit/resource/CTO">
-								<rdfs:label>Chief Technical Officer</rdfs:label>
-							</RO:Role>
-						</RO:withRole>
-						<RO:isRoleInTimeOf
-							rdf:resource="https://w3id.org/ecodigit/person/luigi.asprino" />
-					</RO:TimeIndexedRole>
-				</RO:hasRiT>
-	
+		<RO:hasRiT>
+			<RO:TimeIndexedRole
+				rdf:about="https://w3id.org/ecodigit/resource/ruoloLuigiAsprinoInEcodigit">
+				<RO:withRole>
+					<RO:Role rdf:about="https://w3id.org/ecodigit/resource/CTO">
+						<rdfs:label>Chief Technical Officer</rdfs:label>
+					</RO:Role>
+				</RO:withRole>
+				<RO:isRoleInTimeOf
+					rdf:resource="https://w3id.org/ecodigit/person/luigi.asprino">
+					<foaf:Person
+						rdf:about="https://w3id.org/ecodigit/person/luigi.asprino">
+						<!-- Informazioni Personali -->
+						<foaf:givenname>Luigi</foaf:givenname>
+						<foaf:family_name>Asprino</foaf:family_name>
+						<foaf:img
+							rdf:resource="http://luigiasprino.it/img/luigi-asprino.jpg" />
+						<foaf:mbox
+							rdf:resource="mailto:luigi.asprino@istc.cnr.it" />
+						<foaf:homepage rdf:resource="http://luigiasprino.it" />
+					</foaf:Person>
+				</RO:isRoleInTimeOf>
+			</RO:TimeIndexedRole>
+		</RO:hasRiT>
+
 	</project:PublicInvestmentProject>
 </rdf:RDF>
