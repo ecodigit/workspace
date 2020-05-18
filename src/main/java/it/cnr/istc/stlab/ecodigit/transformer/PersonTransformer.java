@@ -65,7 +65,7 @@ public class PersonTransformer {
 			org.setAcronym(aff_acr);
 			org.setURI(URIGenerator.getURIOrganization(aff_acr));
 			org.setFulladdress(aff_add);
-			p.setMembership(Lists.newArrayList(org));
+			p.setMemberOf(Lists.newArrayList(org));
 		}
 
 		return p;

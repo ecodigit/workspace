@@ -3,6 +3,7 @@ package it.cnr.istc.stlab.ecodigit.transformer.work.model;
 import java.util.ArrayList;
 import java.util.List;
 
+import it.cnr.istc.stlab.ecodigit.transformer.model.DigitalDocument;
 import it.cnr.istc.stlab.ecodigit.transformer.model.Klass;
 import it.cnr.istc.stlab.ecodigit.transformer.model.Organization;
 import it.cnr.istc.stlab.ecodigit.transformer.model.Person;
@@ -15,7 +16,7 @@ public class Work {
 		TITLE, LIST_OF_AUTHORS, YEAR, FIRST_PAGE, LAST_PAGE, URL, LANGUAGE, DOI, TYPE, ISBN_COLLECTION,
 		PUBLISHER_COLLECTION, PUBLISHER_PLACE_COLLECTION, TITLE_COLLECTION, ABSTRACT, IMGURL, COVERAGE,
 		RIGHTS_HOLDER_NAME, RIGHTS_HOLDER_ACRONYM, RELATION, AREA_SETTORE_DISCIPLINARE, DISCIPLINA, SETTORE_AFFINE,
-		TEMATICA, LAT,LON
+		TEMATICA, LAT, LON
 	}
 
 	private String URI, title, language, URL, doi, _abstract, isbn, identifier, authorsString, imgURL, lat, lon;
@@ -33,6 +34,7 @@ public class Work {
 	private List<Resource> subjects = new ArrayList<>();
 	private Organization rightsHolder;
 	private List<Work> relations = new ArrayList<>();
+	private List<DigitalDocument> digitalDocuments = new ArrayList<>();
 
 	public String getURI() {
 		return URI;
@@ -265,7 +267,13 @@ public class Work {
 	public void setLon(String lon) {
 		this.lon = lon;
 	}
-	
-	
+
+	public List<DigitalDocument> getDigitalDocuments() {
+		return digitalDocuments;
+	}
+
+	public void setDigitalDocuments(List<DigitalDocument> digitalDocuments) {
+		this.digitalDocuments = digitalDocuments;
+	}
 
 }

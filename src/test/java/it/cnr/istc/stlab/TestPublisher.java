@@ -20,8 +20,11 @@ import freemarker.template.TemplateNotFoundException;
 import it.cnr.istc.stlab.ecodigit.transformer.TransformerConfiguration;
 import it.cnr.istc.stlab.ecodigit.transformer.URIGenerator;
 import it.cnr.istc.stlab.ecodigit.transformer.WorkTransformer;
+import it.cnr.istc.stlab.ecodigit.transformer.model.DigitalDocument;
+import it.cnr.istc.stlab.ecodigit.transformer.model.Membership;
 import it.cnr.istc.stlab.ecodigit.transformer.model.Organization;
 import it.cnr.istc.stlab.ecodigit.transformer.model.Person;
+import it.cnr.istc.stlab.ecodigit.transformer.model.Role;
 import it.cnr.istc.stlab.ecodigit.transformer.work.model.Work;
 
 public class TestPublisher {
@@ -67,6 +70,19 @@ public class TestPublisher {
 		o.set_long(12);
 		w.setPublisher(o);
 
+		List<DigitalDocument> docs = new ArrayList<>();
+		DigitalDocument d = new DigitalDocument();
+
+		d.setDescription("Descrizione allegato");
+		d.setTitle("Titolo");
+		d.setUri("http://example.com/uriDigitalDocument");
+		d.setUrl("http://example.com/urlAllegato");
+		d.setLanguage("it");
+		d.setMainEntity("http://example.com/uriEntity");
+		docs.add(d);
+
+		w.setDigitalDocuments(docs);
+
 		Map<String, Object> root = new HashMap<>();
 		root.put("work", w);
 
@@ -80,12 +96,12 @@ public class TestPublisher {
 		m.write(System.out, "TTL");
 
 	}
-	
+
 	@Test
 	public void testTemplatePerson() throws TemplateNotFoundException, MalformedTemplateNameException, ParseException,
 			IOException, TemplateException {
 		Person p = new Person();
-		
+
 		p.setName("Luigi Asprino");
 		p.setFamilyName("Asprino");
 		p.set_long(10);
@@ -111,10 +127,20 @@ public class TestPublisher {
 		o.setFulladdress("Indirizzo PUB");
 		o.setLat(10);
 		o.set_long(11);
-		p.setMembership(Lists.newArrayList(o));
+		p.setMemberOf(Lists.newArrayList(o));
 		p.setOrcid("0000-00000-0000");
 		p.setURI("https://w3id/luigi");
 		
+		
+		Membership mem= new Membership();
+		mem.setOrganization(o);
+		Role r = new Role();
+		r.setLabel("Capo");
+		r.setUri("http://example.com/capo");
+		mem.setRole(r);
+		p.setMemberships(Lists.newArrayList(mem));
+//		m.setRole(role);
+
 		Map<String, Object> root = new HashMap<>();
 		root.put("person", p);
 

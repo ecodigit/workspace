@@ -14,7 +14,8 @@ public class Person extends Agent {
 
 	private String givenName, familyName, img, mbox, homepage, orcid, description;
 	private List<Work> made;
-	private List<Organization> membership;
+	private List<Organization> memberOf;
+	private List<Membership> memberships;
 
 	public String getGivenName() {
 		return givenName;
@@ -80,12 +81,20 @@ public class Person extends Agent {
 		this.made = made;
 	}
 
-	public List<Organization> getMembership() {
-		return membership;
+	public List<Organization> getMemberOf() {
+		return memberOf;
 	}
 
-	public void setMembership(List<Organization> membership) {
-		this.membership = membership;
+	public void setMemberOf(List<Organization> memberOf) {
+		this.memberOf = memberOf;
+	}
+
+	public List<Membership> getMemberships() {
+		return memberships;
+	}
+
+	public void setMemberships(List<Membership> memberships) {
+		this.memberships = memberships;
 	}
 
 }

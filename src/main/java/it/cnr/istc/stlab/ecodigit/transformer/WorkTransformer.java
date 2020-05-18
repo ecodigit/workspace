@@ -258,7 +258,7 @@ public class WorkTransformer {
 		}
 
 		String r = getStringField(row, bind.get(Field.RELATION));
-		r=null;
+//		r=null;
 		List<Work> relations = new ArrayList<>();
 		if (r != null) {
 			System.out.println(r);

@@ -57,28 +57,43 @@
 			</rdf:Description>
 		</foaf:made>
 		</#list>
-		<#list person.membership as m>
+		<#list person.memberOf as m>
+		 <org:memberOf>
+		 	<org:Organization rdf:about="${m.URI}">
+		 		<foaf:name><![CDATA[${m.name}]]></foaf:name>
+		 	</org:Organization>
+	    </org:memberOf>
+		</#list>
+		
+		
+		
+		<#list person.memberships as m>
 		<org:hasMembership>
 			<org:Membership>
+				<org:role>
+		          <org:Role rdf:about="${m.role.uri}">
+		            <rdfs:label><![CDATA[${m.role.label}]]></rdfs:label>
+		          </org:Role>
+		        </org:role>
 				<org:organization>
-					<org:Organization rdf:about="${m.URI}">
-						<foaf:name><![CDATA[${m.name}]]></foaf:name>
-						<foaf:acronym>${m.acronym}</foaf:acronym>
+					<org:Organization rdf:about="${m.organization.URI}">
+						<foaf:name><![CDATA[${m.organization.name}]]></foaf:name>
+						<foaf:acronym>${m.organization.acronym}</foaf:acronym>
 						<org:hasSite>
 							<org:Site>
 								<CLV:hasAddress>
 									<CLV:Address>
-										<CLV:fullAddress><![CDATA[${m.fulladdress}]]></CLV:fullAddress>
+										<CLV:fullAddress><![CDATA[${m.organization.fulladdress}]]></CLV:fullAddress>
 									</CLV:Address>
 								</CLV:hasAddress>
-								<#if (m.lat != 0) && (m._long != 0) ??>
+								<#if (m.organization.lat != 0) && (m.organization._long != 0) ??>
 								<locn:geometry>
 									<sf:Point>
 										<geo:asWKT rdf:datatype= "http://www.opengis.net/ont/geosparql#wktLiteral">
-											<![CDATA[<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POINT(${m._long} ${m.lat})]]>
+											<![CDATA[<http://www.opengis.net/def/crs/OGC/1.3/CRS84> POINT(${m.organization._long} ${m.organization.lat})]]>
 										</geo:asWKT>
-										<geo_wgs84:lat>${m.lat}</geo_wgs84:lat>
-										<geo_wgs84:long>${m._long}</geo_wgs84:long>
+										<geo_wgs84:lat>${m.organization.lat}</geo_wgs84:lat>
+										<geo_wgs84:long>${m.organization._long}</geo_wgs84:long>
 									</sf:Point>
 								</locn:geometry>
 								</#if>
@@ -89,6 +104,7 @@
 			</org:Membership>
 		</org:hasMembership>
 		</#list>
+		
 	</foaf:Person>
 	
 	

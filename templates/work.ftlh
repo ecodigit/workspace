@@ -285,5 +285,16 @@
 		</prov:Entity>
 	</#if>
 	
+	
+	<#list work.digitalDocuments as doc>
+	<schemaorg:DigitalDocument rdf:about="${doc.uri}">
+		<dc:title><![CDATA[${doc.title}]]></dc:title>
+		<dc:description><![CDATA[${doc.description}]]></dc:description>
+		<schemaorg:inLanguage>${doc.language}</schemaorg:inLanguage>
+		<schemaorg:mainEntity rdf:resource="${doc.mainEntity}" />
+		<schemaorg:url rdf:resource="${doc.url}" />
+	</schemaorg:DigitalDocument>
+  	</#list>
+	
 
 </rdf:RDF>
