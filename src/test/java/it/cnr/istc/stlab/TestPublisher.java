@@ -139,7 +139,6 @@ public class TestPublisher {
 		r.setUri("http://example.com/capo");
 		mem.setRole(r);
 		p.setMemberships(Lists.newArrayList(mem));
-//		m.setRole(role);
 
 		Map<String, Object> root = new HashMap<>();
 		root.put("person", p);
