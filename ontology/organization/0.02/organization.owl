@@ -36,7 +36,7 @@
         <rdfs:comment xml:lang="it">L&apos;ontologia ha lo scopo di definire un vocabolario condiviso di termini per la descrizione delle organizzazioni che partecipano al Centro di Eccellenza - DTC Lazio.</rdfs:comment>
         <rdfs:isDefinedBy rdf:resource="http://w3id.org/ecodigit/ontology/organization"/>
         <rdfs:label xml:lang="it">Ontologia delle Organizzazioni di EcoDigit</rdfs:label>
-        <owl:versionInfo xml:lang="it">Versione 0.01 (instabile) - Modificata il 14 Maggio 2019 - Prima versione dell&apos;ontologia.</owl:versionInfo>
+        <owl:versionInfo xml:lang="it">Versione 0.02 (instabile) - Modificata il 15 Ottobre 2020 - Modificati gli ID delle entità dell&apos;ontologia.</owl:versionInfo>
         <dcat:contactPoint rdf:resource="https://w3id.org/ecodigit/contactPoint"/>
         <dcat:keyword xml:lang="it">ente di ricerca</dcat:keyword>
         <dcat:keyword xml:lang="it">laboratori di ricerca</dcat:keyword>
