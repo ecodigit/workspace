@@ -139,7 +139,6 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="it">Questa classe rappresenta una valutazione espressa da numeri o lettere di una certa scala di valutazione. Un voto, infatti, è necessariamente associato alla sua scala di valutazione.</rdfs:comment>
-        <rdfs:comment xml:lang="it">Rappresenta una certa scala di valutazione, alla quale si riferisce necessariamente un voto, con almeno un valore minimo e uno massimo.</rdfs:comment>
         <rdfs:comment xml:lang="en">This class represents an evaluation expressed by numbers or letters of a certain grading scale. In fact, a grade is necessarily associated to its grading scale.</rdfs:comment>
         <rdfs:label xml:lang="en">Grade</rdfs:label>
         <rdfs:label xml:lang="it">Voto</rdfs:label>
@@ -173,6 +172,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">It represents a certain grading scale, to which a grade necessarily refers, with at least a minimum and a maximum value.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Rappresenta una certa scala di valutazione, alla quale si riferisce necessariamente un voto, con almeno un valore minimo e uno massimo.</rdfs:comment>
         <rdfs:label xml:lang="en">Grading scale</rdfs:label>
         <rdfs:label xml:lang="it">Scala di valutazione</rdfs:label>
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
