@@ -195,10 +195,13 @@
         <rdfs:subPropertyOf rdf:resource="https://w3id.org/italia/onto/COV/mainFunction"/>
         <rdfs:domain rdf:resource="https://w3id.org/ecodigit/ontology/organization/ResearchInstitute"/>
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
-        <rdfs:comment xml:lang="it">Descrive la missione dell&apos;Istituto di Ricerca.</rdfs:comment>
-        <rdfs:comment xml:lang="en">Property used to describe the main mission of the research institute.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Questa proprietà descrive la missione dell&apos;Istituto di Ricerca.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This property describes the mission of a research institute.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/ecodigit/ontology/organization"/>
         <rdfs:label xml:lang="en">mission</rdfs:label>
         <rdfs:label xml:lang="it">missione</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:DatatypeProperty>
     
 
@@ -253,9 +256,13 @@
                 <owl:allValuesFrom rdf:resource="https://w3id.org/ecodigit/ontology/organization/ResearchLaboratory"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment xml:lang="it">I laboratori censiti dal Centro di Eccellenza DTC Lazio sono stati raggruppati per tematica di competenza o tipologia di tecnologia sviluppata, in modo da costituire la rete.</rdfs:comment>
+        <rdfs:comment xml:lang="it">Questa classe intende rappresentare il raggruppamento in laboratori di ricerca sulla base della loro tematica di competenza o tipologia di tecnologia sviluppata.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This class intends to represent the grouping in research laboratories on the basis of subjects of competence or types of developed technology.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/ecodigit/ontology/organization"/>
         <rdfs:label xml:lang="en">Network of Laboratories</rdfs:label>
         <rdfs:label xml:lang="it">Rete di Laboratori</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:Class>
     
 
@@ -265,8 +272,13 @@
     <owl:Class rdf:about="https://w3id.org/ecodigit/ontology/organization/ResearchDepartment">
         <rdfs:subClassOf rdf:resource="https://w3id.org/ecodigit/ontology/organization/ResearchInstitute"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/COV/SupportUnit"/>
+        <rdfs:comment xml:lang="it">Questa classe rappresenta una divisione di un&apos;organizzazione di ricerca.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This class represents a division of a research organization.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/ecodigit/ontology/organization"/>
         <rdfs:label xml:lang="it">Dipartimento di Ricerca</rdfs:label>
         <rdfs:label xml:lang="en">Research Department</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:Class>
     
 
@@ -276,8 +288,12 @@
     <owl:Class rdf:about="https://w3id.org/ecodigit/ontology/organization/ResearchInstitute">
         <rdfs:subClassOf rdf:resource="https://w3id.org/italia/onto/COV/Organization"/>
         <rdfs:comment xml:lang="it">Gli enti di ricerca sono organizzazioni con il compito di svolgere attività di ricerca scientifica nei principali settori di sviluppo delle conoscenze e delle loro applicazioni in ambito tecnico-scientifico.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Research institutes are organizations aiming at carrying out scientific research activities in the main sectors of knowledge development and their applications in the technical-scientific field.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/ecodigit/ontology/organization"/>
         <rdfs:label xml:lang="it">Ente di Ricerca</rdfs:label>
         <rdfs:label xml:lang="en">Research Institute</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:Class>
     
 
@@ -286,9 +302,13 @@
 
     <owl:Class rdf:about="https://w3id.org/ecodigit/ontology/organization/ResearchLaboratory">
         <rdfs:subClassOf rdf:resource="https://w3id.org/ecodigit/ontology/organization/ResearchInstitute"/>
+        <rdfs:comment xml:lang="it">Questa classe rappresenta un laboratorio di ricerca come organizzazione creata per operare e promuovere la ricerca in una o più aree della scienza.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This class represents a research laboratory as organization created to operate and promote research in one or more areas of science.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/ecodigit/ontology/organization"/>
         <rdfs:label xml:lang="it">Laboratorio di Ricerca</rdfs:label>
         <rdfs:label xml:lang="en">Research Laboratory</rdfs:label>
-        <rdfs:label xml:lang="it">Un laboratorio è una organizzazione creata ad hoc per operare e promuovere la ricerca in uno o più ambiti della scienza.</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:Class>
     
 
@@ -299,9 +319,13 @@
         <owl:equivalentClass rdf:resource="https://w3id.org/ecodigit/ontology/organization/UnitaDiRicerca"/>
         <rdfs:subClassOf rdf:resource="http://www.w3.org/ns/org#OrganizationalCollaboration"/>
         <rdfs:subClassOf rdf:resource="https://w3id.org/ecodigit/ontology/organization/ResearchInstitute"/>
-        <rdfs:comment xml:lang="it">Il Centro di Eccellenza DTC Lazio svolge le proprie attività di ricerca, innovazione, trasferimento tecnologico formazione permanente e alta formazione nei diversi ambiti tecnologi e disciplinari attraverso 6 Unità di Ricerca (UR) operative, che hanno quindi la funzione di coordinamento tecnico scientifico negli ambiti di propria competenza e di integrazione delle tecnologie e conoscenze multidisciplinari che caratterizzano l’unicità e la ricchezza del Centro</rdfs:comment>
+        <rdfs:comment xml:lang="it">Questa classe definisce un&apos;unità di ricerca con funzione di coordinamento tecnico-scientifico nelle aree di sua competenza e integrazione delle tecnologie e conoscenze multidisciplinari.</rdfs:comment>
+        <rdfs:comment xml:lang="en">This class defines a research unit having the function of technical-scientific coordination in the areas of its competence and  integration of the multi-disciplinary technologies and knowledge.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/ecodigit/ontology/organization"/>
         <rdfs:label xml:lang="en">Research Unit</rdfs:label>
         <rdfs:label xml:lang="it">Unità di Ricerca</rdfs:label>
+        <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
+        <owl:versionInfo xml:lang="en">stable</owl:versionInfo>
     </owl:Class>
     
 
