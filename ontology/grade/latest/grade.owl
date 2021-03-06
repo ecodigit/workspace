@@ -57,6 +57,7 @@
         <cpannotationschema:isSpecializationOf rdf:resource="http://www.essepuntato.it/2010/06/literalreification/hasLiteral"/>
         <rdfs:comment xml:lang="it">Questa proprietà associa un voto a qualsiasi cosa valutabile su una scala di valutazione.</rdfs:comment>
         <rdfs:comment xml:lang="en">This property associates a grade to anything evaluable on a grading scale.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/ecodigit/ontology/grade"/>
         <rdfs:label xml:lang="it">ha voto</rdfs:label>
         <rdfs:label xml:lang="en">has grade</rdfs:label>
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
@@ -72,6 +73,7 @@
         <rdfs:range rdf:resource="https://w3id.org/ecodigit/ontology/grade/GradingScale"/>
         <rdfs:comment xml:lang="it">Questa proprietà associa il voto alla relativa scala di valutazione.</rdfs:comment>
         <rdfs:comment xml:lang="en">This property associates the grade with its grading scale.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/ecodigit/ontology/grade"/>
         <rdfs:label xml:lang="it">ha scala di valutazione</rdfs:label>
         <rdfs:label xml:lang="en">has grading scale</rdfs:label>
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
@@ -88,6 +90,7 @@
         <rdfs:range rdf:resource="https://w3id.org/ecodigit/ontology/grade/Grade"/>
         <rdfs:comment xml:lang="it">Questa proprietà associa una scala di valutazione con il suo voto massimo.</rdfs:comment>
         <rdfs:comment xml:lang="en">This property associates a grading scale with its maximum grade.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/ecodigit/ontology/grade"/>
         <rdfs:label xml:lang="it">ha voto massimo</rdfs:label>
         <rdfs:label xml:lang="en">has maximum grade</rdfs:label>
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
@@ -104,6 +107,7 @@
         <rdfs:range rdf:resource="https://w3id.org/ecodigit/ontology/grade/Grade"/>
         <rdfs:comment xml:lang="it">Questa proprietà associata una scala di valutazione al suo voto minimo.</rdfs:comment>
         <rdfs:comment xml:lang="en">This property associated a grading scale to its minimum grade.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/ecodigit/ontology/grade"/>
         <rdfs:label xml:lang="it">ha voto minimo</rdfs:label>
         <rdfs:label xml:lang="en">has minimum grade</rdfs:label>
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
@@ -119,6 +123,7 @@
         <rdfs:range rdf:resource="https://w3id.org/ecodigit/ontology/grade/LiteralReification"/>
         <rdfs:comment xml:lang="it">Questa proprietà mette in relazione il letterale reificato con un altro che ha un valore letterale maggiore.</rdfs:comment>
         <rdfs:comment xml:lang="en">This property relates the reified literal to another one that has a greater literal value.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/ecodigit/ontology/grade"/>
         <rdfs:label xml:lang="en">is greater than</rdfs:label>
         <rdfs:label xml:lang="it">è più grande di</rdfs:label>
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
@@ -146,6 +151,7 @@
         <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
         <rdfs:comment xml:lang="it">Questa proprietà rappresenta il valore letterale associato alla reificazione letterale. È una specializzazione del &apos;litre:hasLiteralValue&apos; del pattern &apos;Literal Reification&apos;.</rdfs:comment>
         <rdfs:comment xml:lang="en">This property represents the literal value associate to the literal reification. It is a specialization of the &apos;litre:hasLiteralValue&apos; of the &apos;Literal Reification&apos; pattern.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/ecodigit/ontology/grade"/>
         <rdfs:label xml:lang="en">Literal value</rdfs:label>
         <rdfs:label xml:lang="it">Valore letterale</rdfs:label>
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
@@ -177,6 +183,7 @@
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="it">Questa classe rappresenta una valutazione espressa da numeri o lettere di una certa scala di valutazione. Un voto, infatti, è necessariamente associato alla sua scala di valutazione.</rdfs:comment>
         <rdfs:comment xml:lang="en">This class represents an evaluation expressed by numbers or letters of a certain grading scale. In fact, a grade is necessarily associated to its grading scale.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/ecodigit/ontology/grade"/>
         <rdfs:label xml:lang="en">Grade</rdfs:label>
         <rdfs:label xml:lang="it">Voto</rdfs:label>
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
@@ -210,6 +217,7 @@
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">It represents a certain grading scale, to which a grade necessarily refers, with at least a minimum and a maximum value.</rdfs:comment>
         <rdfs:comment xml:lang="it">Rappresenta una certa scala di valutazione, alla quale si riferisce necessariamente un voto, con almeno un valore minimo e uno massimo.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/ecodigit/ontology/grade"/>
         <rdfs:label xml:lang="en">Grading scale</rdfs:label>
         <rdfs:label xml:lang="it">Scala di valutazione</rdfs:label>
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
@@ -231,6 +239,7 @@
         <cpannotationschema:isSpecializationOf rdf:resource="http://www.essepuntato.it/2010/06/literalreification/Literal"/>
         <rdfs:comment xml:lang="en">It represents the reification of literal values by specializing the &apos;litre:Literal&apos; class of the &apos;Literal Reification&apos; pattern.</rdfs:comment>
         <rdfs:comment xml:lang="it">Rappresenta la reificazione di valori letterali specializzando la classe &apos;litre:Literal&apos; del pattern &apos;Literal Reification&apos;.</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="https://w3id.org/ecodigit/ontology/grade"/>
         <rdfs:label xml:lang="en">Literal Reification</rdfs:label>
         <rdfs:label xml:lang="it">Reificazione di valori letterali</rdfs:label>
         <owl:versionInfo xml:lang="it">stabile</owl:versionInfo>
