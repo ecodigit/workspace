@@ -29,7 +29,7 @@
         <owl:imports rdf:resource="https://w3id.org/ecodigit/ontology/organization"/>
         <owl:imports rdf:resource="https://w3id.org/italia/onto/CPV-aligns"/>
         <owl:imports rdf:resource="https://w3id.org/italia/onto/Language"/>
-        <dc:description rdf:resource="https://raw.githubusercontent.com/ecodigit/workspace/master/ontology/eas/0.01/diagram.png"/>
+        <dc:description rdf:resource="https://github.com/ecodigit/workspace/blob/master/ontology/eas/latest/eas-diagram.jpg"/>
     </owl:Ontology>
     
 
@@ -487,14 +487,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://w3id.org/ecodigit/ontology/eas/hasCertification"/>
-                <owl:someValuesFrom>
-                    <owl:Class>
-                        <owl:unionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="https://w3id.org/ecodigit/ontology/eas/IstitutionalCertification"/>
-                            <rdf:Description rdf:about="https://w3id.org/ecodigit/ontology/eas/SelfCertification"/>
-                        </owl:unionOf>
-                    </owl:Class>
-                </owl:someValuesFrom>
+                <owl:allValuesFrom rdf:resource="https://w3id.org/ecodigit/ontology/eas/Certification"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="it">Questa classe rappresenta la competenza che una persona ha acquisito grazie a un&apos;esperienza formativa, che può essere certificata o meno.</rdfs:comment>
